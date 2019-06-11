@@ -8,17 +8,7 @@ files <- list.files(pattern = "pdf$")
 env_papers <- lapply(files, pdf_text)
 length(env_papers)
 
-library(tm) ##None of the below works. But the tibble method does!
-#env_corp <- Corpus(URISource(files), readerControl = list(readPDF))
-#env_corp <- tm_map(env_corp, content_transformer(function(x) iconv(enc2utf8(x), sub = "byte")))
-#env_corp <- tm_map(env_corp, removePunctuation, ucp = TRUE)
-#env_corp_TDM <- TermDocumentMatrix(env_corp, control = list(removePunctuation = TRUE,
-# stopwords = FALSE,
-#tolower = FALSE,
-#stemming = FALSE,
-#removeNumbers = TRUE,
-#bounds = list(global = c(1, Inf))))
-
+library(tm) ## the tibble method works!
 env_text <- pdf_text(files)
 env_tibble <- tibble(text = env_text)
 env_tidy <- env_tibble %>%
@@ -40,9 +30,25 @@ test_tidy <- test_tibble %>%
 #alright, there is some weird stuff going on with the third
 #column in the txt files.
 #can I read it in delimited by tabs? And then delete the third col?
+
+
 ##Trying the blog corpus which is xml
 library(XML)
 library(methods)
+library(xml2)
+
+##From here to indication below does not work.
+list.files(pattern=".xml$")
+# create a list from these files
+list.filenames<-list.files(pattern=".xml$")
+df_list <- lapply(list.filenames, function(f) {
+  doc <- read_xml(f)
+  setNames(data.frame(
+    xml_attr(xml_find_all(doc, "//ns2:opendataField"), "key"),
+    xml_attr(xml_find_all(doc, "//ns2:opendataField"), "value")
+  ), c("key", f))
+  
+})
 blog_corpus <- xmlParse(file = "Test/7596.male.26.Internet.Scorpio.xml")
 blog_dataframe <- xmlToDataFrame("Test/7596.male.26.Internet.Scorpio.xml")
 blog_list <- xmlToList(blog_corpus)
@@ -55,8 +61,12 @@ blog_tidy <- blog_dataframe %>%
 posts <- xpathApply(blog_corpus, "//post",xmlValue)
 postWords <- lapply(posts,strsplit,"[[:space:]]")
 #postWords <- tibble(postWords)
+
+###Here. Below is what works, but directory must be set to the jargon master, not to test. 
+
+##This results in however many xml documents in the folder being read in as a DTM.
 library(tm)
-blogposts <- Corpus(DirSource("Test"))
+blogposts <- Corpus(DirSource("Test/XML"))
 blogposts <- tm_map(blogposts, removePunctuation)
 blogposts <- tm_map(blogposts, content_transformer(tolower))
 blogposts <- tm_map(blogposts, removeNumbers)
@@ -66,5 +76,20 @@ blogDTM <- DocumentTermMatrix(blogposts)
 blog_freq <- colSums(as.matrix(blogDTM))
 #total number of terms:
 length(blog_freq) #14515
-
 #posttm <- readXML(type = "node", spec = "XPathExpression") 
+
+
+##Working on some analysis/creating numbers methods: 
+#methods used will be: Jargonness, LSA, lex tightness, Flesch-Kincaid, POS analysis
+
+##Jargonness: 1. comparison of word frequency in corpora: count words in science corpora, count in normal
+#make ratio of counts. 
+
+##LSA: latent semantic analysis: 
+
+##Flesch-Kincaid: 206.835 - 1.015(totalwords/totalsentences) - 84.6(totalsyllables/totalwords)
+#so I need a corpus of abstracts that is not tidy. It needs punctuation and spaces. 
+#there is actually a function: readability(txt.file, hyphen = NULL, index = "Flesch")
+library(koRpus)
+#k so the readability function takes .txt files. I want to look at my abstracts only, so maybe I save them as txt files...?
+readability()
