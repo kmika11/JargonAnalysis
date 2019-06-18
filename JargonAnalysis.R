@@ -94,5 +94,6 @@ library(koRpus)
 library(koRpus.lang.en)
 #install.koRpus.lang(lang = "en") #Think I have this on machine now, so I don't need to run line again.
 #k so the readability function takes .txt files. I want to look at my abstracts only, so maybe I save them as txt files...?
-readability("Test/Abstract1", hyphen = NULL, index = "Flesch.Kincaid", force.lang = "en")
-
+readability("Test/Ab1.txt", hyphen = NULL, index = "Flesch.Kincaid", tagger = "tokenize", force.lang = "en")
+readability("Test/Abs2.txt", hyphen = NULL, index = "Flesch.Kincaid", tagger = "tokenize", force.lang = "en")
+readability("Test/Abs3.txt", hyphen = NULL, index = "Flesch.Kincaid", tagger = "tokenize", force.lang = "en")
