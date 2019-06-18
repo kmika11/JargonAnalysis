@@ -91,5 +91,8 @@ length(blog_freq) #14515
 #so I need a corpus of abstracts that is not tidy. It needs punctuation and spaces. 
 #there is actually a function: readability(txt.file, hyphen = NULL, index = "Flesch")
 library(koRpus)
+library(koRpus.lang.en)
+#install.koRpus.lang(lang = "en") #Think I have this on machine now, so I don't need to run line again.
 #k so the readability function takes .txt files. I want to look at my abstracts only, so maybe I save them as txt files...?
-readability()
+readability("Test/Abstract1", hyphen = NULL, index = "Flesch.Kincaid", force.lang = "en")
+
