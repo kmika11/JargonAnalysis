@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="article-commentary" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="publisher">pbio</journal-id><journal-id journal-id-type="nlm-ta">PLoS Biol</journal-id><journal-id journal-id-type="pmc">plosbiol</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Biology</journal-title></journal-title-group><issn pub-type="ppub">1544-9173</issn><issn pub-type="epub">1545-7885</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="doi">10.1371/journal.pbio.0000003</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Synopsis</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Computational Biology</subject>
+          <subject>Biotechnology</subject>
+          <subject>Genetics and Genomics</subject>
+          <subject>Infectious Diseases</subject>
+          <subject>Virology</subject>
+        </subj-group>
+        <subj-group subj-group-type="System Taxonomy">
+          <subject>Viruses</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Gene Chip for Viral Discovery</article-title><alt-title alt-title-type="running-head">Synopsis</alt-title></title-group><pub-date pub-type="ppub">
+        <month>11</month>
+        <year>2003</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>17</day>
+        <month>11</month>
+        <year>2003</year>
+      </pub-date><volume>1</volume><issue>2</issue><elocation-id>e3</elocation-id><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2003</copyright-year><copyright-holder>Public Library of Science</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Public Library of Science Open-Access License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><related-article page="e2" related-article-type="companion" vol="1" xlink:href="info:doi/10.1371/journal.pbio.0000002" xlink:title="research article" xlink:type="simple">
+        <article-title>Viral Discovery and Sequence Recovery Using DNA Microarrays</article-title>
+      </related-article></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title/>
+      <p>West Nile virus. Monkey pox. SARS. If the ever-growing list of public health scares has taught us anything, it's that we need quick, effective tools for detecting emerging viral threats. Researchers led by Joseph DeRisi of the University of California at San Francisco have combined genome databases of sequenced viruses with DNA microarray technology to create such tools.</p>
+      <p>The viral gene chip they created can rapidly identify known viruses and classify new ones based on their genetic makeup. This was validated in March when the viral chip contributed to the identification of the cause for severe acute respiratory syndrome (SARS) as a novel coronavirus. In the article published in this issue, the researchers describe the chip (or microarray), how it was used in the classification of the SARS virus, and how it provides direct access to viral genomic sequence.</p>
+      <p>Microarray technology works by taking advantage of the structural properties of DNA. DNA molecules normally exist as double helices, two complementary strands of nucleotides wrapped around each other. The microarray consists of a large number of single DNA strands attached to a solid base. These probes (which in case of the viral chip represent sequences from all fully sequenced reference viruses) can be used to interrogate unknown sequences: if a solution containing such sequences is passed over the chip, similar sequences will “hybridize,” or bond in a signature double helix.</p>
+      <p>Known viruses hybridize in a characteristic pattern and can be identified quickly. Because bonding occurs even when the match between probe and sample sequence is not perfect, new relatives of known viruses can be identified as belonging to a particular family (such as coronaviruses, in the case of SARS).</p>
+      <p>To quickly obtain more information on a novel virus, it is then possible to “syphon off” those viral sequences that stuck to their respective counterparts on the chip and to use the material to determine part of the genomic sequence. Such sequence information provides more detail on how the new virus relates to known ones, which might provide clues about its origin and possible treatment strategies.</p>
+      <fig id="pbio.0000003-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pbio.0000003.g001</object-id>
+        <caption>
+          <title>Extraction, amplification, and decoding of viral sequences</title>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000003.g001" xlink:type="simple"/>
+      </fig>
+    </sec>
+  </body>
+</article>
