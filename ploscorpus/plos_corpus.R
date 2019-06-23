@@ -1,6 +1,7 @@
 library(tidyverse)
 library(tm)
 library(XML)
+library(tidytext)
 
 #### Creating a corpus from PLOS articles 
 # Link to full download: https://www.plos.org/text-and-data-mining 
@@ -24,6 +25,19 @@ plos <- VCorpus(DirSource("plostest", mode = "text"),
 
 View(plos)
 plos[["journal.pbio.0000001.xml"]][["content"]]
+
+# tidy - got rid of all metadata except filename (as identifier?) (which is maybe a bad call, but idk where to store it)
+#slice out content
+plos[[4]][[1]]
+
+ploscontent <- data.frame(sapply(plos,`[`,1)) %>%
+  gather(ploscontent) %>%
+  unnest_tokens("words", value)
+
+#pretty dirty - you can clean it up a bit but since you're matching words, i'm not sure 
+# how essential it is to have the cleanest, most beautiful corpus. 
+
+
 
 #try it with the whole dump! <--- THIS IS A BAD IDEA
 
