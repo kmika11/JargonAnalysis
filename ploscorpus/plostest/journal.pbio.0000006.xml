@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="publisher">pbio</journal-id><journal-id journal-id-type="nlm-ta">PLoS Biol</journal-id><journal-id journal-id-type="pmc">plosbiol</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Biology</journal-title></journal-title-group><issn pub-type="ppub">1544-9173</issn><issn pub-type="epub">1545-7885</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="doi">10.1371/journal.pbio.0000006</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Ecology</subject>
+          <subject>Evolutionary Biology</subject>
+          <subject>Genetics and Genomics</subject>
+          <subject>Ecology</subject>
+        </subj-group>
+        <subj-group subj-group-type="System Taxonomy">
+          <subject>Mammals</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>DNA Analysis Indicates That Asian Elephants Are Native to Borneo and Are Therefore a High Priority for Conservation</article-title><alt-title alt-title-type="running-head">Borneo Elephant Origin</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Fernando</surname>
+            <given-names>Prithiviraj</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Vidya</surname>
+            <given-names>T. N. C</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Payne</surname>
+            <given-names>John</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Stuewe</surname>
+            <given-names>Michael</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Davison</surname>
+            <given-names>Geoffrey</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Alfred</surname>
+            <given-names>Raymond J</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Andau</surname>
+            <given-names> Patrick</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Bosi</surname>
+            <given-names>Edwin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" deceased="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kilbourn</surname>
+            <given-names>Annelisa</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Melnick</surname>
+            <given-names>Don J</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label>
+        
+        <addr-line>Center for Environmental Research and Conservation, Columbia University, New York, New York, United States of America</addr-line>
+        
+      </aff><aff id="aff2"><label>2</label>
+        
+        <addr-line>Department of Ecology, Evolution, and Environmental Biology, Columbia University, New York, New York, United States of America</addr-line>
+        
+      </aff><aff id="aff3"><label>3</label>
+        
+        <addr-line>Center for Ecological Sciences, Indian Institute of Science, Bangalore, India</addr-line>
+        
+      </aff><aff id="aff4"><label>4</label>
+        
+        <addr-line>World Wide Fund for Nature–Malaysia, Kota Kinabalu, Sabah, Malaysia</addr-line>
+        
+      </aff><aff id="aff5"><label>5</label>
+        
+        <addr-line>Asian Rhino and Elephant Action Strategy Programme, World Wildlife Fund, Washington, District of Columbia, United States of America</addr-line>
+        
+      </aff><aff id="aff6"><label>6</label>
+        
+        <addr-line>Sabah Wildlife Department, Kota Kinabalu, Sabah, Malaysia</addr-line>
+        
+      </aff><aff id="aff7"><label>7</label>
+        
+        <addr-line>Field Veterinary Program, Wildlife Conservation Society, Bronx, New York, United States of America</addr-line>
+        
+      </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Craig Moritz</surname>
+          </name>
+          <role>Academic Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">University of California, Berkeley.</aff><author-notes>
+        <corresp id="cor1">* To whom correspondence should be addressed. E-mail: <email xlink:type="simple">pf133@columbia.edu</email></corresp>
+        <fn fn-type="con" id="n2">
+          <p> This project is part of an ongoing multicentre collaboration on elephant conservation. All authors on this manuscript contributed substantively to the work described herein.</p>
+        </fn>
+      <fn fn-type="conflict" id="n1">
+        <p> The authors have declared that no conflicts of interest exist.</p>
+      </fn></author-notes><pub-date pub-type="ppub">
+        <month>October</month>
+        <year>2003</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>18</day>
+        <month>8</month>
+        <year>2003</year>
+      </pub-date><volume>1</volume><issue>1</issue><elocation-id>e6</elocation-id><history>
+        <date date-type="received">
+          <day>3</day>
+          <month>6</month>
+          <year>2003</year>
+        </date>
+        <date date-type="accepted">
+          <day>29</day>
+          <month>7</month>
+          <year>2003</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2003</copyright-year><copyright-holder>Fernando et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Public Library of Science Open-Access License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><related-article page="e7" related-article-type="companion" vol="1" xlink:href="info:doi/10.1371/journal.pbio.0000007" xlink:title="synopsis" xlink:type="simple">
+        <article-title>Borneo Elephants: A High Priority for Conservation</article-title>
+      </related-article><abstract>
+        <p>The origin of Borneo's elephants is controversial. Two competing hypotheses argue that they are either indigenous, tracing back to the Pleistocene, or were introduced, descending from elephants imported in the 16th–18th centuries. Taxonomically, they have either been classified as a unique subspecies or placed under the Indian or Sumatran subspecies. If shown to be a unique indigenous population, this would extend the natural species range of the Asian elephant by 1300 km, and therefore Borneo elephants would have much greater conservation importance than if they were a feral population. We compared DNA of Borneo elephants to that of elephants from across the range of the Asian elephant, using a fragment of mitochondrial DNA, including part of the hypervariable d-loop, and five autosomal microsatellite loci. We find that Borneo's elephants are genetically distinct, with molecular divergence indicative of a Pleistocene colonisation of Borneo and subsequent isolation. We reject the hypothesis that Borneo's elephants were introduced. The genetic divergence of Borneo elephants warrants their recognition as a separate evolutionary significant unit. Thus, interbreeding Borneo elephants with those from other populations would be contraindicated in ex situ conservation, and their genetic distinctiveness makes them one of the highest priority populations for Asian elephant conservation.</p>
+      </abstract><abstract abstract-type="toc">
+        <p>Comparison between DNA sequences of Borneo elephants with those of other Asian elephants settles a longstanding dispute about the origins of these endangered animals.</p>
+      </abstract></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Elephants have a very limited distribution in Borneo, being restricted to approximately 5% of the island in the extreme northeast (<xref ref-type="fig" rid="pbio-0000006-g001">Figure 1</xref>). There are no historical records of elephants outside of this range. Fossil evidence for the prehistoric presence of elephants on Borneo is limited to a single specimen of a tooth from a cave in Brunei (<xref ref-type="bibr" rid="pbio-0000006-Hooijer1">Hooijer 1972</xref>).</p>
+      <fig id="pbio-0000006-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pbio.0000006.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Asian Elephant Range and Sampling Locations in Borneo</title>
+          <p>Solid lines demarcate country borders and the dotted line the boundary between the Malaysian states of Sabah and Sarawak. Black dots indicate areas of sample collection.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000006.g001" xlink:type="simple"/>
+      </fig>
+      <p>Popular belief holds that elephants presented to the Sultan of Sulu in 1750 by the East India Trading Company and subsequently transported to Borneo founded the current population (<xref ref-type="bibr" rid="pbio-0000006-Harrisson1">Harrisson and Harrisson 1971</xref>; <xref ref-type="bibr" rid="pbio-0000006-Medway1">Medway 1977</xref>). These animals presumably originated in India (<xref ref-type="bibr" rid="pbio-0000006-Shoshani1">Shoshani and Eisenberg 1982</xref>), where company operations and trade in domesticated elephants were centred. Alternatively, considering the geographic proximity to Borneo, the elephant trade that flourished in Sumatra and peninsular Malaysia during the 16th–18th centuries (<xref ref-type="bibr" rid="pbio-0000006-Andaya1">Andaya 1979</xref>; <xref ref-type="bibr" rid="pbio-0000006-Marsden1">Marsden 1986</xref>[1811]) may have been the source. Thus, if elephants were introduced to Borneo, the source population could have been India, Sumatra, or peninsular Malaysia, and as a feral population, Borneo's elephants would have low conservation importance.</p>
+      <p>Conversely, if elephants occurred naturally on Borneo, they would have colonised the island during Pleistocene glaciations, when much of the Sunda shelf was exposed (<xref ref-type="fig" rid="pbio-0000006-g002">Figure 2</xref>) and the western Indo-Malayan archipelago formed a single landmass designated as Sundaland (<xref ref-type="bibr" rid="pbio-0000006-MacKinnon1">MacKinnon et al. 1996</xref>). Thus, the isolation of Borneo's elephants from other conspecific populations would minimally date from the last glacial maximum, 18,000 years ago, when land bridges last linked the Sunda Islands and the mainland (<xref ref-type="bibr" rid="pbio-0000006-MacKinnon1">MacKinnon et al. 1996</xref>). If Borneo's elephants are of indigenous origin, this would push the natural range of Asian elephants 1300 km to the east, and as a unique population at an extreme of the species' range, Borneo elephants' in situ conservation would be a priority and ex situ cross-breeding with other populations would be contraindicated.</p>
+      <fig id="pbio-0000006-g002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pbio.0000006.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Asian Elephant Range and Sampling Locations</title>
+          <p>Central sampling locations denote the countries sampled and represent a number of actual sampling locations within each country. 1. Sri Lanka, 2. India, 3. Bhutan, 4. Bangladesh, 5. Thailand, 6. Laos, 7. Vietnam, 8. Cambodia, 9. Peninsular Malaysia, 10. Sumatra (Indonesia) 11. Borneo (Sabah–Malaysia).</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000006.g002" xlink:type="simple"/>
+      </fig>
+      <p>Initially, Borneo elephants were classified as a unique subspecies (<named-content content-type="genus-species" xlink:type="simple">Elephas maximus borneensis</named-content>) based on morphological differences from other populations (<xref ref-type="bibr" rid="pbio-0000006-Deraniyagala1">Deraniyagala 1950</xref>, 1955). Subsequently, they were subsumed under the Indian <named-content content-type="genus-species" xlink:type="simple">Elephas maximus indicus</named-content> (<xref ref-type="bibr" rid="pbio-0000006-Shoshani1">Shoshani and Eisenberg 1982</xref>) or the Sumatran <named-content content-type="genus-species" xlink:type="simple">Elephas maximus sumatrensis</named-content> (<xref ref-type="bibr" rid="pbio-0000006-Medway1">Medway 1977</xref>) subspecies, based on an assumption of their introduction to the region or on the reasoning that morphological divergence was insufficient to warrant separate status. While unique subspecific status would highlight their conservation importance, evaluation of their status in terms of evolutionary significant units (ESUs) and management units (MUs) (<xref ref-type="bibr" rid="pbio-0000006-Ryder1">Ryder 1986</xref>; <xref ref-type="bibr" rid="pbio-0000006-Moritz1">Moritz 1994</xref>) would be more relevant to conservation management.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <p>We PCR-amplified and sequenced a 630 bp fragment of mitochondrial DNA (mtDNA), including the hypervariable left domain of the d-loop (<xref ref-type="bibr" rid="pbio-0000006-Fernando3">Fernando et al. 2000</xref>), from 20 Borneo elephants and compared them with 317 sequences we generated for elephants across ten of the 13 Asian elephant range states (<xref ref-type="fig" rid="pbio-0000006-g002">Figure 2</xref>). Asian elephant haplotypes segregated into two distinct clades, α and β (<xref ref-type="bibr" rid="pbio-0000006-Fernando3">Fernando et al. 2000</xref>). All ‘Sundaland’ (peninsular Malaysia, Sumatra, and Borneo) haplotypes fell in clade β, while α and β clades were observed in Sri Lanka and mainland populations (<xref ref-type="fig" rid="pbio-0000006-g003">Figures 3</xref> and <xref ref-type="fig" rid="pbio-0000006-g004">4</xref>). The Borneo population was fixed for the unique β-haplotype BD. Similar tree topologies were obtained by maximum parsimony, neighbour joining, and maximum-likelihood methods of phylogenetic analyses, with some minor rearrangements of the terminal branches. In all trees, Bornean and other haplotypes unique to ‘Sundaland' (Borneo: BD; peninsular Malaysia: BQ, BV; Sumatra: BS, BU, BT, BR) occupied basal positions in the β-clade phylogeny (<xref ref-type="fig" rid="pbio-0000006-g003">Figure 3</xref>) and were derived from internal nodes in a parsimony network of haplotypes (<xref ref-type="fig" rid="pbio-0000006-g004">Figure 4</xref>). Uncorrected <italic>p</italic> distances between the Borneo haplotype and other β-haplotypes ranged from 0.012 (haplotypes BQ, BP, BO, BS, BU) to 0.020 (haplotype BE), with a mean of 0.014. Assuming a nucleotide substitution rate of 3.5% per million years for the elephant mtDNA d-loop (<xref ref-type="bibr" rid="pbio-0000006-Fleischer1">Fleischer et al. 2001</xref>), the observed genetic distance indicates divergence of the Borneo haplotype BD and its closest relative from a common ancestor approximately 300,000 years ago. Owing to stochastic coalescent processes, the use of a single gene to infer population parameters is prone to error. Despite any such error, the magnitude of the genetic difference between Borneo and other Asian elephant haplotypes is such that it indisputably excludes divergence since introduction; the observed divergence is so great that even if there was some error it would not have any influence on the conclusion that places the Borneo haplotype in a timeframe supporting a Pleistocene colonisation rather than introduction by humans.</p>
+      <fig id="pbio-0000006-g003" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pbio.0000006.g003</object-id>
+        <label>Figure 3</label>
+        <caption>
+          <title>A Neighbour-Joining Phylogram of Asian Elephant Haplotypes Rooted with an African Elephant Out-Group</title>
+          <p>Sunda Region haplotypes are in bold.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000006.g003" xlink:type="simple"/>
+      </fig>
+      <fig id="pbio-0000006-g004" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pbio.0000006.g004</object-id>
+        <label>Figure 4</label>
+        <caption>
+          <title>Network of Asian Elephant Haplotypes Based on Statistical Parsimony</title>
+          <p>Grey circles with letters denote haplotypes unique to the Sunda region (BD: Borneo; BQ, BV: peninsular Malaysia; BR, BS, BT, BU: Sumatra). White circles with letters denote haplotypes found in mainland Asia (excluding peninsular Malaysia) and Sri Lanka. The small open circles denote hypothetical haplotypes. Haplotypes beginning with the letters A and B belong to the two clades α and β, respectively.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000006.g004" xlink:type="simple"/>
+      </fig>
+      <p>We also genotyped 15 Borneo elephants for five polymorphic autosomal microsatellite loci (<xref ref-type="bibr" rid="pbio-0000006-Nyakaana1">Nyakaana and Arctander 1998</xref>; <xref ref-type="bibr" rid="pbio-0000006-Fernando4">Fernando et al. 2001</xref>) and compared them to 136 five-locus genotypes we generated for Asian elephants from nine range states. Tests of Hardy–Weinberg equilibrium and linkage disequilibrium in all populations indicated simple Mendelian inheritance of five unlinked, selectively neutral loci. The total number of alleles per locus across populations in the Asian elephant ranged from 2.0 (<italic>EMX-2</italic>) to 11.0 (<italic>LafMS03</italic>) (<italic>x̄</italic>, SE = 4.60, 1.51); the average number of alleles across loci, per population (excluding Borneo), from 2.0 (Sumatra) to 3.6 (Sri Lanka) (<italic>x̄</italic>&gt;, SE = 2.93, 0.155); the observed heterozygosity H<sub>0</sub> across all populations (excluding Borneo) from 0.38 (<italic>EMX-4</italic>) to 0.63 (<italic>LafMS03</italic>) (<italic>x̄</italic>, SE = 0.44, 0.041); and gene diversity from 0.39 (<italic>EMX-4</italic>) to 0.69 (<italic>LafMS03</italic>) (<italic>x̄</italic>, SE = 0.47, 0.050). Comparatively, all indices demonstrated very low genetic diversity in the Borneo population: proportion of polymorphic loci, 0.4; number of alleles per locus, 1–2 (<italic>x̄</italic>, SE = 1.40, 0.219); gene diversity, 0–0.13 (<italic>x̄</italic>, SE = 0.04, 0.024); heterozygosity H<sub>0</sub> = 0–0.07 (<italic>x̄</italic>, SE = 0.01, 0.013). The number of alleles, observed heterozygosity, and gene diversity, averaged across Asian elephant populations, were all higher than those in Borneo, at all loci (<xref ref-type="table" rid="pbio-0000006-t001">Table 1</xref>). Similarly, in all populations, the number of alleles and observed heterozygosity, averaged across loci, were higher than in Borneo (<xref ref-type="table" rid="pbio-0000006-t002">Table 2</xref>). Five unique genotypes were identified in the 15 Borneo elephants sampled. In tests of population subdivision, all pairwise comparisons between Borneo and other populations demonstrated highly significant differentiation, <italic>F<sub>ST</sub></italic> 0.32–0.63 (<italic>x̄</italic>, SE = 0.44, 0.034) (<xref ref-type="table" rid="pbio-0000006-t003">Table 3</xref>). In tests of a recent bottleneck, no heterozygote excess (<xref ref-type="bibr" rid="pbio-0000006-Maruyama1">Maruyama and Fuerst 1985</xref>) or mode-shift distortion of allele frequency distributions (<xref ref-type="bibr" rid="pbio-0000006-Luikart1">Luikart et al. 1998a</xref>), characteristic of a recent bottleneck, was observed in the Borneo population. In assignment tests indicating the distinctness of a population's genotypes, all five Borneo genotypes were assigned with maximum likelihood to Borneo (likelihoods ranging from 0.004 to 0.80, <italic>x̄</italic>, SE = 0.51, 0.175), and maximum-likelihood ratios of the most-likely (Borneo) to the next-most-likely population ranged from 2.97 to 48.20 (<italic>x̄</italic>, SE = 25.02, 8.795). Borneo was significantly more likely to be the source than any other population for all five genotypes, since each of the assignment likelihoods to Borneo fell outside the upper end of the corresponding distribution of assignment likelihoods to the other populations. Assignment likelihoods to the putative Indian, Sumatran, and peninsular Malaysian source populations were very small (India: 0–0.0004, <italic>x̄</italic>, SE = 0.000126, 0.000065; Sumatra: 0–0.0355, <italic>x̄</italic>, SE = 0.007146, 0.006336; peninsular Malaysia: 0.0003–0.1195, <italic>x̄</italic>, SE = 0.0301, 0.0201), indicating that Borneo's genotypes were highly unlikely to have originated from any of these populations.</p>
+      <table-wrap id="pbio-0000006-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.0000006.t001</object-id><label>Table 1</label><caption>
+          <title>Comparison of Measures of Genetic Variation at Individual Loci in Borneo with Those of the Other Populations</title>
+        </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000006.t001" xlink:type="simple"/><!-- <table>
+          <thead>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Gene Diversity</td>
+              <td>Observed Heterozygosity</td>
+            </tr>
+            <tr>
+              <td>Locus</td>
+              <td>Number of Alleles in Borneo</td>
+              <td>Average Number of Alleles in Other Populations</td>
+              <td>Total Number of Alleles in Other Populations</td>
+              <td>Borneo</td>
+              <td>Other Populations Averaged</td>
+              <td>Borneo</td>
+              <td>Other Populations Averaged</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><italic>EMX-1</italic></td>
+              <td>2</td>
+              <td>3.22</td>
+              <td>5</td>
+              <td>0.133</td>
+              <td>0.409</td>
+              <td>0.000</td>
+              <td>0.403</td>
+            </tr>
+            <tr>
+              <td><italic>EMX-2</italic></td>
+              <td>1</td>
+              <td>2.00</td>
+              <td>2</td>
+              <td>0.000</td>
+              <td>0.408</td>
+              <td>0.000</td>
+              <td>0.397</td>
+            </tr>
+            <tr>
+              <td><italic>EMX-3</italic></td>
+              <td>1</td>
+              <td>2.22</td>
+              <td>3</td>
+              <td>0.000</td>
+              <td>0.449</td>
+              <td>0.000</td>
+              <td>0.405</td>
+            </tr>
+            <tr>
+              <td><italic>EMX-4</italic></td>
+              <td>1</td>
+              <td>2.50</td>
+              <td>3</td>
+              <td>0.000</td>
+              <td>0.393</td>
+              <td>0.000</td>
+              <td>0.382</td>
+            </tr>
+            <tr>
+              <td><italic>LafMS03</italic></td>
+              <td>2</td>
+              <td>4.67</td>
+              <td>11</td>
+              <td>0.071</td>
+              <td>0.692</td>
+              <td>0.071</td>
+              <td>0.625</td>
+            </tr>
+            <tr>
+              <td>Average</td>
+              <td>1.4</td>
+              <td>2.92</td>
+              <td>4.6</td>
+              <td>0.041</td>
+              <td>0.470</td>
+              <td>0.014</td>
+              <td>0.442</td>
+            </tr>
+            <tr>
+              <td>SE</td>
+              <td>0.22</td>
+              <td>0.431</td>
+              <td>1.51</td>
+              <td>0.024</td>
+              <td>0.050</td>
+              <td>0.013</td>
+              <td>0.041</td>
+            </tr>
+          </tbody>
+        </table> --></table-wrap>
+      <table-wrap id="pbio-0000006-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.0000006.t002</object-id><label>Table 2</label><caption>
+          <title>Measures of Genetic Variation Using Five Loci, in Asian Elephant Populations from across the Range</title>
+        </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000006.t002" xlink:type="simple"/><!-- <table>
+          <thead>
+            <tr>
+              <td>Population</td>
+              <td>Number of Individuals</td>
+              <td>Total Number of Alleles</td>
+              <td> Average Number of Alleles across Loci &plusmn; SE</td>
+              <td> Average Heterozygosity across Loci &plusmn; SE</td>
+              <td>Number of Private Alleles</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Borneo</td>
+              <td>15</td>
+              <td>7</td>
+              <td> 1.4 &plusmn; 0.22</td>
+              <td> 0.014 &plusmn; 0.013</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Cambodia</td>
+              <td>15</td>
+              <td>13</td>
+              <td> 2.6 &plusmn; 0.54</td>
+              <td> 0.183 &plusmn; 0.056</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Bhutan</td>
+              <td>12</td>
+              <td>14</td>
+              <td> 2.8 &plusmn; 0.66</td>
+              <td> 0.367 &plusmn; 0.102</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Bangladesh</td>
+              <td>20</td>
+              <td>15</td>
+              <td> 3.0 &plusmn; 0.40</td>
+              <td> 0.381 &plusmn; 0.072</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Thailand</td>
+              <td>8</td>
+              <td>17</td>
+              <td> 3.4 &plusmn; 0.61</td>
+              <td> 0.625 &plusmn; 0.106</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Sumatra</td>
+              <td>20</td>
+              <td>10</td>
+              <td> 2.0 &plusmn; 0.00</td>
+              <td> 0.399 &plusmn; 0.045</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Malaysia</td>
+              <td>9</td>
+              <td>14</td>
+              <td> 2.8 &plusmn; 0.33</td>
+              <td> 0.522 &plusmn; 0.058</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Laos</td>
+              <td>6</td>
+              <td>11</td>
+              <td> 2.8 &plusmn; 0.37</td>
+              <td> 0.475 &plusmn; 0.093</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Sri Lanka</td>
+              <td>20</td>
+              <td>18</td>
+              <td> 3.6 &plusmn; 0.83</td>
+              <td> 0.510 &plusmn; 0.101</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>South India</td>
+              <td>20</td>
+              <td>17</td>
+              <td> 3.4 &plusmn; 0.67</td>
+              <td> 0.537 &plusmn; 0.094</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table> --></table-wrap>
+      <table-wrap id="pbio-0000006-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.0000006.t003</object-id><label>Table 3</label><caption>
+          <title>F<italic><sub>ST</sub></italic> Values in Pairwise Comparison of Borneo with Other Populations</title>
+        </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000006.t003" xlink:type="simple"/><!-- <table>
+          <thead>
+            <tr>
+              <td></td>
+              <td>Sumatra</td>
+              <td>Malaysia</td>
+              <td>Cambodia</td>
+              <td>Laos</td>
+              <td>Thailand</td>
+              <td>Bangladesh</td>
+              <td>India</td>
+              <td>Sri Lanka</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Borneo</td>
+              <td>0.562</td>
+              <td>0.331</td>
+              <td>0.626</td>
+              <td>0.381</td>
+              <td>0.394</td>
+              <td>0.428</td>
+              <td>0.535</td>
+              <td>0.322</td>
+            </tr>
+          </tbody>
+        </table> --></table-wrap>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>mtDNA evidence supports an indigenous hypothesis in three ways. First, this hypothesis assumes an ancient, independent evolution of Borneo's elephants, resulting in the unique, divergent Borneo haplotype(s), as we observed. Conversely, the introduction hypothesis assumes an introduction at 500 years ago or less, which approximates zero time on a scale of mtDNA d-loop evolution, and hence requires Borneo and source population haplotypes to be identical. This was not observed. Second, the estimated divergence time between the Borneo haplotype and other Asian elephant haplotypes is concordant with a mid- to late-Pleistocene isolation of elephants on Borneo and the vicariant history of the island (<xref ref-type="bibr" rid="pbio-0000006-MacKinnon1">MacKinnon et al. 1996</xref>). Third, all observed ‘Sundaland' haplotypes, including Borneo's, were of the β clade, had basal relationships to that clade in a phylogenetic tree, and were independently derived from internal nodes in a haplotype network, suggesting an ancient isolation of these lineages on Borneo, Sumatra, and peninsular Malaysia. Thus, the Borneo haplotype fits a pattern of distribution and relatedness to other ‘Sundaland' haplotypes that is congruent with an ancient colonisation of the Sunda region by β clade and subsequent allopatric divergence of populations on its larger landmasses.</p>
+      <p>Microsatellite data also support the indigenous hypothesis. If the Borneo population originated from animals introduced in the 16th–18th centuries, it would have reached its mid-20th-century size of approximately 2,000 individuals (<xref ref-type="bibr" rid="pbio-0000006-deSilva1">deSilva 1968</xref>) in fewer than 30 generations, assuming an Asian elephant generation time of 15–20 years (<xref ref-type="bibr" rid="pbio-0000006-Sukumar1">Sukumar 1989</xref>). Thus, the Borneo population would have experienced a rapid demographic expansion after the ‘recent’ bottleneck caused by the founder-event of introduction. We did not observe a heterozygote excess or a mode-shift distortion in allele frequency distribution in the Borneo population, suggesting that the population did not undergo a recent bottleneck and hence did not arise from a few introduced animals. However, this result by itself is not conclusive, since with a sample size of 15 and five loci, the test for heterozygosity excess has low power and bottlenecks may not be detected (<xref ref-type="bibr" rid="pbio-0000006-Luikart2">Luikart et al. 1998b</xref>). We observed extremely low genetic diversity at Borneo elephant microsatellite loci, including fixation at three of the five loci. Sequential founder-events or persistent small population size, as would be expected in a small population isolated since the Pleistocene, would lead to substantial loss of genetic variation (<xref ref-type="bibr" rid="pbio-0000006-Nei1">Nei et al. 1975</xref>) and hence is consistent with the data. Successful founding of a population by a very few individuals from a single introduction could also result in a severe bottleneck. However, given the adversities faced by translocated elephants (<xref ref-type="bibr" rid="pbio-0000006-Fernando1">Fernando 1997</xref>) and the importance of social structure in the reproduction and survival of elephants (<xref ref-type="bibr" rid="pbio-0000006-Fernando2">Fernando and Lande 2000</xref>; <xref ref-type="bibr" rid="pbio-0000006-McComb1">McComb et al. 2001</xref>), such an explanation is unlikely.</p>
+      <p>In the assignment tests, all five Borneo genotypes, which included free-ranging as well as captive animals, were assigned to Borneo with significantly higher likelihoods than to other populations and with extremely low likelihoods to the putative source populations. An introduced population may be highly divergent from the source population in terms of <italic>F</italic> statistics (<xref ref-type="bibr" rid="pbio-0000006-Williams1">Williams et al. 2002</xref>) due to allelic loss from founder-events. However, the probability of loss for a particular allele is inversely proportional to its frequency in the founder and hence the source population. Thus, genotypes in an introduced population would retain a high likelihood of assignment to the source population, enabling its identification from among a number of candidate populations. Therefore, the assignment tests strongly suggest that the Borneo elephants were not derived from another population in the recent past.</p>
+      <p>Thus, microsatellite data strongly suggest a Pleistocene colonisation, independent evolution through a long period of isolation, and long-term small population size for the Borneo population. It strongly rejects a recent origin from any of the putative source populations.</p>
+      <p>Mitochondrial and microsatellite analyses indicate that Borneo's elephants are indigenous to Borneo, have undergone independent evolution since a Pleistocene colonisation, and are not descended from animals introduced by humans. The evolutionary history of Borneo's elephants warrants their recognition as a separate ESU (<xref ref-type="bibr" rid="pbio-0000006-Moritz1">Moritz 1994</xref>). Thus, they should not be cross-bred with other Asian elephants in ex situ management. The genetic distinctiveness and evolutionary history of Borneo elephants support their recognition as a unique subspecies. However, one of the reasons <named-content content-type="genus-species" xlink:type="simple">E. maximus borneensis</named-content> was subsumed under <named-content content-type="genus-species" xlink:type="simple">E. m. indicus</named-content> and <named-content content-type="genus-species" xlink:type="simple">E. m. sumatrensis</named-content> was the inadequacy of the original description of <named-content content-type="genus-species" xlink:type="simple">E. m. borneensis</named-content> in terms of the morphological characters assessed and sample size. Therefore, we suggest that a formal reinstatement of the <named-content content-type="genus-species" xlink:type="simple">E. m. borneensis</named-content> taxa await a detailed morphological analysis of Borneo elephants and their comparison with other populations.</p>
+      <p>While Borneo's elephants appear to be genetically depauperate, through a long history of isolation and inbreeding, they may have purged deleterious recessive alleles from their genome and decreased their genetic load, thus becoming less susceptible to inbreeding depression. We recommend research on reproductive rates, juvenile survival, and other indicators of detrimental effects of inbreeding such as sperm deformities, sperm mobility, and genetic diversity at MHC loci. While increasing genetic diversity by introducing a small number of elephants from other populations (<xref ref-type="bibr" rid="pbio-0000006-Whitehouse1">Whitehouse and Harley 2001</xref>) may have to be considered if deleterious inbreeding effects are evident, in the absence of such findings Borneo's elephants should be managed separately from other Asian elephants.</p>
+    </sec>
+    <sec id="s4">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title/>
+        <sec id="s4a1">
+          <title>Samples.</title>
+          <p>Samples consisted of dung from free-ranging and dung or blood from captive elephants. Sample collection, storage, and DNA extraction followed published protocols (<xref ref-type="bibr" rid="pbio-0000006-Fernando3">Fernando et al. 2000</xref>, <xref ref-type="bibr" rid="pbio-0000006-Fernando5">2003</xref>). For mitochondrial and microsatellite analysis, respectively, 20 and 15 samples from Borneo (nine blood samples from elephants captured for management purposes—eight from the Kretam area and one individual originating from around Lahad Datu—and the rest from dung samples from free-ranging elephants collected during a survey of the Kinabatangan watershed) were compared with 317 and 136 samples from across the current Asian elephant range, Sri Lanka (n = 81, 20), India (n = 81, 20), Bhutan (n = 13, 13), Bangladesh (n = 30, 20), Thailand (n = 8, 8), Cambodia (n = 30, 20), Vietnam (n = 5, 0), Laos (n = 20, 6), Indonesia (Sumatra) (n = 40, 20), and peninsular Malaysia (n = 9, 9). Vietnam was excluded from the microsatellite analysis owing to nonamplification of a number of samples.</p>
+        </sec>
+        <sec id="s4a2">
+          <title>mtDNA amplification and sequencing.</title>
+          <p>Approximately 630 bp of mtDNA, including the left domain of the d-loop, were amplified using published primers (<xref ref-type="bibr" rid="pbio-0000006-Fernando3">Fernando et al. 2000</xref>). PCR products were sequenced in both directions, using internal sequencing primers MDLseq-1 (CCTACAYCATTATYGGCCAAA) and MDLseq-2 (AGAAGAGGGACACGAAGATGG), and resolved in 4% polyacrylamide gels in an ABI 377 automated sequencer (Perkin-Elmer, Wellesley, Massachusetts, United States).</p>
+        </sec>
+        <sec id="s4a3">
+          <title>mtDNA phylogenetic analysis.</title>
+          <p>We used 600 bp of the amplified segment in the analysis. Sequences were aligned and edited using SEQUENCHER version 3.1.1 (GeneCodes Corporation, Ann Arbor, Michigan, United States). Sequences were deposited in GenBank (accession numbers AY245538 and AY245802 to AY245827). Phylogenetic analyses were conducted using PAUP* version 4.0 (<xref ref-type="bibr" rid="pbio-0000006-Swofford1">Swofford 1998</xref>). Three African elephant (<named-content content-type="genus-species" xlink:type="simple">Loxodonta africana</named-content>) sequences from zoo animals in the United States were used as an out-group. Genetic distances among sequences were calculated using uncorrected <italic>p</italic> distances. Maximum-parsimony analysis was conducted using a heuristic search with random stepwise addition of taxa, tree bisection/reconnection branch swapping, and equal weighting; neighbour joining, with Kimura two-parameter distances; and maximum likelihood, using empirical base frequencies and estimated values for the shape parameter for among-site rate variation and transition/transversion ratios. A network of haplotypes was created using statistical parsimony in the software TCS version 1.13 (<xref ref-type="bibr" rid="pbio-0000006-Clement1">Clement et al. 2001</xref>).</p>
+        </sec>
+        <sec id="s4a4">
+          <title>Microsatellite amplification.</title>
+          <p>Samples were screened with five published microsatellite loci, <italic>EMX-1</italic> to <italic>EMX-4</italic> (<xref ref-type="bibr" rid="pbio-0000006-Fernando4">Fernando et al. 2001</xref>) and <italic>LafMS03</italic> (<xref ref-type="bibr" rid="pbio-0000006-Nyakaana1">Nyakaana and Arctander 1998</xref>). Forward primers were fluorescent labelled (FAM, HEX, or TET), samples were amplified in 12.5 μl volumes with relevant cycling profiles (<xref ref-type="bibr" rid="pbio-0000006-Fernando4">Fernando et al. 2001</xref>), and 1 μl of PCR product was mixed with 0.2 μl of loading-dye and 0.5 μl of Tamra 500 size standard (Applied Biosystems, Foster City, California, United States) and was resolved in 4% polyacrylamide gels in an ABI 377 automated sequencer. Alleles were scored using GENESCAN software (Applied Biosystems) and published guidelines (<xref ref-type="bibr" rid="pbio-0000006-Fernando5">Fernando et al. 2003</xref>).</p>
+        </sec>
+        <sec id="s4a5">
+          <title>Microsatellite data analysis.</title>
+          <p>Deviations from Hardy–Weinberg equilibrium for each locus and population were tested using the exact Hardy–Weinberg test as implemented in GENEPOP 3.2 (<xref ref-type="bibr" rid="pbio-0000006-Raymond1">Raymond and Rousset 1995</xref>), with the complete enumeration method (<xref ref-type="bibr" rid="pbio-0000006-Louis1">Louis and Dempster 1987</xref>) for loci with fewer than four alleles and with the Markov chain method (<xref ref-type="bibr" rid="pbio-0000006-Guo1">Guo and Thompson 1992</xref>) (dememorization: 1000; batches: 100; iterations per batch: 1000) for loci with more than four alleles. GENEPOP was also used to test for linkage disequilibrium between loci, using the Markov chain method. Population differentiation was tested with estimates of Wright's fixation index (<xref ref-type="bibr" rid="pbio-0000006-Weir1">Weir and Cockerham 1984</xref>), <italic>F<sub>ST</sub></italic>, using the program Arlequin version 2 (<xref ref-type="bibr" rid="pbio-0000006-Schneider1">Schneider et al. 2000</xref>).</p>
+          <p>Evidence for a recent bottleneck in the Borneo population in terms of a heterozygote excess (<xref ref-type="bibr" rid="pbio-0000006-Cornuet1">Cornuet and Luikart 1996</xref>) or a mode-shift distortion in allele frequencies (<xref ref-type="bibr" rid="pbio-0000006-Luikart1">Luikart et al. 1998a</xref>) was conducted using the program BOTTLENECK version 1.2.02 (<xref ref-type="bibr" rid="pbio-0000006-Piry1">Piry et al. 1997</xref>) and a graphical method (<xref ref-type="bibr" rid="pbio-0000006-Luikart1">Luikart et al. 1998a</xref>).</p>
+          <p>Assignment tests were performed using WHICHRUN version 4.1 (<xref ref-type="bibr" rid="pbio-0000006-Banks1">Banks and Eichert 2000</xref>). Assuming Hardy–Weinberg equilibrium in each baseline population and linkage equilibrium between loci, the likelihood that an individual originates from a particular population is the Hardy–Weinberg frequency of the individual's genotype at that locus, in that population. This likelihood was multiplied across loci to obtain a multilocus assignment likelihood of the test individual to each population, and the population with the highest value was identified as the ‘most-likely’ source population. To test for statistical significance of the most-likely source population, this assignment likelihood was compared with the distribution of assignment likelihoods of the other populations. Maximum-likelihood ratios were calculated as the ratio between the likelihood of assignment to the most-likely population to that for a particular population.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <sec id="s5a">
+        <title/>
+        <sec id="s5a1">
+          <title>Accession Numbers</title>
+          <p>The GenBank accession numbers for the sequences reported in this paper are AY245538 and AY245802 to AY245827.</p>
+        </sec>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We would like to thank Susan Mikota, Peter Malim, Eric Wickramakayake, Richard Lair, Jayantha Jayewardene, L. K. A. Jayasinghe, Manori Gunawardene, H. K. Janaka, Chandana Rajapakse, Ashoka Dangolla, Raman Sukumar, Ajay Desai, Christy Williams, Ainun Nishat, Mohsinuzzman Chowdhury, Mike Keele, Jeff Briscoe, Steve Osofsky, Karl Stromayer, Andrew Maxwell, Ou Ratanak, Lic Vuthy, Joe Heffernen, Rob Tizard, Tom Dillon, Vongphet, Buntjome, Kari Johnson, Heidi Riddle, Simon Hedges, Martin Tyson, Joshua Ginsberg, the Sabah Wildlife Department, Fauna and Flora International, the Department of Wildlife Conservation Sri Lanka, the International Union for Conservation of Nature and Natural Resources Bangladesh, the Zoological Gardens and Wildlife Rescue Centre Cambodia, Angkor Village Resort Elephant Farm (Siem Reap, Cambodia), the Seblat Elephant Training Centre (Bengkulu, Sumatra), Have Trunk Will Travel, the Department of Forests and Wildlife Cambodia, the Wildlife Trust, the World Wildlife Fund (WWF) Malaysia, WWF Vietnam, the Wildlife Conservation Society, the Portland (Oregon) Zoo, the Los Angeles Zoo, the Singapore Zoo, and the Pinnawela Elephant Orphanage Sri Lanka for help in obtaining samples; and Jennifer Pastorini, Ajay Desai, and two anonymous reviewers for comments on an earlier version of the manuscript. This study was conducted in partnership with the WWF's Asian Rhino and Elephant Action Strategy (AREAS) Programme and through additional collaboration with Wildlife Trust's Indian and Sri Lankan Elephant Programs and the Wildlife Conservation Society's Indonesia–Sumatran Elephant Project and Field Veterinary Program. It was made possible by grants from Ms. Nancy Abraham, the WWF United States, WWF for Nature (WWF International), the United States Fish and Wildlife Service's Asian Elephant Conservation Fund, and the Center for Environmental Research and Conservation Seed Grant Program and by additional support from the Laboratory of Genetic Investigation and Conservation, Columbia University. We dedicate this paper to the memory of our coauthor Annelisa Kilbourn, whose untimely death during her work in Gabon is a great loss to conservation.</p>
+    </ack>
+    
+    <ref-list>
+      <title>References</title>
+      <ref id="pbio-0000006-Andaya1">
+        <label>1</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group person-group-type="editor">
+            <name name-style="western">
+              <surname>Andaya</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <source>Perak, the abode of grace: A study of an eighteenth-century Malay state</source>
+          <year>1979</year>
+          <publisher-loc>Kuala Lumpur</publisher-loc>
+          <publisher-name>Oxford University Press</publisher-name>
+          <page-count count="462"/>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Banks1">
+        <label>2</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Banks</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Eichert</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>WHICHRUN (version 3.2): A computer program for population assignment of individuals based on multilocus genotype data.</article-title>
+          <source>J Hered</source>
+          <year>2000</year>
+          <volume>91</volume>
+          <fpage>87</fpage>
+          <lpage>89</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Clement1">
+        <label>3</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group person-group-type="editor">
+            <name name-style="western">
+              <surname>Clement</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Derington</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Posada</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <source>TCS: Estimating gene genealogies. Version 1.13</source>
+          <year>2001</year>
+          <publisher-loc>Provo (Utah)</publisher-loc>
+          <publisher-name>Brigham Young University</publisher-name>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Cornuet1">
+        <label>4</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Cornuet</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Luikart</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Description and power analysis of two tests for detecting recent population bottlenecks from allele frequency data.</article-title>
+          <source>Genetics</source>
+          <year>1996</year>
+          <volume>144</volume>
+          <fpage>2001</fpage>
+          <lpage>2014</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Deraniyagala1">
+        <label>5</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Deraniyagala</surname>
+              <given-names>PEP</given-names>
+            </name>
+          </person-group>
+          <article-title>The elephant of Asia.</article-title>
+          <source>Proc Ceylon Assoc Sci</source>
+          <year>1950</year>
+          <volume>3</volume>
+          <fpage>1</fpage>
+          <lpage>18</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Deraniyagala2">
+        <label>6</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group person-group-type="editor">
+            <name name-style="western">
+              <surname>Deraniyagala</surname>
+              <given-names>PEP</given-names>
+            </name>
+          </person-group>
+          <source>Some extinct elephants, their relatives, and the two living species</source>
+          <year>1955</year>
+          <publisher-loc>Colombo, Ceylon</publisher-loc>
+          <publisher-name>Government Press</publisher-name>
+          <page-count count="161"/>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-deSilva1">
+        <label>7</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>deSilva</surname>
+              <given-names>GS</given-names>
+            </name>
+          </person-group>
+          <article-title>Elephants of Sabah.</article-title>
+          <source>J Sabah Soc</source>
+          <year>1968</year>
+          <volume>3</volume>
+          <fpage>169</fpage>
+          <lpage>181</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Fernando1">
+        <label>8</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Fernando</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Keeping jumbo afloat: Is translocation an answer to the human–elephant conflict?</article-title>
+          <source>Sri Lanka Nature</source>
+          <year>1997</year>
+          <volume>1</volume>
+          <fpage>4</fpage>
+          <lpage>12</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Fernando2">
+        <label>9</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Fernando</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lande</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular genetic and behavioral analyses of social organization in the Asian elephant.</article-title>
+          <source>Behav Ecol Sociobiol</source>
+          <year>2000</year>
+          <volume>48</volume>
+          <fpage>84</fpage>
+          <lpage>91</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Fernando3">
+        <label>10</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Fernando</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pfrender</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Encalada</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lande</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Mitochondrial DNA variation, phylogeography, and population structure of the Asian elephant.</article-title>
+          <source>Heredity</source>
+          <year>2000</year>
+          <volume>84</volume>
+          <fpage>362</fpage>
+          <lpage>372</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Fernando4">
+        <label>11</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Fernando</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Vidya</surname>
+              <given-names>TNC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Melnick</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Isolation and characterisation of tri- and tetranucleotide microsatellite loci in the Asian elephant, <named-content content-type="genus-species" xlink:type="simple">Elephas maximus</named-content>.</article-title>
+          <source>Mol Ecol Notes</source>
+          <year>2001</year>
+          <volume>1</volume>
+          <fpage>232</fpage>
+          <lpage>233</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Fernando5">
+        <label>12</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Fernando</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Vidya</surname>
+              <given-names>TNC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rajapakse</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Dangolla</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Melnick</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Reliable non-invasive genotyping: Fantasy or reality?</article-title>
+          <source>J Hered</source>
+          <year>2003</year>
+          <volume>94</volume>
+          <fpage>115</fpage>
+          <lpage>123</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Fleischer1">
+        <label>13</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Fleischer</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Perry</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Muralidharan</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Stevens</surname>
+              <given-names>EE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Wemmer</surname>
+              <given-names>CM</given-names>
+            </name>
+          </person-group>
+          <article-title>Phylogeography of the Asian elephant (<named-content content-type="genus-species" xlink:type="simple">Elephas maximus</named-content>) based on mitochondrial DNA.</article-title>
+          <source>Evolution</source>
+          <year>2001</year>
+          <volume>55</volume>
+          <fpage>1882</fpage>
+          <lpage>1892</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Guo1">
+        <label>14</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Guo</surname>
+              <given-names>SW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Thompson</surname>
+              <given-names>EA</given-names>
+            </name>
+          </person-group>
+          <article-title>Performing the exact test of Hardy–Weinberg proportions for multiple alleles.</article-title>
+          <source>Biometrics</source>
+          <year>1992</year>
+          <volume>48</volume>
+          <fpage>361</fpage>
+          <lpage>372</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Harrisson1">
+        <label>15</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Harrisson</surname>
+              <given-names>T</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Harrisson</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>The prehistory of Sabah.</article-title>
+          <source>Sabah Soc J Monogr</source>
+          <year>1971</year>
+          <volume>4</volume>
+          <fpage>1</fpage>
+          <lpage>272</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Hooijer1">
+        <label>16</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Hooijer</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <article-title>Prehistoric evidence for <named-content content-type="genus-species" xlink:type="simple">Elephas maximus</named-content> L. in Borneo.</article-title>
+          <source>Nature</source>
+          <year>1972</year>
+          <volume>239</volume>
+          <fpage>228</fpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Louis1">
+        <label>17</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Louis</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Dempster</surname>
+              <given-names>ER</given-names>
+            </name>
+          </person-group>
+          <article-title>An exact test for Hardy–Weinberg and multiple alleles.</article-title>
+          <source>Biometrics</source>
+          <year>1987</year>
+          <volume>43</volume>
+          <fpage>805</fpage>
+          <lpage>811</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Luikart1">
+        <label>18</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Luikart</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Allendorf</surname>
+              <given-names>FW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cornuet</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sherwin</surname>
+              <given-names>WB</given-names>
+            </name>
+          </person-group>
+          <article-title>Distortion of allele frequency distributions provides a test for recent population bottlenecks.</article-title>
+          <source>J Hered</source>
+          <year>1998a</year>
+          <volume>89</volume>
+          <fpage>238</fpage>
+          <lpage>247</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Luikart2">
+        <label>19</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Luikart</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sherwin</surname>
+              <given-names>WB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Steele</surname>
+              <given-names>BM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Allendorf</surname>
+              <given-names>FW</given-names>
+            </name>
+          </person-group>
+          <article-title>Usefulness of molecular markers for detecting population bottlenecks via monitoring genetic change.</article-title>
+          <source>Mol Ecol</source>
+          <year>1998b</year>
+          <volume>7</volume>
+          <fpage>963</fpage>
+          <lpage>974</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-MacKinnon1">
+        <label>20</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group person-group-type="editor">
+            <name name-style="western">
+              <surname>MacKinnon</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hatta</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Halim</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Mangalik</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <source>The ecology of Kalimantan</source>
+          <year>1996</year>
+          <publisher-loc>Hong Kong</publisher-loc>
+          <publisher-name>Periplus Editions Ltd</publisher-name>
+          <page-count count="802"/>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Marsden1">
+        <label>21</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group person-group-type="editor">
+            <name name-style="western">
+              <surname>Marsden</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <source>The history of Sumatra</source>
+          <year>1986 [1811]</year>
+          <publisher-loc>Kuala Lumpur</publisher-loc>
+          <publisher-name>Oxford University Press</publisher-name>
+          <page-count count="532"/>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Maruyama1">
+        <label>22</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Maruyama</surname>
+              <given-names>T</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fuerst</surname>
+              <given-names>PA</given-names>
+            </name>
+          </person-group>
+          <article-title>Population bottlenecks and non-equilibrium models in population genetics. II. Number of alleles in a small population that was formed by a recent bottleneck.</article-title>
+          <source>Genetics</source>
+          <year>1985</year>
+          <volume>111</volume>
+          <fpage>675</fpage>
+          <lpage>689</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-McComb1">
+        <label>23</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>McComb</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Moss</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Durant</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Baker</surname>
+              <given-names>L</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sayialel</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Matriarchs as repositories of social knowledge in African elephants.</article-title>
+          <source>Science</source>
+          <year>2001</year>
+          <volume>292</volume>
+          <fpage>491</fpage>
+          <lpage>494</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Medway1">
+        <label>24</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Medway</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Mammals of Borneo.</article-title>
+          <source>Monogr Malay Br R Asia Soc</source>
+          <year>1977</year>
+          <volume>7</volume>
+          <fpage>1</fpage>
+          <lpage>172</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Moritz1">
+        <label>25</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Moritz</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Defining ‘evolutionary significant units' for conservation.</article-title>
+          <source>Trends Ecol Evol</source>
+          <year>1994</year>
+          <volume>9</volume>
+          <fpage>373</fpage>
+          <lpage>375</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Nei1">
+        <label>26</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Nei</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Maruyama</surname>
+              <given-names>T</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Chakraborty</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>The bottleneck effect and genetic variability in populations.</article-title>
+          <source>Evolution</source>
+          <year>1975</year>
+          <volume>29</volume>
+          <fpage>1</fpage>
+          <lpage>10</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Nyakaana1">
+        <label>27</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Nyakaana</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Arctander</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Isolation and characterisation of microsatellite loci in the African elephant (<named-content content-type="genus-species" xlink:type="simple">Loxodonta africana</named-content> Blumenbach 1797).</article-title>
+          <source>Mol Ecol</source>
+          <year>1998</year>
+          <volume>7</volume>
+          <fpage>1436</fpage>
+          <lpage>1437</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Piry1">
+        <label>28</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Piry</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Luikart</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cornuet</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>BOTTLENECK: A program for detecting recent effective population size reductions from allele frequency data.</article-title>
+          <year>1997</year>
+          <comment>Laboratoire de Modelisation et Biologie Evolutive, Montpellier, France</comment>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Raymond1">
+        <label>29</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Raymond</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rousset</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>GENEPOP (version 1.2): Population genetics software for exact tests and ecumenicism.</article-title>
+          <source>J Hered</source>
+          <year>1995</year>
+          <volume>86</volume>
+          <fpage>248</fpage>
+          <lpage>249</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Ryder1">
+        <label>30</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Ryder</surname>
+              <given-names>OA</given-names>
+            </name>
+          </person-group>
+          <article-title>Species conservation and systematics: The dilemma of subspecies.</article-title>
+          <source>Trends Ecol Evol</source>
+          <year>1986</year>
+          <volume>1</volume>
+          <fpage>9</fpage>
+          <lpage>10</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Schneider1">
+        <label>31</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group person-group-type="editor">
+            <name name-style="western">
+              <surname>Schneider</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Roessli</surname>
+              <given-names>D</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Excoffier</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <source>Arlequin: A software for population genetics data analysis. Version 2.000</source>
+          <year>2000</year>
+          <publisher-loc>Geneva</publisher-loc>
+          <publisher-name>Genetics and Biometry Laboratory, University of Geneva</publisher-name>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Shoshani1">
+        <label>32</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Shoshani</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Eisenberg</surname>
+              <given-names>JF</given-names>
+            </name>
+          </person-group>
+          <article-title><italic>Elephas maximus</italic>.</article-title>
+          <source>Mamm Sp</source>
+          <year>1982</year>
+          <volume>182</volume>
+          <fpage>1</fpage>
+          <lpage>8</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Sukumar1">
+        <label>33</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group person-group-type="editor">
+            <name name-style="western">
+              <surname>Sukumar</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <source>The Asian elephant: Ecology and management</source>
+          <year>1989</year>
+          <publisher-loc>Cambridge</publisher-loc>
+          <publisher-name>Cambridge University Press</publisher-name>
+          <page-count count="272"/>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Swofford1">
+        <label>34</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group person-group-type="editor">
+            <name name-style="western">
+              <surname>Swofford</surname>
+              <given-names>DL</given-names>
+            </name>
+          </person-group>
+          <source>PAUP*: Phylogenetic analysis using parsimony (and other methods). Version 4</source>
+          <year>1998</year>
+          <publisher-loc>Sunderland, Massachusetts</publisher-loc>
+          <publisher-name>Sinauer Associates</publisher-name>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Weir1">
+        <label>35</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Weir</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cockerham</surname>
+              <given-names>CC</given-names>
+            </name>
+          </person-group>
+          <article-title>Estimating <italic>F</italic>-statistics for the analysis of population structure.</article-title>
+          <source>Evolution</source>
+          <year>1984</year>
+          <volume>38</volume>
+          <fpage>1358</fpage>
+          <lpage>1370</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Whitehouse1">
+        <label>36</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Whitehouse</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Harley</surname>
+              <given-names>EH</given-names>
+            </name>
+          </person-group>
+          <article-title>Post-bottleneck genetic diversity of elephant populations in South Africa, revealed using microsatellite analysis.</article-title>
+          <source>Mol Ecol</source>
+          <year>2001</year>
+          <volume>10</volume>
+          <fpage>2139</fpage>
+          <lpage>2149</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000006-Williams1">
+        <label>37</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Williams</surname>
+              <given-names>CL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Serfass</surname>
+              <given-names>TL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cogan</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rhodes</surname>
+              <given-names>OE</given-names>
+            </name>
+          </person-group>
+          <article-title>Microsatellite variation in the reintroduced Pennsylvania elk herd.</article-title>
+          <source>Mol Ecol</source>
+          <year>2002</year>
+          <volume>11</volume>
+          <fpage>1299</fpage>
+          <lpage>1310</lpage>
+        </nlm-citation>
+      </ref>
+    </ref-list>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>ESU</term>
+          <def>
+            <p>evolutionary significant unit</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>mtDNA</term>
+          <def>
+            <p>mitochondrial DNA</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>MU</term>
+          <def>
+            <p>management unit.</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+  </back>
+</article>
