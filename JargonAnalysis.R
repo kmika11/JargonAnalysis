@@ -97,3 +97,7 @@ library(koRpus.lang.en)
 readability("Test/Ab1.txt", hyphen = NULL, index = "Flesch.Kincaid", tagger = "tokenize", force.lang = "en")
 readability("Test/Abs2.txt", hyphen = NULL, index = "Flesch.Kincaid", tagger = "tokenize", force.lang = "en")
 readability("Test/Abs3.txt", hyphen = NULL, index = "Flesch.Kincaid", tagger = "tokenize", force.lang = "en")
+
+
+##Lexical Tightness: how inter-related words are in normal vs science language.
+#is a mean of NPMI and is log2(p(a,b)/p(a)p(b))/-log2(p(a,b))
