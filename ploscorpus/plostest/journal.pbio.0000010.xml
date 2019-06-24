@@ -1,0 +1,2061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="publisher">pbio</journal-id><journal-id journal-id-type="nlm-ta">PLoS Biol</journal-id><journal-id journal-id-type="pmc">plosbiol</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Biology</journal-title></journal-title-group><issn pub-type="ppub">1544-9173</issn><issn pub-type="epub">1545-7885</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="doi">10.1371/journal.pbio.0000010</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Computational Biology</subject>
+          <subject>Oncology</subject>
+          <subject>Cell Biology</subject>
+          <subject>Developmental Biology</subject>
+          <subject>Molecular Biology</subject>
+        </subj-group>
+        <subj-group subj-group-type="System Taxonomy">
+          <subject>Xenopus</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>The Roles of APC and Axin Derived from Experimental and Theoretical Analysis of the Wnt Pathway</article-title><alt-title alt-title-type="running-head">Mathematical Modeling of the Wnt Pathway</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lee</surname>
+            <given-names>Ethan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Salic</surname>
+            <given-names>Adrian</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Krüger</surname>
+            <given-names>Roland</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Heinrich</surname>
+            <given-names>Reinhart</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kirschner</surname>
+            <given-names>Marc W</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label>
+        
+        <addr-line>Department of Cell Biology, Harvard Medical School, Boston, Massachusetts, United States of America</addr-line>
+        
+      </aff><aff id="aff2"><label>2</label>
+        
+        <addr-line>Department of Theoretical Biophysics, Institute of Biology, Humboldt University Berlin, Berlin, Germany</addr-line>
+        
+      </aff><aff id="aff3"><label>3</label>
+        
+        <addr-line>Department of Cell and Developmental Biology, Vanderbilt University Medical Center, Nashville, Tennessee, United States of America</addr-line>
+        
+      </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Roel Nusse</surname>
+          </name>
+          <role>Academic Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">Stanford University School of Medicine.</aff><author-notes>
+        <corresp id="cor1">* To whom correspondence should be addressed. E-mail: <email xlink:type="simple">reinhart_heinrich@hms.harvard.edu</email> (RH), Email: <email xlink:type="simple">marc@hms.harvard.edu</email> (MK)</corresp>
+        <fn fn-type="con" id="n2">
+          <p> EL, AS, RK, RH, and MWK conceived and designed the experiments. EL, AS, RK, and RH performed the experiments. EL, AS, RK, RH, and MWK analyzed the data. EL, AS, RK, RH, and MWK contributed reagents/materials/analysis tools. EL, AS, RK, RH, and MWK wrote the paper.</p>
+        </fn>
+      <fn fn-type="conflict" id="n1">
+        <p> The authors have declared that no conflicts of interest exist.</p>
+      </fn></author-notes><pub-date pub-type="ppub">
+        <month>10</month>
+        <year>2003</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>13</day>
+        <month>10</month>
+        <year>2003</year>
+      </pub-date><volume>1</volume><issue>1</issue><elocation-id>e10</elocation-id><history>
+        <date date-type="received">
+          <day>20</day>
+          <month>6</month>
+          <year>2003</year>
+        </date>
+        <date date-type="accepted">
+          <day>1</day>
+          <month>8</month>
+          <year>2003</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2003</copyright-year><copyright-holder>Lee et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Public Library of Science Open-Access License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><related-article page="e32" related-article-type="companion" vol="1" xlink:href="info:doi/10.1371/journal.pbio.0000032" xlink:title="synopsis" xlink:type="simple">
+        <article-title>Mathematical Modeling Predicts How Proteins Affect Cellular Communication</article-title>
+      </related-article><related-article issue="3" page="e89" related-article-type="correction-forward" vol="2" xlink:href="info:doi/10.1371/journal.pbio.0020089" xlink:title="Correction" xlink:type="simple">
+        <article-title>Corrections: The Roles of APC and Axin Derived from Experimental and Theoretical Analysis of the Wnt Pathway</article-title>
+      </related-article><abstract>
+        <p>Wnt signaling plays an important role in both oncogenesis and development. Activation of the Wnt pathway results in stabilization of the transcriptional coactivator β-catenin. Recent studies have demonstrated that axin, which coordinates β-catenin degradation, is itself degraded. Although the key molecules required for transducing a Wnt signal have been identified, a quantitative understanding of this pathway has been lacking. We have developed a mathematical model for the canonical Wnt pathway that describes the interactions among the core components: Wnt, Frizzled, Dishevelled, GSK3β, APC, axin, β-catenin, and TCF. Using a system of differential equations, the model incorporates the kinetics of protein–protein interactions, protein synthesis/degradation, and phosphorylation/dephosphorylation. We initially defined a reference state of kinetic, thermodynamic, and flux data from experiments using <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> extracts. Predictions based on the analysis of the reference state were used iteratively to develop a more refined model from which we analyzed the effects of prolonged and transient Wnt stimulation on β-catenin and axin turnover. We predict several unusual features of the Wnt pathway, some of which we tested experimentally. An insight from our model, which we confirmed experimentally, is that the two scaffold proteins axin and APC promote the formation of degradation complexes in very different ways. We can also explain the importance of axin degradation in amplifying and sharpening the Wnt signal, and we show that the dependence of axin degradation on APC is an essential part of an unappreciated regulatory loop that prevents the accumulation of β-catenin at decreased APC concentrations. By applying control analysis to our mathematical model, we demonstrate the modular design, sensitivity, and robustness of the Wnt pathway and derive an explicit expression for tumor suppression and oncogenicity.</p>
+      </abstract><abstract abstract-type="toc">
+        <p>Wnt signaling is important in both oncogenesis and development. Mathematical modeling predicts several unusual features of the Wnt pathway, some of which are tested experimentally.</p>
+      </abstract></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Considerable effort employing biochemistry, genetics, and pharmacology has been invested in identifying the web of interactions that characterize signal transduction pathways in metazoan organisms. Several conclusions can be drawn from these efforts. Despite the large number of receptors, ligands, and downstream targets, the number of signal transduction pathways in metazoans is relatively small, arguably less than 20 (<xref ref-type="bibr" rid="pbio-0000010-Gerhart1">Gerhart 1999</xref>). This limited diversity occurs despite large numbers of different organisms, cell types, states of growth, and differentiation, as well as sexual dimorphism in biology. Remarkably, these pathways are highly conserved, some among all eukaryotes, most among all metazoans. Whereas signaling pathways differ in detail, it is not clear whether these differences are functionally significant. Conservation in the face of diversity of function raises the question of whether the behaviors of the pathway are in reality as similar as they seem when one compares more quantitative aspects of the signals and responses, such as amplitude, duration, and flux (<xref ref-type="bibr" rid="pbio-0000010-Heinrich3">Heinrich et al. 2002</xref>). Finally, the structure and design of the pathways are themselves a mystery. Is the structure of these conserved pathways so deeply embedded in other conserved process that it is difficult to change any interaction, or does conservation imply continuous selection for function (<xref ref-type="bibr" rid="pbio-0000010-Gerhart2">Gerhart and Kirschner 1997</xref>)?</p>
+      <p>Many of these questions require a more quantitative understanding of the behavior of signaling pathways. Such information is rarely available. Most mathematical models have to be satisfied with a general conceptual understanding and are seldom testable, as most parameters must be assumed or inferred. It is partly for this reason that such theoretical efforts up to now have had limited impact on experimentalists, who prefer powerful qualitative tools to construct logical and formal models of pathway structures. Mathematical modeling is more advanced for metabolic networks, where the pathways have been known for more than a half-century and where more kinetic data have been available, including more recent data on in vivo dynamics (<xref ref-type="bibr" rid="pbio-0000010-Heinrich2">Heinrich and Schuster 1996</xref>). To develop a better quantitative understanding of a signal transduction pathway, we have recreated a more accessible system for biochemical study. The Wnt signaling pathway downstream of its immediate cytoplasmic mediator, Dishevelled (Dsh), can be reconstituted in frog egg extracts. The readout of the pathway is the rate of degradation of the transcriptional coactivator, β-catenin. We chose the Wnt pathway because it is active in the early <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> embryo, it is widely used in many different contexts in development, and it is also very important in human cancer. Although the design features of the Wnt pathway are highly conserved in evolution, it is not clear what purposes those features serve. This paper is in part an answer to that question.</p>
+      <p>The pivotal player in Wnt signaling is the scaffold protein axin, which is required for the constitutive degradation of β-catenin. Axin coordinates the assembly of a large complex that includes the glycogen synthase kinase 3β (GSK3β); another scaffold protein, adenomatous polyposis coli (APC); and the negative regulators Dsh and GSK3β-binding protein (glycogen synthase kinase-binding protein [GBP]/Frat). Binding of Wnt to its receptor, Frizzled, activates Dsh through an as-yet-unknown process. In the absence of Wnt, GSK3β bound to axin phosphorylates β-catenin bound to both axin and APC. Phosphorylated β-catenin is a substrate for ubiquitination and subsequent degradation through the F-box protein β-TRCP, which is part of an SCF ubiquitin ligase complex. In the presence of the Wnt signal, the activated Dsh protein binds to axin and, through bound GBP, inhibits β-catenin phosphorylation; this inhibits its ubiquitination and consequent degradation. The buildup in β-catenin in the presence of a Wnt signal leads to transcription of specific genes.</p>
+      <p>Numerous questions arise from this general model. Why are two scaffold proteins, APC and axin, both necessary? Do their roles differ? Recently it has been discovered that axin, like β-catenin, is an unstable protein (<xref ref-type="bibr" rid="pbio-0000010-Yamamoto1">Yamamoto et al. 1999</xref>; <xref ref-type="bibr" rid="pbio-0000010-Tolwinski1">Tolwinski et al. 2003</xref>). In recent work (unpublished data), we have further described the conditions under which axin is unstable. We ask here what role axin instability plays in the behavior of the Wnt pathway and in the responsiveness of the pathway to the Wnt signal? Beyond these mechanistic questions are important biological ones that lie beyond the scope of this work but that may be raised by some of the findings here. For example, mutations in APC seem to play a particularly important role in colorectal cancer; is the peculiar sensitivity to APC mutations in the colonic epithelium understandable in terms of how the pathway performs in that tissue? Similarly, GSK3β is also essential but not commonly mutated in colorectal cancer; why is that the case? No one has purified a discrete complex containing all the major players in the Wnt pathway arrayed on the axin–APC scaffolds, suggesting that the pathway might be affected by nonproductive titration of components by subcomplexes. If this is a problem, how is it avoided? The Wnt pathway is likely present in all cell types, and yet several of its constituents are used in other pathways; how is crosstalk or interference in other pathways avoided? As we set out to produce a realistic kinetic model of the Wnt pathway, we encountered other questions. For example, quantitative measurements led to the unusual finding that axin is present at very low concentrations. Is there a satisfactory explanation of this fact and of other, previously unexplained, features of the pathway? We are aware that some of the answers to specific questions could lie in unknown components or unknown interactions among known components. We were under no illusions that we could accommodate all known interactions in a model at this time or that we already knew all we need to know to construct such a model. For this reason we have asked a more modest question—whether the properties of the core pathway, as presently understood, can provide insight into important questions not yet answered or not yet clearly raised.</p>
+      <p>To answer such questions, we collected what we initially thought were sufficient quantitative data on rates, affinities, and fluxes to derive a reference state model of the Wnt pathway in this system. The provisional reference state model reflected most of the known properties of the system, but from this model we identified several rates and affinity constants whose values were critical to the behavior of the model. We then went back and measured these. Thus this paper contains a reference model, a large number of experimental measurements needed to define this model, theoretical predictions, and experimental tests of those predictions, where possible. A general test of the validity of the model is its predictive ability under a wide range of conditions. From this analysis, several unexpected properties emerged with significance for understanding the biological function of the Wnt pathway.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title>A Proposed Kinetic Pathway</title>
+        <p>The model was based on the reaction scheme shown in <xref ref-type="fig" rid="pbio-0000010-g001">Figure 1</xref>. A few steps are labeled, such as the synthesis of axin and β-catenin, the degradation of axin, the axin-independent (basal) and axin-dependent degradation of β-catenin, as well as the critical cycle involved in the phosphorylation of β-catenin for degradation (Destruction Core Cycle). The output is the formation of the β-catenin/T-cell factor (TCF) complex and the input is the Wnt signal. Although many proteins interact with the Wnt pathway, we have focused only on core components known to be necessary for mediating a Wnt signal in most contexts. These core proteins include GSK3β, protein phosphatase 2A (PP2A), β-catenin, APC, axin, Dsh, TCF, and Wnt. The reactions incorporated into our model include protein synthesis/degradation, protein phosphorylation/dephosphorylation, and the assembly/disassembly of protein complexes (<xref ref-type="fig" rid="pbio-0000010-g001">Figure 1</xref>, solid arrows). Reactions mediated by proteins that activate a process are represented with broken arrows: (1) activation of Dsh by Wnt (step 1), (2) activation of the release of GSK3β from APC/axin/GSK3β by Dsh (step 3), and (3) activation of APC-dependent axin degradation (step 15). The reactions and components in blue are concerned with additional features of the pathway, as discussed below.</p>
+        <fig id="pbio-0000010-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0000010.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Reaction Scheme for Wnt Signaling</title>
+            <p>The reaction steps of the Wnt pathway are numbered 1 to 19. Protein complexes are denoted by the names of their components, separated by a slash and enclosed in brackets. Phosphorylated components are marked by an asterisk. Single-headed solid arrows characterize reactions taking place only in the indicated direction. Double-headed arrows denote binding equilibria. Blue arrows mark reactions that have only been taken into account when studying the effect of high axin concentrations. Broken arrows represent activation of Dsh by the Wnt ligand (step 1), Dsh-mediated initiation of the release of GSK3β from the destruction complex (step 3), and APC-mediated degradation of axin (step 15). The broken arrows indicate that the components mediate but do not participate stoichiometrically in the reaction scheme. The irreversible reactions 2, 4, 5, 9–11, and 13 are unimolecular, and reactions 6, 7, 8, 16, and 17 are reversible binding steps. The individual reactions and their role in the Wnt pathway are explained in the text.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.g001" xlink:type="simple"/>
+        </fig>
+        <p>The centerpiece of the model is the formation of the unstable core complexes involved in β-catenin phosphorylation and subsequent destruction. In addition to β-catenin, this set of complexes contains GSK3β and the scaffold proteins APC and axin. The complexes assemble in several steps: (1) binding of axin to APC (forward reaction of step 7); (2) binding of GSK3β (forward reaction of step 6); (3) phosphorylation of axin and APC by GSK3β (step 4). Dephosphorylation of the core complex (step 5) is mediated by PP2A. The first step in β-catenin degradation is its binding to APC*/axin*/GSK3β (step 8), after which it is phosphorylated by GSK3β (step 9) and released from the complex (step 10). Our model assumes that the phosphorylation of β-catenin by GSK3β is negligible in the absence of axin. Indeed, recent work indicates that axin stimulates the phosphorylation of β-catenin by GSK3β at least 24,000-fold (<xref ref-type="bibr" rid="pbio-0000010-Dajani1">Dajani et al. 2003</xref>). Free, phosphorylated β-catenin is rapidly polyubiquitinated and degraded by the SCF complex and the proteasome, respectively (step 11).</p>
+        <p>The dynamic properties of the model, such as the flux through the pathway, are also affected by binding of β-catenin to other partners, such as TCF (step 16) and free APC (step 17). In special cases (high axin concentrations), the flux through the system is affected by the binding of axin to GSK3β (step 19) as well as β-catenin (step 18). We have previously shown experimentally that TCF reduces the rate of β-catenin degradation (<xref ref-type="bibr" rid="pbio-0000010-Lee1">Lee et al. 2001</xref>). Turnover of β-catenin (steps 11, 12, and 13) and axin (steps 14 and 15) are included in our model, but since biochemical experiments in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> egg extracts indicate that the turnover of GSK3β, Dsh, and TCF is relatively slow (no detectable degradation after 3 h at room temperature; unpublished data), the synthesis and degradation of these proteins are not explicitly modeled. The activation of the pathway in vivo, which results in the stabilization of β-catenin, is initiated by binding of Wnt ligands to Frizzled receptors and the subsequent transition of Dsh from its inactive form (Dsh<sub>i</sub>) to its active form (Dsh<sub>a</sub>). Since these events are still poorly defined, both processes have been combined in step 1. Interaction of Dsh<sub>a</sub> with the nonphosphorylated complex APC/axin/GSK3β (step 3) activates the release of GSK3β . This latter process requires the activity of the GBP/Frat (not shown on our diagram). Deactivation of Dsh<sub>a</sub> occurs through an as-yet-unidentified mechanism (step 2).</p>
+      </sec>
+      <sec id="s2b">
+        <title>Analytical Description</title>
+        <p>The mathematical analysis is based on a series of balance equations that describe the concentrations and complexes of proteins in the Wnt pathway, as depicted in <xref ref-type="fig" rid="pbio-0000010-g001">Figure 1</xref>. The set of variables and the set of 15 differential equations we obtained are given in <xref ref-type="supplementary-material" rid="st001">Table S1</xref>, and <xref ref-type="supplementary-material" rid="sd001">Dataset S1</xref>, respectively (Equations [A-1]–[A-15]). Stimulation of the pathway by Wnt is described by a time-dependent function, <italic>Wnt(t)</italic>. Since Dsh, TCF, and GSK3β are degraded very slowly, we assume that their concentrations remain constant throughout the timecourse of a Wnt signaling event. The conservation equations for Dsh, TCF, and GSK3β are as follows:
+          <disp-formula id="pbio-0000010-e001"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.e001" xlink:type="simple"/><!-- <math display='block'>
+              <mrow>
+                <msup>
+                  <mrow>
+                    <mrow>
+                      <mi>D</mi>
+                      <mi>s</mi>
+                      <mi>h</mi>
+                    </mrow>
+                  </mrow>
+                  <mrow>
+                    <mn>0</mn>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <msub>
+                  <mrow>
+                    <mi>D</mi>
+                    <mi>s</mi>
+                    <mi>h</mi>
+                  </mrow>
+                  <mrow>
+                    <mi>i</mi>
+                  </mrow>
+                </msub>
+                <mo>+</mo>
+                <msub>
+                  <mrow>
+                    <mi>D</mi>
+                    <mi>s</mi>
+                    <mi>h</mi>
+                  </mrow>
+                  <mrow>
+                    <mi>a</mi>
+                  </mrow>
+                </msub>
+              </mrow>
+            </math> --></disp-formula>
+          <disp-formula id="pbio-0000010-e002"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.e002" xlink:type="simple"/><!-- <math display='block'>
+              <mrow>
+                <msup>
+                  <mrow>
+                    <mrow>
+                      <mi>T</mi>
+                      <mi>C</mi>
+                      <mi>F</mi>
+                    </mrow>
+                  </mrow>
+                  <mrow>
+                    <mn>0</mn>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <mi>T</mi>
+                <mi>C</mi>
+                <mi>F</mi>
+                <mo>+</mo>
+                <mo>(</mo>
+                <mi>&beta;-</mi>
+                <mi>c</mi>
+                <mi>a</mi>
+                <mi>t</mi>
+                <mi>e</mi>
+                <mi>n</mi>
+                <mi>i</mi>
+                <mi>n</mi>
+                <mo>/</mo>
+                <mi>T</mi>
+                <mi>C</mi>
+                <mi>F</mi>
+                <mo>)</mo>
+              </mrow>
+            </math> --></disp-formula>
+          <disp-formula id="pbio-0000010-e003"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.e003" xlink:type="simple"/><!-- <math display='block'>
+              <mrow>
+                <msup>
+                  <mrow>
+                    <mrow>
+                      <mi>G</mi>
+                      <mi>S</mi>
+                      <mi>K</mi>
+                      <mn>3</mn>
+                      <mi>&beta;</mi>
+                    </mrow>
+                  </mrow>
+                  <mrow>
+                    <mn>0</mn>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <mi>G</mi>
+                <mi>S</mi>
+                <mi>K</mi>
+                <mn>3</mn>
+                <mi>&beta;</mi>
+                <mo>+</mo>
+                <mo>(</mo>
+                <mi>A</mi>
+                <mi>P</mi>
+                <mi>C</mi>
+                <mo>/</mo>
+                <mi>a</mi>
+                <mi>x</mi>
+                <mi>i</mi>
+                <mi>n</mi>
+                <mo>/</mo>
+                <mi>G</mi>
+                <mi>S</mi>
+                <mi>K</mi>
+                <mn>3</mn>
+                <mi>&beta;</mi>
+                <mo>)</mo>
+                <mtext>&NewLine;</mtext>
+                <mo>+</mo>
+                <mo>(</mo>
+                <mi>A</mi>
+                <mi>P</mi>
+                <msup>
+                  <mi>C</mi>
+                  <mi fontsize='12pt'>*</mi>
+                </msup>
+                <mo>/</mo>
+                <mi>a</mi>
+                <mi>x</mi>
+                <mi>i</mi>
+                <msup>
+                  <mi>n</mi>
+                  <mi fontsize='12pt'>*</mi>
+                </msup>
+                <mo>/</mo>
+                <mi>G</mi>
+                <mi>S</mi>
+                <mi>K</mi>
+                <mn>3</mn>
+                <mi>&beta;</mi>
+                <mo>)</mo>
+                <mtext>&NewLine;</mtext>
+                <mo>+</mo>
+                <mo>(</mo>
+                <mi>&beta;-</mi>
+                <mi>c</mi>
+                <mi>a</mi>
+                <mi>t</mi>
+                <mi>e</mi>
+                <mi>n</mi>
+                <mi>i</mi>
+                <mi>n</mi>
+                <mo>/</mo>
+                <mi>A</mi>
+                <mi>P</mi>
+                <msup>
+                  <mi>C</mi>
+                  <mi fontsize='12pt'>*</mi>
+                </msup>
+                <mo>/</mo>
+                <mi>a</mi>
+                <mi>x</mi>
+                <mi>i</mi>
+                <msup>
+                  <mi>n</mi>
+                  <mi fontsize='12pt'>*</mi>
+                </msup>
+                <mo>/</mo>
+                <mi>G</mi>
+                <mi>S</mi>
+                <mi>K</mi>
+                <mn>3</mn>
+                <mi>&beta;</mi>
+                <mo>)</mo>
+                <mtext>&NewLine;</mtext>
+                <mo>+</mo>
+                <mo>(</mo>
+                <mi>&beta;-</mi>
+                <mi>c</mi>
+                <mi>a</mi>
+                <mi>t</mi>
+                <mi>e</mi>
+                <mi>n</mi>
+                <mi>i</mi>
+                <msup>
+                  <mi>n</mi>
+                  <mi fontsize='12pt'>*</mi>
+                </msup>
+                <mo>/</mo>
+                <mi>A</mi>
+                <mi>P</mi>
+                <msup>
+                  <mi>C</mi>
+                  <mi fontsize='12pt'>*</mi>
+                </msup>
+                <mo>/</mo>
+                <mi>a</mi>
+                <mi>x</mi>
+                <mi>i</mi>
+                <msup>
+                  <mi>n</mi>
+                  <mi fontsize='12pt'>*</mi>
+                </msup>
+                <mo>/</mo>
+                <mi>G</mi>
+                <mi>S</mi>
+                <mi>K</mi>
+                <mn>3</mn>
+                <mi>&beta;</mi>
+                <mo>)</mo>
+              </mrow>
+            </math> --></disp-formula>Symbols with the superscript "0" denote total concentrations.
+        </p>
+        <p>Since the concentration of axin is very low (see below) compared to the concentration of GSK3β, we replaced Equation (3) with the simple relationship <italic>GSK3β</italic><sup>0</sup> = <italic>GSK3β</italic>. Similarly, we omitted the concentration of complexes containing axin in the conservation relationship for APC, which leads to the following equation:
+          <disp-formula id="pbio-0000010-e004"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.e004" xlink:type="simple"/><!-- <math display='block'>
+              <mrow>
+                <msup>
+                  <mrow>
+                    <mrow>
+                      <mi>A</mi>
+                      <mi>P</mi>
+                      <mi>C</mi>
+                    </mrow>
+                  </mrow>
+                  <mrow>
+                    <mn>0</mn>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <mi>A</mi>
+                <mi>P</mi>
+                <mi>C</mi>
+                <mo>+</mo>
+                <mo>(</mo>
+                <mi>&beta;-</mi>
+                <mi>c</mi>
+                <mi>a</mi>
+                <mi>t</mi>
+                <mi>e</mi>
+                <mi>n</mi>
+                <mi>i</mi>
+                <mi>n</mi>
+                <mo>/</mo>
+                <mi>A</mi>
+                <mi>P</mi>
+                <mi>C</mi>
+                <mo>)</mo>
+                <mn>.</mn>
+              </mrow>
+            </math> --></disp-formula>
+        </p>
+        <p>We will, however, take into account the contribution of axin-containing complexes for GSK3β and APC conservation equations when we later consider the effect of large increases in axin concentration.</p>
+        <p>The simplest possible equation was chosen to describe the kinetics of each individual reaction. Synthesis of β-catenin and axin are described by constant rates <bold>ν</bold><italic><sub>i</sub></italic>. Unimolecular reactions are assumed to be irreversible and are described by linear rate equations <bold>ν</bold><italic><sub>i</sub></italic> = <italic>k<sub>i</sub></italic> · <italic>X<sub>j</sub></italic>, where <italic>k<sub>i</sub></italic> denotes the first-order rate constant and <italic>X<sub>j</sub></italic> denotes the concentration of the reactants. Reversible binding steps (double-headed arrows in <xref ref-type="fig" rid="pbio-0000010-g001">Figure 1</xref>) are described by the equation <bold>ν</bold><italic><sub>i</sub></italic> = <italic>k<sub>+i</sub>X<sub>j</sub>Y<sub>l</sub></italic> − <italic>k<sub>−i</sub></italic>(<italic>X<sub>j</sub></italic><bold>.</bold><italic>Y<sub>l</sub></italic>), where <italic>X<sub>j</sub></italic> and <italic>Y<sub>l</sub></italic> denote the concentrations of the binding partners and (<italic>X<sub>j</sub></italic><bold>.</bold><italic>Y<sub>l</sub></italic>) the concentration of their complex. The Dsh-mediated release of GSK3β from the destruction complex is described by an irreversible reaction that is bimolecular in the concentrations of Dsh and the degradation complex. The model is simplified by assuming that the reversible binding steps between axin, β-catenin, APC, and TCF are very fast, such that the corresponding protein complexes are in rapid equilibrium, so that only the dissociation constants <italic>K<sub>i</sub></italic> = <italic>k</italic><sub>−<italic>i</italic></sub>/<italic>k</italic><sub>+<italic>i</italic></sub> are considered in the kinetic description of these steps. The conservation equations and the binding equilibria reduce the number of independent dynamic variables. Accordingly, the original set of 15 differential equations is transformed into a set of only seven ordinary differential equations coupled to four conservation equations and four relationships for binding equilibria. For a detailed mathematical description of the model and the procedure for reducing the number of systems variables, see <xref ref-type="supplementary-material" rid="sd001">Dataset S1</xref>.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Experimental Evaluation of the Reference and Stimulated States</title>
+        <p>We define the reference state as the absence of Wnt signaling (<italic>Wnt</italic> = 0). In this unstimulated stationary state, Dsh is inactive and does not affect the degradation complex. β-Catenin concentration is kept low by continuous phosphorylation and degradation. The reference state can be characterized by the special values for its rate constants, its equilibrium constants, and its conservation quantities. If one can obtain values for all of these system parameters, the model equations should allow for a straightforward calculation of the variables in the reference state. Currently, we have experimental data for many of these parameters (see below). For the remaining system parameters that were not directly measured, we were able to derive numbers based on experimental data of steady-state concentrations and fluxes. A number of parameters were set such that the results of the model were in agreement with previous experimental data, specifically with the experimentally determined rate of β-catenin degradation (<xref ref-type="bibr" rid="pbio-0000010-Salic1">Salic et al. 2000</xref>; <xref ref-type="bibr" rid="pbio-0000010-Lee1">Lee et al. 2001</xref>). Finally, a few parameters had to be estimated; the constraint used was that the resulting model should be compatible with the steady-state and flux values. <xref ref-type="table" rid="pbio-0000010-t001">Table 1</xref> lists the numeric values of all of the input quantities of the model. These quantities are either specific parameters, such as dissociation constants, or systemic properties, such as steady-state concentrations or fluxes, from which the other parameters have been derived. Both types of input quantities include experimental data as well as estimated values. The specific numerical values affect the model to differing degrees. In a later section, we analyze the effects of changing the values of the parameters around their reference numbers. The types of input data used for our modeling can be divided into five groups.</p>
+        <table-wrap id="pbio-0000010-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.0000010.t001</object-id><label>Table 1</label><caption>
+            <title>Numeric Values of Input Quantities of the Model for the Reference State</title>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.t001" xlink:type="simple"/><table-wrap-foot>
+            <fn id="nt101">
+              <p>The data are grouped into concentrations of pathway components, dissociation constants of protein complexes, concentration ratios, fluxes and flux ratios, and characteristic times of selected processes. Experimental evidence for these data is discussed in the text. From these data, the following rates and rate constants are calculated: <bold>ν</bold><sub>12</sub> = 0.42 nM · min<sup>−1</sup> (rate of β-catenin synthesis), <bold>ν</bold><sub>14</sub> = 8.2 · 10<sup>−5</sup> · nM min<sup>−1</sup> (rate of axin synthesis), <italic>k</italic><sub>4</sub> = 0.27 min<sup>−1</sup>, <italic>k</italic><sub>5</sub> = 0.13 min<sup>−1</sup>, <italic>k</italic><sub>6</sub> = 9.1 · 10<sup>−2</sup> nM<sup>−1</sup> · min<sup>−1</sup>, <italic>k<sub>−</sub></italic><sub>6</sub> = 0.91 · nM<sup>−1</sup> · min<sup>−1</sup>, <italic>k</italic><sub>9</sub> = 210 min<sup>−1</sup>, <italic>k</italic><sub>10</sub> = 210 min<sup>−1</sup>, <italic>k</italic><sub>11</sub> = 0.42 min<sup>−1</sup>, <italic>k</italic><sub>13</sub> = 2.6 · 10<sup>−4</sup> min<sup>−1</sup>, <italic>k</italic><sub>15</sub> = 0.17 · min<sup>−1</sup>. See Table S2, found at <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pbio.0000010.st002" xlink:type="simple">http://dx.doi.org/10.1371/journal.pbio.0000010.st002</ext-link>, for more precise numbers used in the calculations</p>
+            </fn>
+            <fn id="nt102">
+              <p><bold>Bold: Measured values,</bold> <italic>Italics</italic>: Estimated values</p>
+            </fn>
+          </table-wrap-foot><!-- <table>
+            <thead>
+              <tr>
+                <td>Symbol</td>
+                <td>Description</td>
+                <td>Reference value</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><italic>Concentrations</italic></td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td><italic>Dsh</italic><sup>0</sup></td>
+                <td>total Dsh</td>
+                <td><bold>100 nM</bold></td>
+              </tr>
+              <tr>
+                <td><italic>APC</italic><sup>0</sup></td>
+                <td>total APC</td>
+                <td><bold>100 nM</bold></td>
+              </tr>
+              <tr>
+                <td><italic>TCF</italic><sup>0</sup></td>
+                <td>total TCF</td>
+                <td><bold>15 nM</bold></td>
+              </tr>
+              <tr>
+                <td><italic>GSK</italic><sup>0</sup></td>
+                <td>total GSK3&beta;</td>
+                <td><bold>50 nM</bold></td>
+              </tr>
+              <tr>
+                <td><italic>Axin</italic><sup>0</sup></td>
+                <td>total axin</td>
+                <td><bold>0.02 nM</bold></td>
+              </tr>
+              <tr>
+                <td><italic>&beta;-catenin</italic><sup>0</sup></td>
+                <td>total &beta;-catenin</td>
+                <td><bold>35 nM</bold></td>
+              </tr>
+              <tr>
+                <td><italic>&beta;-catenin</italic>*</td>
+                <td>free phosphorylated &beta;-catenin</td>
+                <td><italic>1 nM</italic></td>
+              </tr>
+              <tr>
+                <td><italic>Dissociation constants</italic></td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td><italic>K</italic><sub>6</sub></td>
+                <td>binding of GSK3&beta; to (APC/axin)</td>
+                <td><italic>10 nM</italic></td>
+              </tr>
+              <tr>
+                <td><italic>K</italic><sub>7</sub></td>
+                <td>binding of APC to axin</td>
+                <td><italic>50 nM</italic></td>
+              </tr>
+              <tr>
+                <td><italic>K</italic><sub>8</sub></td>
+                <td>binding of &beta;-catenin to (APC/axin/GSK3&beta;)</td>
+                <td><italic>120 nM</italic></td>
+              </tr>
+              <tr>
+                <td><italic>K</italic><sub>16</sub></td>
+                <td>binding of &beta;-catenin to TCF</td>
+                <td><italic>30 nM</italic></td>
+              </tr>
+              <tr>
+                <td><italic>K</italic><sub>17</sub></td>
+                <td>binding of &beta;-catenin to APC</td>
+                <td><italic>1200 nM</italic></td>
+              </tr>
+              <tr>
+                <td><italic>Concentration ratios</italic></td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td>
+                  <math display='block'>
+                    <mrow>
+                      <mfrac>
+                        <mrow>
+                          <mo>(</mo>
+                          <mi>A</mi>
+                          <mi>P</mi>
+                          <msup>
+                            <mi>C</mi>
+                            <mi fontsize='11pt'>*</mi>
+                          </msup>
+                          <mo>/</mo>
+                          <mi>A</mi>
+                          <mi>x</mi>
+                          <mi>i</mi>
+                          <msup>
+                            <mi>n</mi>
+                            <mi fontsize='11pt'>*</mi>
+                          </msup>
+                          <mo>/</mo>
+                          <mi>G</mi>
+                          <mi>S</mi>
+                          <mi>K</mi>
+                          <mi>3&beta;</mi>
+                          <mo>)</mo>
+                        </mrow>
+                        <mrow>
+                          <mo>(</mo>
+                          <mi>A</mi>
+                          <mi>P</mi>
+                          <mi>C</mi>
+                          <mo>/</mo>
+                          <mi>A</mi>
+                          <mi>x</mi>
+                          <mi>i</mi>
+                          <mi>n</mi>
+                          <mo>/</mo>
+                          <mi>G</mi>
+                          <mi>S</mi>
+                          <mi>K</mi>
+                          <mi>3&beta;</mi>
+                          <mo>)</mo>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </math>
+                </td>
+                <td> </td>
+                <td><italic>2</italic></td>
+              </tr>
+              <tr>
+                <td>
+                  <math display='block'>
+                    <mrow>
+                      <mfrac>
+                        <mrow>
+                          <mo>(</mo>
+                          <mi>&beta;</mi>
+                          <mo>-</mo>
+                          <mi>c</mi>
+                          <mi>a</mi>
+                          <mi>t</mi>
+                          <mi>e</mi>
+                          <mi>n</mi>
+                          <mi>i</mi>
+                          <msup>
+                            <mi>n</mi>
+                            <mi fontsize='11pt'>*</mi>
+                          </msup>
+                          <mo>/</mo>
+                          <mi>A</mi>
+                          <mi>P</mi>
+                          <msup>
+                            <mi>C</mi>
+                            <mi fontsize='11pt'>*</mi>
+                          </msup>
+                          <mo>/</mo>
+                          <mi>A</mi>
+                          <mi>x</mi>
+                          <mi>i</mi>
+                          <msup>
+                            <mi>n</mi>
+                            <mi fontsize='11pt'>*</mi>
+                          </msup>
+                          <mo>/</mo>
+                          <mi>G</mi>
+                          <mi>S</mi>
+                          <mi>K</mi>
+                          <mi>3&beta;</mi>
+                          <mo>)</mo>
+                        </mrow>
+                        <mrow>
+                          <mo>(</mo>
+                          <mi>&beta;</mi>
+                          <mo>-</mo>
+                          <mi>c</mi>
+                          <mi>a</mi>
+                          <mi>t</mi>
+                          <mi>e</mi>
+                          <mi>n</mi>
+                          <mi>i</mi>
+                          <mi>n</mi>
+                          <mo>/</mo>
+                          <mi>A</mi>
+                          <mi>P</mi>
+                          <msup>
+                            <mi>C</mi>
+                            <mi fontsize='11pt'>*</mi>
+                          </msup>
+                          <mo>/</mo>
+                          <mi>A</mi>
+                          <mi>x</mi>
+                          <mi>i</mi>
+                          <msup>
+                            <mi>n</mi>
+                            <mi fontsize='11pt'>*</mi>
+                          </msup>
+                          <mo>/</mo>
+                          <mi>G</mi>
+                          <mi>S</mi>
+                          <mi>K</mi>
+                          <mi>3&beta;</mi>
+                          <mo>)</mo>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                  </math>
+                </td>
+                <td> </td>
+                <td><italic>1</italic></td>
+              </tr>
+              <tr>
+                <td><italic>Flux and flux ratio</italic></td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td><bold>&nu;</bold><sub>11</sub></td>
+                <td>degradation flux of &beta;-catenin via the proteasome</td>
+                <td><bold>25 nM/h</bold></td>
+              </tr>
+              <tr>
+                <td><bold>&nu;</bold><sub>13</sub>/<bold>&nu;</bold><sub>11</sub></td>
+                <td> </td>
+                <td><bold>0.015</bold></td>
+              </tr>
+              <tr>
+                <td><italic>Characteristic times</italic></td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td>&tau;<italic><sub>K</sub><bold><sub>.</sub></bold><sub>P</sub></italic></td>
+                <td>phosphorylation/dephosphorylation of APC and axin</td>
+                <td><italic>2.5 min</italic></td>
+              </tr>
+              <tr>
+                <td>&tau;<italic><sub>GSK</sub><bold><sub>.</sub></bold><sub>ass</sub></italic></td>
+                <td>GSK3&beta; association/dissociation</td>
+                <td><italic>1 min</italic></td>
+              </tr>
+              <tr>
+                <td>&tau;<italic><sub>ax</sub><bold><sub>.</sub></bold><sub>deg</sub></italic></td>
+                <td>Axin degradation</td>
+                <td><bold>6 min</bold></td>
+              </tr>
+            </tbody>
+          </table> --></table-wrap>
+        <p>The first group of input data contains both total concentrations (<italic>Dsh</italic><sup>0</sup>, <italic>APC</italic><sup>0</sup>, <italic>TCF</italic><sup>0</sup>, and <italic>GSK3β</italic><sup>0</sup>) and steady-state concentrations (<italic>Axin</italic><sup>0</sup>, <italic>β-catenin</italic><sup>0</sup>, <italic>β-catenin</italic>*). The total concentrations of Dsh, TCF, GSK3β, axin, β-catenin, and APC in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> egg extract were determined experimentally using Western blot analysis by comparing the intensity of the signal to that of known amounts of recombinant protein. The concentration of phosphorylated β-catenin w as estimated because we have not been able to directly determine its level in extracts. However, we estimate that this value is small compared to that of nonphosphorylated β-catenin for the following reasons: (1) Addition of axin to <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> extracts dramatically increases the rate of β-catenin degradation. Since the role of axin is to promote phosphorylation of β-catenin, which is subsequently degraded, this would suggest that normally a significant pool of β-catenin exists in the nonphosphorylated form. (2) Western blot analysis of <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> extracts demonstrates that only a small percentage (&lt;10%) of total β-catenin can be detected as migrating with a slower mobility, which likely represents the phosphorylated form of β-catenin.</p>
+        <p>The second group of input data was experimentally obtained from measurements of rates of dissociation of protein complexes. Binding constants were calculated based on the assumption that association rates approached that of the diffusion limits for a typical protein in an aqueous solution. The ratio <italic>K</italic><sub>17</sub>/<italic>K</italic><sub>8</sub> = 10 of the dissociation constants characterizing the binding of β-catenin to APC and APC*/axin*/GSK3β, respectively, is based on previous experimental results demonstrating that β-catenin has a 10-fold lower affinity for nonphosphorylated compared to phosphorylated APC (<xref ref-type="bibr" rid="pbio-0000010-Salic1">Salic et al. 2000</xref>). In addition, we have shown experimentally (unpublished data; see Materials and Methods) that phosphorylated β-catenin dissociates from axin more rapidly (reaction 10) than nonphosphorylated β-catenin. Once phosphorylated, β-catenin will thus dissociate from the axin complex and undergo polyubiquitination and proteolysis.</p>
+        <p>The third group of input data consists of the two concentration ratios in the Destruction Core Cycle for complexes that either contain or lack β-catenin. The concentration ratio for the complexes that lack β-catenin is represented by the ratio of its phosphorylated versus nonphosphorylated forms and reflects the relative activities of its kinase(s) and phosphatase(s), respectively. By contrast, the concentration ratio of the two β-catenin-containing degradation complexes represents the relative activities of β-catenin phosphorylation and the rate of release of phosphorylated β-catenin from the complex. These parameters were chosen rather arbitrarily to indicate roughly equal kinase and phosphatase activities and yielded realistic values for the overall fluxes, given the known concentrations and kinetic rate constants.</p>
+        <p>The fourth group of data includes the steady state flux <bold>ν</bold><sub>11</sub> for the degradation of β-catenin via the Wnt pathway and the flux ratio <bold>ν</bold><sub>13</sub> <italic>/</italic> <bold>ν</bold><sub>11</sub> describing the extent to which β-catenin is degraded via non-Wnt mechanisms (e.g., via Siah-1 and presenilin [<xref ref-type="bibr" rid="pbio-0000010-Liu1">Liu et al. 2001</xref>; <xref ref-type="bibr" rid="pbio-0000010-Matsuzawa1">Matsuzawa and Reed 2001</xref>; <xref ref-type="bibr" rid="pbio-0000010-Kang1">Kang et al. 2002</xref>]). We have now measured this Wnt pathway–independent degradation in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> extracts (see Materials and Methods; value shown in <xref ref-type="table" rid="pbio-0000010-t001">Table 1</xref>).</p>
+        <p>The final group of input data consists of the characteristic time constant (τ) of selected processes. This is the time it takes for the concentration to drop to 1/e of its initial value. These characteristic times include τ<italic><sub>K</sub></italic><bold><sub>.</sub></bold><italic><sub>P</sub></italic> = 1/(<italic>k</italic><sub>4</sub> + <italic>k</italic><sub>5</sub>) for the kinase/phosphatase cycle that mediates phosphorylation/dephosphorylation of both APC and axin in the degradation complex (steps 4 and 5), τ<italic><sub>GSK3β</sub></italic><bold><sub>.</sub></bold><italic><sub>ass</sub></italic> = 1 <italic>/</italic> (<italic>k</italic><sub>6</sub> <italic>GSK3β</italic> + <italic>k</italic><sub>−6</sub>) for the binding equilibrium of GSK3β with the APC/axin complex (step 6), and τ<italic><sub>ax</sub></italic><bold><sub>.</sub></bold><italic><sub>deg</sub></italic> for axin degradation (step 15). Values for the rate of axin degradation were determined directly from experiments performed in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> egg extracts (unpublished data). Experiments to determine the rate of APC and axin dephosphorylation (τ<italic><sub>K</sub></italic><bold><sub>.</sub></bold><italic><sub>P</sub></italic> ≈ 2.5 min) were performed using in vitro <sup>32</sup>P-labeled recombinant APC and axin. Radiolabeled proteins were added to <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> egg extracts, and the loss of radioactivity over time was assessed by SDS-PAGE and autoradiography (<xref ref-type="bibr" rid="pbio-0000010-Salic1">Salic et al. 2000</xref>). The legend to <xref ref-type="table" rid="pbio-0000010-t001">Table 1</xref> contains the values of rate constants calculated from the input quantities using the described system of equations. The values of all variables in the reference state are listed in the first column of <xref ref-type="table" rid="pbio-0000010-t002">Table 2</xref>. These values represent the steady state solutions of system equations using the data in <xref ref-type="table" rid="pbio-0000010-t001">Table 1</xref> as input quantities with the value of Wnt set at <italic>Wnt</italic> = 0.</p>
+        <table-wrap id="pbio-0000010-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.0000010.t002</object-id><label>Table 2</label><caption>
+            <title>Steady-State Concentrations of Pathway Compounds in the Reference State and in the Standard Stimulated State</title>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.t002" xlink:type="simple"/><table-wrap-foot>
+            <fn id="nt201">
+              <p>Calculation of the concentrations is performed by the systems equations (see Dataset S1) under steady-state conditions. For the reference state (<italic>W</italic> = 0), the corresponding parameters given in <xref ref-type="table" rid="pbio-0000010-t001">Table 1</xref> are used. Values marked by “#” represent steady-state concentrations, which also appear in <xref ref-type="table" rid="pbio-0000010-t001">Table 1</xref>. The additional input quantities required for the calculation of the standard stimulated state (<italic>W =</italic> 1) are taken as follows: <italic>Dsh <sub>a</sub> / Dsh <sub>i</sub> = k</italic><sub>1</sub> <italic>/ k</italic><sub>2 </sub>= 10, <bold>ν</bold><sub>−6</sub> <italic>/</italic> <bold>ν</bold><sub>3</sub> <italic>= k</italic><sub>−6</sub> <italic>/</italic> (<italic>k</italic><sub>3</sub> <italic>Dsh<sub>a</sub></italic>) = 0.2, and τ<italic><sub>Dsh</sub></italic><bold><sub>.</sub></bold><italic><sub>act </sub></italic> = 1 <italic>/</italic> (<italic>k</italic><sub>1</sub> <italic>+ k</italic><sub>2</sub>) = 5 min. This yields the following values for rate constants: <italic>k</italic><sub>1</sub> = 0.18 min<sup>−1</sup>, <italic>k</italic><sub>2</sub> = 1.8 · 10<sup>−2</sup> min<sup>−1</sup>, <italic>k</italic><sub>3</sub> = 5.0 · 10<sup>−2</sup> nM<sup>−1</sup> · s<sup>−1</sup></p>
+            </fn>
+          </table-wrap-foot><!-- <table>
+            <thead>
+              <tr>
+                <td>Compound</td>
+                <td>Concentration (nM)</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><italic>W</italic> &equals; 0</td>
+                <td><italic>W</italic> &equals; 1</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dsh<sub>i</sub></td>
+                <td>100</td>
+                <td>9.09</td>
+              </tr>
+              <tr>
+                <td>Dsh<sub>a</sub></td>
+                <td>0</td>
+                <td>90.9</td>
+              </tr>
+              <tr>
+                <td>(APC*/Axin*/GSK3&beta;)</td>
+                <td>9.66&middot;10<sup>&minus;3</sup></td>
+                <td>1.46&middot;10<sup>&minus;3</sup></td>
+              </tr>
+              <tr>
+                <td>(APC/Axin/GSK3&beta;)</td>
+                <td>4.83&middot;10<sup>&minus;3</sup></td>
+                <td>7.29&middot;10<sup>&minus;4</sup></td>
+              </tr>
+              <tr>
+                <td>(APC/Axin)</td>
+                <td>9.66&middot;10<sup>&minus;4</sup></td>
+                <td>9.75&middot;10<sup>&minus;4</sup></td>
+              </tr>
+              <tr>
+                <td>APC</td>
+                <td>98.0</td>
+                <td>88.7</td>
+              </tr>
+              <tr>
+                <td>(&beta;-catenin/APC)</td>
+                <td>2.05</td>
+                <td>11.3</td>
+              </tr>
+              <tr>
+                <td>(&beta;-catenin/APC*/Axin*/GSK3&beta;)</td>
+                <td>2.02&middot;10<sup>&minus;3</sup></td>
+                <td>1.86&middot;10<sup>&minus;3</sup></td>
+              </tr>
+              <tr>
+                <td>(&beta;-catenin*/APC*/Axin*/GSK3&beta;)</td>
+                <td>2.02&middot;10<sup>&minus;3</sup></td>
+                <td>1.86&middot;10<sup>&minus;3</sup></td>
+              </tr>
+              <tr>
+                <td>&beta;-catenin*</td>
+                <td>1.00&num;</td>
+                <td>0.92</td>
+              </tr>
+              <tr>
+                <td>&beta;-catenin</td>
+                <td>25.1</td>
+                <td>153</td>
+              </tr>
+              <tr>
+                <td>Axin</td>
+                <td>4.93&middot;10<sup>&minus;4</sup></td>
+                <td>4.93&middot;10<sup>&minus;4</sup></td>
+              </tr>
+              <tr>
+                <td>TCF</td>
+                <td>8.17</td>
+                <td>2.46</td>
+              </tr>
+              <tr>
+                <td>(&beta;-catenin.TCF)</td>
+                <td>6.83</td>
+                <td>12.5</td>
+              </tr>
+              <tr>
+                <td><italic>&beta;-catenin</italic><sup>0</sup></td>
+                <td>35.0#</td>
+                <td>178</td>
+              </tr>
+              <tr>
+                <td><italic>Axin</italic><sup>0</sup></td>
+                <td>2.00&middot;10<sup>&minus;2</sup>&num;</td>
+                <td>7.28&middot;10<sup>&minus;3</sup></td>
+              </tr>
+            </tbody>
+          </table> --></table-wrap>
+        <p>Using the reference state as a starting point, we consider other stationary states that are attained when the pathway is permanently stimulated. To describe the strength of Wnt stimulation, we introduce a dimensionless quantity <italic>W = Wnt/Wnt</italic><sup>0</sup> that represents the ratio of the Wnt concentration with respect to its concentration <italic>Wnt</italic><sup>0</sup> in a “standard” stimulated (signaling) state. <italic>W =</italic> 0 and <italic>W =</italic> 1 characterize the reference state and a standard stimulated state, respectively, with the hyperstimulated state defined as <italic>W</italic> &gt; 1. In order to calculate concentrations in the standard stimulated state, additional input quantities are required. These include the ratio of the active and inactive forms of Dsh (<italic>Dsh<sub>a</sub>/Dsh<sub>i</sub></italic>), the relation between non-Dsh-mediated and Dsh-mediated release of GSK3β from the destruction complex (the flux ratio <bold>ν</bold><italic><sub>−</sub></italic><sub>6</sub>/<bold>ν</bold><sub>3</sub>), and the characteristic time for the Dsh activation/inactivation cycle (τ<italic><sub>Dsh</sub></italic><bold><sub>.</sub></bold><italic><sub>act</sub></italic>). These values are not at present measurable. The values for these input quantities are listed in the legend of <xref ref-type="table" rid="pbio-0000010-t002">Table 2</xref>. In a later section, we analyze the effects of changes in these additional input quantities.</p>
+        <p>By setting <italic>W</italic> = 1 and fixing all other parameters, we arrive at steady-state solutions of the systems equations (see <xref ref-type="supplementary-material" rid="sd001">Dataset S1</xref>, Equations. [A-1]–[A-15]), which yield the numerical variables for the standard stimulated state (listed in the second column of <xref ref-type="table" rid="pbio-0000010-t002">Table 2</xref>). A comparison of this state with the reference state shows that the concentration of free nonphosphorylated β-catenin increases by a factor of approximately 6, from 25 to 153 nM. Upon Wnt stimulation, the free phosphorylated β-catenin concentration decreases by 8%, from 1 nM to 0.92 nM. The increase in β-catenin levels reflects the decrease in its degradation caused by the reduction in the ability of GSK3β to phosphorylate it. The concentration of the β-catenin/TCF complex increases by a factor of 1.8. The large increase in β-catenin concentration shifts the binding equilibrium between APC and β-catenin and the concentration of free APC falls slightly. Total axin concentration decreased by a factor of 2.7 upon Wnt stimulation since addition of Dsh decreases the concentration of the various axin containing complexes. Remarkably, the steady-state concentration of free axin is constant during the transition from <italic>W</italic> = 0 to <italic>W</italic> = 1. This is due to the fact that under steady-state conditions, the rate of axin synthesis equals its degradation; the rate of synthesis (<bold>ν</bold><sub>14</sub>) is a fixed value and the rate of degradation depends solely on the concentration of free axin (and independent of other parameters such as binding constants and strength of the Wnt signal).</p>
+        <p>As expected, simulations of increasing Wnt activation (0 ≤ <italic>W</italic> ≤ 1.4) on the steady-state concentrations of β-catenin and axin reveal a nearly hyperbolic saturation of increasing concentrations of nonphosphorylated and total β-catenin with increasing strength of Wnt stimulation. Furthermore, Wnt stimulation affects the steady-state concentrations of axin and β-catenin in an opposite direction (see <xref ref-type="supplementary-material" rid="sg001">Figure S1</xref>).</p>
+      </sec>
+      <sec id="s2d">
+        <title>β-Catenin Degradation: Comparison of Theory and Experiment</title>
+        <p>To test whether the mathematical model represented the Wnt pathway under a variety of conditions, we ran through a series of simulations, all of which used the same set of parameters. From these we calculated simulated timecourses for β-catenin degradation under a range of different conditions (increased axin concentration, increased Dsh<sup>a</sup> concentration, inhibition of GSK3β, increased TCF concentration) (<xref ref-type="fig" rid="pbio-0000010-g002">Figure 2</xref>A). We then tested the results using the previously described biochemical system (<xref ref-type="bibr" rid="pbio-0000010-Salic1">Salic et al. 2000</xref>; <xref ref-type="bibr" rid="pbio-0000010-Lee1">Lee et al. 2001</xref>), adding purified proteins or compounds at <italic>t =</italic> 0 (<xref ref-type="fig" rid="pbio-0000010-g002">Figure 2</xref>B). Simulations and experimental results are each shown as plots of total β-catenin concentration versus time. The agreement between theory and experiment is excellent.</p>
+        <fig id="pbio-0000010-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0000010.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Kinetics of β-Catenin Degradation: Simulation and Experimental Results</title>
+            <p>(A) Simulated timecourses of β-catenin degradation. The straight line for <italic>t &lt;</italic> 0 corresponds to the reference state of β-catenin using the parameters given in the legends of <xref ref-type="table" rid="pbio-0000010-t001">Table 1</xref> and 2. In vitro conditions are simulated by switching off synthesis of β-catenin and axin (<bold>ν</bold><sub>12</sub> = 0, <bold>ν</bold><sub>14</sub> = 0 for <italic>t</italic> ≥ 0). Curve a: reference case (no addition of further compounds); curve b: addition of 0.2 nM axin; curve c: addition of 1 μM activated Dsh (deactivation of Dsh was neglected, <italic>k</italic><sub>2</sub> = 0); curve d: inhibition of GSK3β (simulated by setting <italic>k</italic><sub>4</sub> = 0, <italic>k</italic><sub>9</sub> = 0); curve e: addition of 1μM TCF. Addition of compounds (axin, Dsh, TCF) and inhibition of GSK3β was performed at <italic>t</italic> = 0.</p>
+            <p>(B) Experimental timecourse of β-catenin degradation in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> egg extracts in the presence of buffer (curve a′), axin (curve b′: 10 nM), Dsh (curve c′: 1 μM), Li<sup>+</sup> (curve d′: 25 mM), or Tcf3 (curve e′: 1 μM).</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.g002" xlink:type="simple"/>
+        </fig>
+        <p>The straight line for <italic>t &lt;</italic> 0 represents the reference state. The simulated reference state curve (<xref ref-type="fig" rid="pbio-0000010-g002">Figure 2</xref>A, curve a) for β-catenin degradation is calculated for <italic>t &gt;</italic> 0, at which there is an absence of protein synthesis for axin (<bold>ν</bold><sub>14</sub> = 0) and β-catenin (<bold>ν</bold><sub>12</sub> = 0). This reference curve is in close agreement with our experimental data (<xref ref-type="fig" rid="pbio-0000010-g002">Figure 2</xref>B, curve a′) with identical half-lives for β-catenin degradation (theoretical value of <italic>t</italic><sub>½</sub> = 60.2 min versus experimental value of <italic>t</italic><sub>½</sub> = 60 min). We examined a new state, where we have increased the amount of endogenous axin (0.02 nM) by 0.2 nM. As shown in <xref ref-type="fig" rid="pbio-0000010-g002">Figure 2</xref>A, curve b, the additional axin markedly accelerated β-catenin degradation (<italic>t</italic><sub>½</sub> = 11.8 min) in agreement with the experimentally obtained values (<xref ref-type="fig" rid="pbio-0000010-g002">Figure 2</xref>B, curve b′; <italic>t</italic><sub>½</sub> = 12 min). Theoretically, the effect of axin on β-catenin degradation is primarily due to the large concentration difference between the two scaffold proteins, APC and axin. Owing to the high concentration of APC, an increase in axin concentration results in a sharp increase in the concentration of the APC/axin complex, thereby accelerating β-catenin binding to the destruction complex.</p>
+        <p>Curve d in <xref ref-type="fig" rid="pbio-0000010-g002">Figure 2</xref> shows the effect of inhibiting GSK3β on β-catenin degradation. This effect is produced in the simulation by inhibiting GSK3β activity (steps 4 and 9). Only a small fraction of β-catenin (phosphorylated β-catenin) is available for degradation after complete inhibition of β-catenin phosphorylation (step 9), so inhibition is rapid. This is in complete agreement with our experimental data in which degradation is essentially blocked after inhibiting GSK3β activity by lithium (<xref ref-type="fig" rid="pbio-0000010-g002">Figure 2</xref>B, curve d′). Curve e in <xref ref-type="fig" rid="pbio-0000010-g002">Figure 2</xref>A predicts that β-catenin degradation is strongly inhibited after the addition of 1 μM TCF. Previously we have shown that β-catenin is sequestered by TCF, thereby resulting in a significant decrease in free β-catenin (<xref ref-type="bibr" rid="pbio-0000010-Lee1">Lee et al. 2001</xref>). The addition of TCF would be expected to decrease the rate of β-catenin phosphorylation (step 9) and subsequently β-catenin degradation. This is also seen experimentally (<xref ref-type="fig" rid="pbio-0000010-g002">Figure 2</xref>B, curve e′).</p>
+        <p>The immediate inhibition by LiCl is in contrast with the action of Dsh that inhibits only after a significant delay. We were intrigued by the theoretical biphasic degradation curves of β-catenin in the presence of Dsh<sub>a</sub>, as well as the experimental support for it (<xref ref-type="fig" rid="pbio-0000010-g002">Figure 2</xref>A and 2B, curves c and c′). In both cases, there is an initial rapid decrease in β-catenin in the first 30 min to 1 h, followed by a much slower decrease. Such a feature should allow us to distinguish mechanistic details of complex formation. Experimentally, the biphasic nature of Dsh activity is not due to a delay in Dsh activation upon its addition to the <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> extracts since we see the same effect with Dsh protein that has been “activated” with extracts prior to its use in our degradation assay. As shown in <xref ref-type="table" rid="pbio-0000010-t001">Table 1</xref>, the characteristic time τ<italic><sub>K</sub></italic><bold><sub>.</sub></bold><italic><sub>P</sub></italic> of phosphorylation and dephosphorylation of APC and axin in the destruction complex is relatively slow (2.5 min), and it therefore takes 5 min for 75% of the complex to be dephosphorylated. If Dsh<sub>a</sub> acted only on the dephosphorylated complex (through step 3) to remove GSK3β and thus block phosphorylation of the complex, then we would predict the biphasic kinetics shown in <xref ref-type="fig" rid="pbio-0000010-g002">Figure 2</xref>A, curve c. These data suggest that Dsh inhibits the phosphorylation of the scaffold complex by GSK3β, but does not inhibit the phosphorylation of β-catenin. When Dsh binds, the complex can go around many times binding and phosphorylating β-catenin before it dissociates and is inhibited by Dsh. One hour after the addition of Dsh, β-catenin degradation is significantly inhibited due to the removal of a significant pool of GSK3β from the degradation complex over time (through the action of Dsh). As a result, the scaffold protein axin is dephosphorylated by the phosphatase (step 5) that remains bound to the degradation complex. Dephosphorylated axin is rapidly ubiquitinated and degraded when the β-catenin degradation normally stops. The small decrease in β-catenin levels in <xref ref-type="fig" rid="pbio-0000010-g002">Figure 2</xref>, curve c, after a 1 h incubation with Dsh, is due to degradation of β-catenin via nonWnt pathway mechanisms (see <xref ref-type="table" rid="pbio-0000010-t001">Table 1</xref>) that we have incorporated into our model.</p>
+        <p>To test this prediction beyond consistency with experimental data, we performed an experiment in which Dsh was either preincubated with extract before or added at the same time as radiolabeled β-catenin (<xref ref-type="fig" rid="pbio-0000010-g003">Figure 3</xref>). If β-catenin and Dsh are added at the same time, there is an initial rapid loss of β-catenin (<xref ref-type="fig" rid="pbio-0000010-g003">Figure 3</xref>, curve b) followed by pronounced inhibition of degradation after 1 h. This initial rapid loss is consistent with Dsh acting on a subpopulation of degradation complexes (presumably the unphosphorylated forms). Strikingly, preincubation with Dsh prior to the addition of radiolabeled β-catenin (<xref ref-type="fig" rid="pbio-0000010-g003">Figure 3</xref>, curve a) results in immediate action of Dsh. We interpret this result to simply reflect the fact that over time in the preincubated extract Dsh can remove GSK3β from the degradation complexes, thereby enhancing the activity of the phosphatase and, as a result, promoting the degradation of axin and inhibition of β-catenin degradation. The small decrease in β-catenin levels at <italic>t</italic> &gt; 2 h in both curves a and b again suggests the existence of a slow degradation process mediated by non-Wnt pathway mechanisms.</p>
+        <fig id="pbio-0000010-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0000010.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Preincubation of Dsh in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> Egg Extracts Abolishes the Lag in Dsh Activity</title>
+            <p>Labeled β-catenin was incubated in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> extracts on ice 30 min prior to (B) or 30 min after (A) the extract had been preincubated with 1 μM Dsh. No degradation of the labeled β-catenin was detected while the reactions were on ice. The reactions were started by shifting to 20°C.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.g003" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2e">
+        <title>Clues to Axin Activity from Its Very Low Cellular Concentration</title>
+        <p>In establishing quantities for our model in <xref ref-type="table" rid="pbio-0000010-t001">Table 1</xref>, we found that the axin concentration (20 pM) is much lower than the concentration of the other major components (β-catenin, 35 nM; APC, 100 nM; Dsh, 100 nM; and GSK3β, 50 nM). This unusual finding suggests that the function of the Wnt signaling system may actually depend on a low axin concentration. Our theoretical predictions for the effects of axin, GSK3β, and Dsh on the half-lives of β-catenin are shown in <xref ref-type="fig" rid="pbio-0000010-g004">Figure 4</xref>A and 4B, respectively. At zero concentration of Dsh, doubling the concentration of axin (from the reference state, indicated as 0, to a state where the concentration has been increased by 0.02 nM) causes a 50% drop in the half-life of β-catenin. By contrast, a doubling of the GSK3β concentration only decreases the half-life of β-catenin by 10%. The small effect of GSK3β is predicted to be due to the fact that only a limited amount of axin can be recruited to the degradation complex through binding to additional GSK3β. On the other hand, increased axin concentrations are immediately translated into an increased concentration of the destruction complex, because the concentrations of APC and GSK3β are high. Changing the concentration of either GSK3β or of axin should also change the amount of Dsh<sub>a</sub> required to inhibit β-catenin degradation, but the pathway is much more sensitive to axin concentration than it is to GSK3β concentration. In the presence of high concentrations of axin, the effect of Dsh<sub>a</sub> should be blocked; high concentrations of axin will lead to high concentrations of the phosphorylated destruction complex no matter what level of Dsh<sub>a</sub> activity is present. High levels of the destruction complex will require even higher levels of Dsh to overcome the inhibition. The interaction between Dsh<sub>a</sub> and GSK3β is similar in principle: Dsh-mediated release of GSK3β (step 3) from the degradation complex can simply be reversed by sufficiently high concentrations of GSK3β (step 6). In this case, however, the effect is small. Thus, axin blocks the action of Dsh so effectively that it renders the Dsh pathway inoperable.</p>
+        <fig id="pbio-0000010-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0000010.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>The Effect of Dsh versus Axin or GSK3β on the Half-Life of β-Catenin in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> Extracts</title>
+            <p>(A and B) Predicted effects of Dsh, axin, and GSK3β on the half-life of β-catenin degradation. The half-lives are calculated from simulated degradation curves. Data are plotted as function of added Dsh (logarithmic scale) for various concentrations of axin (A) and GSK3β (B).</p>
+            <p>(C and D) Measured effects of Dsh, axin, and GSK3β on the half-life of β-catenin degradation. Stimulation of β-catenin degradation by axin occurs throughout the range of Dsh concentrations tested. (C) Axin increases the rate of β-catenin degradation even in the absence of added Dsh. (D) Stimulation of β-catenin degradation by GSK3β is detected only at high concentrations of Dsh. No effects of GSK3β on β-catenin degradation can be detected at less than 30 nM added Dsh. There is a disparity between the concentrations of axin in the experimental and theoretical curves. We assume that this is most likely due to the specific activity of the expressed axin protein.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.g004" xlink:type="simple"/>
+        </fig>
+        <p>In <xref ref-type="fig" rid="pbio-0000010-g004">Figure 4</xref>C and 4D, we studied experimentally the dose-dependent effects of Dsh, GSK3β, and axin on β-catenin degradation. These curves represent β-catenin half-lives for various concentrations of axin (<xref ref-type="fig" rid="pbio-0000010-g004">Figure 4</xref>C) and GSK3β (<xref ref-type="fig" rid="pbio-0000010-g004">Figure 4</xref>D) with varying concentrations of Dsh. The results are qualitatively similar to those predicted by the model. As expected, β-catenin degradation is inhibited by increasing Dsh concentration and stimulated by increasing the concentration of either axin or GSK3β. There are, however, two pronounced differences in the effects of axin and GSK3β on Dsh inhibition. Whereas axin activates β-catenin degradation over a wide range of Dsh concentrations (<xref ref-type="fig" rid="pbio-0000010-g004">Figure 4</xref>C), the effect of GSK3β becomes significant only at high concentrations of Dsh (<xref ref-type="fig" rid="pbio-0000010-g004">Figure 4</xref>D). Furthermore, the inhibitory effect of Dsh can be almost completely blocked by high concentrations of axin (10 nM). In contrast, GSK3β (1 μM) can only partially inhibit the strong inhibitory effect of Dsh on β-catenin degradation.</p>
+        <p>Our experimental results, however, show a smaller effect on the half-life of β-catenin degradation at high concentrations of Dsh as GSK3β levels are increased. Also, the concentrations of added axin in the theoretical curve and the experimental curves are very different. The quantitative difference between the model and experimental may simply reflect the fact that the specific activity of our GSK3β and axin preparations (purified from <italic>Sf9</italic> cells and bacteria, respectively) may be low and that a significant fraction of the recombinant proteins may not be active. Alternatively, the low activity of GSK3β may point to an unidentified inhibitory activity present in our <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> egg extracts.</p>
+      </sec>
+      <sec id="s2f">
+        <title>Effects of Dynamic Changes in Protein Concentrations</title>
+        <p>The dependence of flux on the concentration of a pathway component is a measure of how much the flux is sensitively controlled by that component. In metabolic control theory, the normalized concentration-dependent parameters of the total flux known as control coefficients have been very useful in defining the characteristics of pathways (<xref ref-type="bibr" rid="pbio-0000010-Heinrich1">Heinrich and Rapoport 1974</xref>; <xref ref-type="bibr" rid="pbio-0000010-Fell1">Fell 1997</xref>). Similarly, in the analysis of bacterial chemotaxis, the response of a behavioral parameter as a function of changes in specific kinetic rates has been termed robustness (<xref ref-type="bibr" rid="pbio-0000010-Alon1">Alon et al. 1999</xref>). Such terms are rarely measured in signal transduction.</p>
+        <p>To determine the effects of changes in the levels of Wnt pathway components, we analyzed how the flux (β-catenin degradation) changes with changes in the concentrations of <italic>APC</italic><sup>0</sup>, <italic>GSK3β</italic><sup>0</sup>, <italic>Dsh</italic><sup>0</sup>, and <italic>TCF</italic><sup>0</sup> (see <xref ref-type="supplementary-material" rid="sg002">Figure S2</xref>).</p>
+        <p>We chose to focus on the effects of changes in the concentrations of pathway components in the reference state, because similar effects were also seen for the stimulated state. Recently, we investigated a new and important property of the Wnt pathway, namely that the degradation of axin (reaction 15) is dependent on APC (unpublished data). The degradation rate of axin is mathematically expressed in the following manner:
+          <disp-formula id="pbio-0000010-e005"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.e005" xlink:type="simple"/><!-- <math display="block">
+              <mrow>
+                <msub>
+                  <mrow>
+                    <mi>&nu;</mi>
+                  </mrow>
+                  <mrow>
+                    <mn>15</mn>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <mfrac>
+                  <mrow>
+                    <msubsup>
+                      <mrow>
+                        <mrow>
+                          <mi>k</mi>
+                        </mrow>
+                      </mrow>
+                      <mrow>
+                        <mn>15</mn>
+                      </mrow>
+                      <mrow>
+                        <mo>'</mo>
+                      </mrow>
+                    </msubsup>
+                    <mi>A</mi>
+                    <mi>P</mi>
+                    <mi>C</mi>
+                    <mo>&sdot;</mo>
+                    <mi>a</mi>
+                    <mi>x</mi>
+                    <mi>i</mi>
+                    <mi>n</mi>
+                  </mrow>
+                  <mrow>
+                    <msub>
+                      <mrow>
+                        <mi>K</mi>
+                      </mrow>
+                      <mrow>
+                        <mi>M</mi>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mi>A</mi>
+                    <mi>P</mi>
+                    <mi>C</mi>
+                  </mrow>
+                </mfrac>
+              </mrow>
+            </math> --></disp-formula>where <italic>K<sub>M</sub></italic> represents a half-saturation constant for the activating effect of APC.
+        </p>
+        <p>The theoretical effect of APC on the concentrations of both β-catenin and axin is shown in <xref ref-type="fig" rid="pbio-0000010-g005">Figure 5</xref>, where we considered independently the effect of APC-mediated degradation of axin (“with regulatory loop” where Equation [5] is applied) or the absence of such an effect (where the linear rate equation <bold>ν</bold><sub>15 </sub><italic>= k</italic><sub>15</sub> <italic>axin</italic> is applied). With APC-mediated axin degradation, β-catenin degradation is affected very little by changes in the concentration of APC (25% decrease with a 2-fold increase in APC concentration). This resistance to changes of β-catenin levels upon changes in APC concentration is due to the APC-dependence of axin degradation (see <xref ref-type="fig" rid="pbio-0000010-g001">Figure 1</xref> and Equation [5]). Decreasing the concentration of APC inhibits the degradation of axin, thereby promoting the formation of the degradation complex. As shown in <xref ref-type="fig" rid="pbio-0000010-g005">Figure 5</xref>, in the absence of the regulatory loop, axin degradation is APC independent, homeostasis is lost, and β-catenin levels are greatly upregulated with decreasing APC concentrations. A comparison of the curves that represent the dependence and independence of axin degradation on APC (dashed lines in <xref ref-type="fig" rid="pbio-0000010-g005">Figure 5</xref>) indicates that the regulatory loop acts in such a way that the normally inhibitory effect on β-catenin degradation as a result of lowering the concentration of APC is counteracted by an increase in axin levels.</p>
+        <fig id="pbio-0000010-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0000010.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Effect of the Regulatory Loop for Axin Degradation</title>
+            <p>The case “with regulatory loop” takes into account that axin degradation is APC-dependent (black curves). Alternatively, the case without this regulatory loop is considered (red curves). For the regulatory loop, the rate law (5) is used assuming that in the reference state the APC activation is half of its maximum (<italic>K<sub>M</sub></italic> = 98.0 nM). The value of <italic>k</italic>′<sub>15</sub> was chosen such that in the reference state both cases, with and without regulatory loop, yield the same degradation rate of axin (<italic>k</italic>′<sub>15</sub> = 0.33 min<sup>−1</sup>).</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.g005" xlink:type="simple"/>
+        </fig>
+        <p>We have also simulated the effects of changes in the rate of β-catenin (<bold>ν</bold><sub>12</sub>) and axin (<bold>ν</bold><sub>14</sub>) synthesis on both β-catenin and axin levels (see <xref ref-type="supplementary-material" rid="sg003">Figure S3</xref>). Interestingly, changing the level of axin or β-catenin affects the concentration of the other component in different ways. An increase in the synthesis of axin results in a decrease in β-catenin, whereas increasing β-catenin synthesis leads to an increase in axin levels. This latter effect contrasts with effects observed upon changes of other parameters (see <xref ref-type="supplementary-material" rid="sg002">Figure S2</xref>) that affect the concentrations of axin and β-catenin in opposite directions.</p>
+      </sec>
+      <sec id="s2g">
+        <title>Transient Stimulation of the Pathway</title>
+        <p>Wnt stimulation in vivo is transient, likely due to receptor inactivation/internalization and/or other downregulatory processes.</p>
+        <p>We model transient Wnt stimulation by an exponential decay:</p>
+        <disp-formula id="pbio-0000010-e006"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.e006" xlink:type="simple"/><!-- <math display="block">
+            <mrow>
+              <mi>W</mi>
+              <mo>=</mo>
+              <mo mathsize='22pt'>&lcub;</mo>
+              <mtable>
+                <mtr>
+                  <mtd>
+                    <mn>0</mn>
+                    <mo>,</mo>
+                    <mi>for</mi>
+                    <mo></mo>
+                    <mi>t</mi>
+                    <mo>&lt;</mo>
+                    <msub>
+                      <mrow>
+                        <mi>t</mi>
+                      </mrow>
+                      <mrow>
+                        <mn>0</mn>
+                      </mrow>
+                    </msub>
+                  </mtd>
+                </mtr>
+                <mtr>
+                  <mtd>
+                    <msup>
+                      <mrow>
+                        <mi>e</mi>
+                      </mrow>
+                      <mrow>
+                        <mo>-</mo>
+                        <mi>&lambda;</mi>
+                        <mo>(</mo>
+                        <mi>t</mi>
+                        <mo>-</mo>
+                        <msub>
+                          <mrow>
+                            <mi>t</mi>
+                          </mrow>
+                          <mrow>
+                            <mn>0</mn>
+                          </mrow>
+                        </msub>
+                        <mo>)</mo>
+                      </mrow>
+                    </msup>
+                    <mo>,</mo>
+                    <mtext>for</mtext>
+                    <mi>t</mi>
+                    <mo>&ge;</mo>
+                    <msub>
+                      <mrow>
+                        <mi>t</mi>
+                      </mrow>
+                      <mrow>
+                        <mn>0</mn>
+                      </mrow>
+                    </msub>
+                  </mtd>
+                </mtr>
+              </mtable>
+            </mrow>
+          </math> --></disp-formula>
+        <p>where the reciprocal of <italic>λ</italic> represents the characteristic lifetime τ<italic><sub>W</sub></italic> of receptor stimulation and <italic>t</italic><sub>0</sub> denotes the onset of signaling. The concentration changes of all other pathway compounds resulting from Wnt stimulation can be calculated by numerical solution of the system equations (see <xref ref-type="supplementary-material" rid="sd001">Dataset S1</xref>), with initial values of the variables corresponding to the reference state.</p>
+        <p>Regulating axin turnover is important for Wnt signaling. Wnt-stimulated axin turnover has been reported in cultured mammalian cells (<xref ref-type="bibr" rid="pbio-0000010-Yamamoto1">Yamamoto et al. 1999</xref>) and in <italic>Drosophila</italic> (<xref ref-type="bibr" rid="pbio-0000010-Tolwinski1">Tolwinski et al. 2003</xref>). In a future paper we will show that axin turnover is affected inversely to β-catenin turnover by phosphorylation by GSK3β. Here we show theoretically that this regulated axin turnover sharply affects the dynamics of the response. <xref ref-type="fig" rid="pbio-0000010-g006">Figure 6</xref> shows the time-dependent behavior of the total concentration of β-catenin and the total concentration of axin upon transient Wnt stimulation. The concentration of β-catenin increases transiently and then returns to its initial value. In contrast, the concentration of axin is temporarily downregulated. Further analysis of <xref ref-type="fig" rid="pbio-0000010-g006">Figure 6</xref> reveals that the amplitude of the β-catenin signal upon transient stimulation is significantly lower than the steady-state concentration upon permanent stimulation (<italic>W =</italic> 1; see <xref ref-type="supplementary-material" rid="sg001">Figure S1</xref>). The curves a and a′ in <xref ref-type="fig" rid="pbio-0000010-g006">Figure 6</xref> are calculated for the reference values of the rate of axin synthesis and of the rate constant of axin degradation, whereas the curves b and b′ and the curves c and c′ are obtained for the case where both parameters are increased by a factor of 5 and decreased by a factor of 5, respectively. Under these conditions, both the degradation rate and the synthesis rate are altered by the same factor, thus maintaining essentially identical steady-state concentrations of axin. As a result, the steady-state concentrations of axin are the same in the unstimulated condition (<italic>W =</italic> 0) and after diminution of the Wnt signal; however, during active signaling, the differences in the dynamic nature of signal output at differing rates of axin turnover are dramatically revealed.</p>
+        <fig id="pbio-0000010-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0000010.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Timecourse of β-Catenin and Axin Concentrations Following a Transient Wnt Stimulation</title>
+            <p>Transient activation of the pathway is modeled assuming a Wnt stimulus that decays exponentially (Equation [6] with τ<italic><sub>W</sub></italic> = 1/<italic>λ</italic> = 20 min) starting at <italic>t</italic><sub>0</sub> = 0. The straight line for <italic>t</italic> &lt; 0 corresponds to the steady state before pathway stimulation. The curves are obtained by numerical integration of the differential equation system (see Dataset S1). The various curves for β-catenin and for axin differ in the turnover rate of axin determined by the parameters <bold>ν</bold><sub>14 </sub>and <italic>k</italic><sub>15</sub> (curves a: reference values of these parameters; curves b: increase by a factor of 5; curves c: reduction by a factor of 5). All other parameters are given in the legend of <xref ref-type="table" rid="pbio-0000010-t002">Table 2</xref>.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.g006" xlink:type="simple"/>
+        </fig>
+        <p>Interestingly, an increase in the turnover rate of axin leads to higher amplitudes and shorter durations of the β-catenin signal. This can be explained by the faster degradation of axin after its Dsh-mediated release from the destruction complex.<bold> </bold>Thus, β-catenin degradation is effectively inhibited for a certain time period due to a reduced availability of the scaffold axin.</p>
+        <p>Since the steady-state concentration of free axin remains unchanged (rate of axin synthesis equals the rate of its degradation) during the transition from <italic>W =</italic> 0 to <italic>W =</italic> 1, a fast axin turnover favors rapid replenishment of the axin pool after the decline of the Wnt stimulus and, in this way, fast recovery of the destruction complex. This explains why the β-catenin signal is not only amplified, but becomes more spike-like. Increasing the turnover rate of axin affects the response of axin to temporary Wnt stimulation in a similar way as the response of β-catenin; i.e., the signal is amplified and sharpened (<xref ref-type="fig" rid="pbio-0000010-g006">Figure 6</xref>). Closer inspection of <xref ref-type="fig" rid="pbio-0000010-g006">Figure 6</xref> reveals that the axin response precedes the β-catenin response. For example, in the reference case, the β-catenin concentration reaches its maximum at about 260 min (curve a), whereas the minimum of the axin concentration is reached at 130 min (curve a′). This effect can be understood by observing that it is the lowering of the axin concentration that decreases the concentration of the destruction core complexes; in turn, this stabilizes β-catenin.</p>
+      </sec>
+      <sec id="s2h">
+        <title>Mechanistic Differences between APC and Axin as Scaffolds</title>
+        <p>As the axin concentration is several orders of magnitude lower than that of the other components in the degradation pathway (see <xref ref-type="table" rid="pbio-0000010-t001">Table 1</xref>), we decided to test the effect of increasing axin levels (up to, equal to, and greater than the concentrations of other components in the pathway). To do this, we had to extend the model to include additional reactions, marked in blue in <xref ref-type="fig" rid="pbio-0000010-g001">Figure 1</xref>; these had previously been neglected due to the very low axin concentrations. High axin concentrations affect most prominently the formation of the β-catenin/axin complex. Assuming a realistic value for the β-catenin–axin dissociation constant (<italic>K</italic><sub>18</sub><italic> =</italic> 1 nM), a moderate increase in axin concentration should theoretically accelerate β-catenin degradation, whereas a much higher concentration should result in inhibition of β-catenin degradation, due to the formation of partial complexes on axin. A more extensive analysis of β-catenin half-lives over a range of axin concentrations shows such a biphasic curve (<xref ref-type="fig" rid="pbio-0000010-g007">Figure 7</xref>A, curve b). These effects can also be seen experimentally in extracts (<xref ref-type="fig" rid="pbio-0000010-g007">Figure 7</xref>B), where 10 nM axin accelerates and 300 nM axin inhibits β-catenin degradation. The <italic>t</italic><sub>½ </sub>decrease for low amounts of added axin can be easily explained by the fact that greater amounts of APC and GSK3β can be recruited to form the destruction complex. As a result, the <italic>t</italic><sub>½</sub> decreases from 60 min to <italic>t</italic><sub>½</sub> = 3 − 4 min. The inhibitory effect of axin becomes apparent only for axin concentrations approaching that of the other components. As shown in <xref ref-type="fig" rid="pbio-0000010-g007">Figure 7</xref>A, the effect of axin binding only to GSK3β (<italic>K</italic><sub>19</sub> = 1 nM, <italic>K</italic><sub>18</sub> → ∞) only becomes inhibitory at higher than micromolar concentration (curve c), whereas the combined effect of binding to both β-catenin and GSK3β (<italic>K</italic><sub>18</sub> = 1 nM, <italic>K</italic><sub>19</sub> = 1 nM) shows inhibition at less than 500 nM (curve d). If, however, we model an ordered process of binding to axin, then abortive inhibitory complexes cannot form. We show this in <xref ref-type="fig" rid="pbio-0000010-g007">Figure 7</xref>A. Here there is no separate binding of axin to β-catenin or GSK3β. In this case, there is no increase in the t<sub>½</sub> at high axin concentrations (<xref ref-type="fig" rid="pbio-0000010-g007">Figure 7</xref>A, curve a).</p>
+        <fig id="pbio-0000010-g007" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0000010.g007</object-id>
+          <label>Figure 7</label>
+          <caption>
+            <title>Effects of Increasing Axin Concentration on β-Catenin Degradation</title>
+            <p>(A) Effect of axin concentration on β-catenin half-life. Curve a: reference case (<italic>K</italic><sub>18</sub>, <italic>K</italic><sub>19</sub> &gt; 1 nM, ordered mechanism); curve b: <italic>K</italic><sub>18</sub> = 1 nM, <italic>K</italic><sub>19</sub> &gt; 1 nM; curve c: <italic>K</italic><sub>18</sub> &gt; 1 nM, <italic>K</italic><sub>19</sub> = 1 nM; curve d: <italic>K</italic><sub>18</sub> = 1 nM.</p>
+            <p>(B) High concentration of axin inhibits β-catenin degradation in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> egg extracts. Labeled β-catenin was incubated in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> extracts in the absence (0 nM) or presence of moderate (10 nM) and high (300 nM) concentrations of axin. Moderate concentrations of axin greatly accelerate, whereas high concentrations inhibit β-catenin degradation.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.g007" xlink:type="simple"/>
+        </fig>
+        <p>We also examined theoretically the effects of increasing APC concentration on the half-life of β-catenin, as shown in <xref ref-type="fig" rid="pbio-0000010-g008">Figure 8</xref>. The black curve corresponds to a nonordered mechanism, such as that found in axin, in which the β-catenin–APC dissociation constant (reaction 17) is low. The inhibitory effect of APC at high concentrations is due to its β-catenin buffering activity. The green curve corresponds to an ordered mechanism and reflects a high β-catenin–APC dissociation constant (high <italic>K</italic><sub>17</sub>). In this case, increasing concentrations of APC greater than the reference concentrations does not lead to inhibition of β-catenin degradation even at very high concentrations of APC. In cultured cells, overexpression of APC stimulates β-catenin degradation (<xref ref-type="bibr" rid="pbio-0000010-Munemitsu1">Munemitsu et al. 1995</xref>; <xref ref-type="bibr" rid="pbio-0000010-Papkoff1">Papkoff et al. 1996</xref>). Unfortunately, we are presently unable to express full-length APC in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> egg extracts to measure the effects of high levels in the extract system.</p>
+        <fig id="pbio-0000010-g008" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0000010.g008</object-id>
+          <label>Figure 8</label>
+          <caption>
+            <title>Effects of APC Concentrations on β-Catenin Degradation</title>
+            <p>Effect of APC concentration on β-catenin half-life assuming an ordered (curve a) or nonordered mechanism (curve b: <italic>K</italic><sub>17</sub> = 1,200 nM), respectively.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.g008" xlink:type="simple"/>
+        </fig>
+        <p>β-Catenin can also be degraded by nonaxin-dependent mechanisms, which include Siah-1 and presenilin-mediated degradation. Though they are expected to contribute very little to the total flux through the pathway, the nonaxin-dependent processes may have very important influences under certain conditions. In our <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> system, these alternative pathways do not contribute greatly to the half-life of β-catenin. Experimentally, we have measured only a 1.5% contribution to total β-catenin degradation such that the half-life of β-catenin is 45 h when the axin-dependent processes are inhibited. If in some situations the nonaxin-dependent degradation contributed 10% to the flux, the half-life would be 6.3 h (<italic>k</italic><sub>13</sub> = 1.83 · 10<sup>−3</sup> min<sup>−1</sup>). The alternative pathways have very little effect on the half-life of β-catenin at normal and supranormal concentrations of APC. However, the effect of these alternative pathways becomes much more prominent when the APC concentration is lowered, a situation that may be significant under pathological conditions. As seen in <xref ref-type="fig" rid="pbio-0000010-g009">Figure 9</xref>A, when APC levels are at 50% of their normal concentration, there are dramatic differences in β-catenin concentration, depending on whether the alternative degradation pathway contributes to 1.5% or 10% of the total β-catenin degradation activity. The importance of the regulatory loop involving APC-mediated axin degradation is shown in <xref ref-type="fig" rid="pbio-0000010-g009">Figure 9</xref>B. In the absence of the regulatory loop, a significant inhibition of APC levels would strongly inhibit axin degradation, leading to a large increase in β-catenin levels. The control of β-catenin would be very brittle in this circumstance. However, by making axin degradation dependent on APC, a loss of APC would not stabilize axin levels, and the high axin levels would support continued degradation of β-catenin. This is the situation labeled “with regulatory loop” shown in <xref ref-type="fig" rid="pbio-0000010-g009">Figure 9</xref>B. The control of axin degradation could be a decisive factor in the response of the system to genetic or environmental effects on APC.</p>
+        <fig id="pbio-0000010-g009" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0000010.g009</object-id>
+          <label>Figure 9</label>
+          <caption>
+            <title>Effects of the Alternative β-Catenin Degradation Pathway and of Axin Degradation at Low Concentrations of APC</title>
+            <p>(A) The alternative β-catenin degradation pathway (axin independent) can have profound effects on β-catenin levels at low APC concentrations. Variations of β-catenin and axin resulting from changes in APC concentration were calculated from the standard stimulated state. Relative variations were plotted since variation in the share of alternative degradation (1%, 5%, and 10%) results in changes of the standard stimulated state (all parameters are constant). β-Catenin and axin levels for varying contributions of the alternative degradation pathway are as follows: 1.5%, β-catenin 178 nM, axin 0.00728 nM; 5%, β-catenin 151 nM, axin 0.00679 nM; 10%, β-catenin 125 nM, axin 0.00629 nM.</p>
+            <p>(B)<bold/> Inhibition of axin degradation reduces β-catenin concentration after loss of APC. Plotted is the concentration of a potential proteasome inhibitor I (scaled to its inhibition constant, <italic>K</italic><sub>I</sub>) necessary to reduce β-catenin concentration to its original level, depending on the concentration of APC.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.g009" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2i">
+        <title>Control, Modular Composition, and Robustness of the Wnt Pathway</title>
+        <p>The model contains many parameters that affect the system behavior in different ways and to various extents. We can systematically investigate these parameters and look for those whose perturbation the system is most sensitive or most robust against. We focus on the concentrations of β-catenin and axin and calculate the responses in the total concentrations of these two compounds upon changes in the rates of the individual processes. For quantifying the effects of the rate constants <italic>k<sub>+i</sub></italic> and <italic>k<sub>−i</sub></italic>, we use control coefficients for the total concentration of β-catenin</p>
+        <disp-formula id="pbio-0000010-e007"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.e007" xlink:type="simple"/><!-- <math display='block'>
+            <mrow>
+              <msubsup>
+                <mrow>
+                  <mi>C</mi>
+                </mrow>
+                <mrow>
+                  <mo>&plusmn;</mo>
+                  <mi>i</mi>
+                </mrow>
+                <mrow>
+                  <mi>&beta;</mi>
+                  <mi>c</mi>
+                  <mi>a</mi>
+                  <mi>t</mi>
+                </mrow>
+              </msubsup>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <msub>
+                    <mrow>
+                      <mi>k</mi>
+                    </mrow>
+                    <mrow>
+                      <mo>&plusmn;</mo>
+                      <mi>i</mi>
+                    </mrow>
+                  </msub>
+                </mrow>
+                <mrow>
+                  <mi>&beta;</mi>
+                  <mo>-</mo>
+                  <mi>c</mi>
+                  <mi>a</mi>
+                  <mi>t</mi>
+                  <mi>e</mi>
+                  <mi>n</mi>
+                  <mi>i</mi>
+                  <mi>n</mi>
+                </mrow>
+              </mfrac>
+              <mfrac>
+                <mrow>
+                  <mo>&part;</mo>
+                  <mo>(</mo>
+                  <mi>&beta;</mi>
+                  <mo>-</mo>
+                  <mi>c</mi>
+                  <mi>a</mi>
+                  <mi>t</mi>
+                  <mi>e</mi>
+                  <mi>n</mi>
+                  <mi>i</mi>
+                  <mi>n</mi>
+                  <mo>)</mo>
+                </mrow>
+                <mrow>
+                  <mo>&part;</mo>
+                  <msub>
+                    <mrow>
+                      <mi>k</mi>
+                    </mrow>
+                    <mrow>
+                      <mo>&plusmn;</mo>
+                      <mi>i</mi>
+                    </mrow>
+                  </msub>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </math> --></disp-formula>
+        <p>and corresponding definitions for the control coefficients <italic>C<sup>axin</sup><sub>±i</sub></italic> for the total axin concentration. These coefficients, originally proposed for quantifying control in metabolic networks (for reviews, see <xref ref-type="bibr" rid="pbio-0000010-Heinrich2">Heinrich and Schuster 1996</xref>; <xref ref-type="bibr" rid="pbio-0000010-Fell1">Fell 1997</xref>), describe the relative changes of the concentrations of the given compounds to relative changes of the rate constants. The control coefficients for the reference state are listed in <xref ref-type="table" rid="pbio-0000010-t003">Table 3</xref>. It should be remembered that the following discussion refers to small perturbations of the reference state.</p>
+        <table-wrap id="pbio-0000010-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.0000010.t003</object-id><label>Table 3</label><caption>
+            <title>Control Coefficients for the Total Concentrations of β-Catenin and Axin and Parameters Quantifying the Sensitivity and the Robustness of the Wnt/β-Catenin Pathway</title>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.t003" xlink:type="simple"/><table-wrap-foot>
+            <fn id="nt301">
+              <p>The control coefficients (Equation 7) were obtained by numerical determination of the response to a change of the rate constants of all steps by 1%. Using relative changes of rate constants less than 1% does not lead to a significant improvement of the precision of the <italic>C</italic> values. Coefficients are given for the reference state. Horizontal lines separate the coefficients for distinct modules of the pathway. The last block contains the coefficients for parameters that enter the systems equations as binding rate constants <italic>k<sub>+j</sub></italic> and dissociation rate constants <italic>k<sub>−j </sub></italic>via dissociation constants <italic>K<sub>j</sub></italic> = <italic>k<sub>−j</sub> / k<sub>+j</sub></italic>. The upper signs of these coefficients refer to changes in <italic>k<sub>+j</sub></italic> and the lower sign to changes in <italic>k<sub>−j</sub></italic>. The sum of the control coefficients in each column is zero. Additional summation rules hold true for the rate constants within each module as well as for the two rate constants of each binding equilibrium. The standard deviation <italic>σ</italic> of the concentration control coefficients and the robustness <italic>ρ</italic> for β-catenin and axin are calculated by applying Equations (8) and (9)</p>
+            </fn>
+          </table-wrap-foot><!-- <table>
+            <thead>
+              <tr>
+                <td></td>
+                <td>Parameter of step <italic>j</italic></td>
+                <td><italic>C<sup>&beta;cat</sup><sub>j</sub></italic></td>
+                <td><italic>C<sup>axin</sup><sub>j</sub></italic> </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kinase/</td>
+                <td><italic>k</italic><sub>4</sub></td>
+                <td>&minus;0.89</td>
+                <td>0.50</td>
+              </tr>
+              <tr>
+                <td>phosphatase module</td>
+                <td><italic>k</italic><sub>5</sub></td>
+                <td>0.89</td>
+                <td>&minus;0.50</td>
+              </tr>
+              <tr>
+                <td>&beta;-catenin module</td>
+                <td><italic>k</italic><sub>9</sub></td>
+                <td>&minus;0.89</td>
+                <td>&minus;0.08</td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td><italic>k</italic><sub>10</sub></td>
+                <td>&minus;(10<sup>&minus;5</sup>)</td>
+                <td>&minus;0.10</td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td><italic>k</italic><sub>11</sub></td>
+                <td>&minus;0.03</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td><bold>&nu;</bold><sub>12</sub></td>
+                <td>0.93</td>
+                <td>0.19</td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td><italic>k</italic><sub>13</sub></td>
+                <td>&minus;0.01</td>
+                <td>&minus;0.01</td>
+              </tr>
+              <tr>
+                <td>Axin module</td>
+                <td><bold>&nu;</bold><sub>14</sub></td>
+                <td>&minus;0.89</td>
+                <td>0.82</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><italic>k</italic><sub>15</sub></td>
+                <td>0.89</td>
+                <td>&minus;0.82</td>
+              </tr>
+              <tr>
+                <td>Binding, dissociation</td>
+                <td><italic>k</italic><sub>6, </sub><italic>k</italic><sub>&minus;6</sub> </td>
+                <td>&plusmn;0.89</td>
+                <td>&plusmn;0.74</td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td><italic>k</italic><sub>7, </sub><italic>k</italic><sub>&minus;7</sub> </td>
+                <td>&plusmn;0.89</td>
+                <td>&plusmn;0.79</td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td><italic>k</italic><sub>8, </sub><italic>k</italic><sub>&minus;8</sub> </td>
+                <td>&plusmn;0.89</td>
+                <td>&plusmn;0.02</td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td><italic>k</italic><sub>16, </sub><italic>k</italic><sub>&minus;16</sub></td>
+                <td>&plusmn;0.11</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td><italic>k</italic><sub>17, </sub><italic>k</italic><sub>&minus;17</sub></td>
+                <td>&plusmn;0.08</td>
+                <td>&plusmn;0.02</td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td><italic>&sigma;</italic></td>
+                <td>0.66</td>
+                <td>0.44</td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td><italic>&rho;</italic></td>
+                <td>0.60</td>
+                <td>0.70</td>
+              </tr>
+            </tbody>
+          </table> --></table-wrap>
+        <p>For the reference state, there are six steps exerting strong negative control on the total β-catenin concentration (<italic>C<sup>βcat</sup><sub>i</sub></italic> ≅ −1). This group includes the reactions participating in assembling the destruction complex APC*/axin*/GSK3β. The corresponding parameters involve the rate constants <italic>k</italic><sub>7</sub> for the binding of axin to APC, <italic>k</italic><sub>6</sub> for the association of GSK3β to the APC/axin complex, and <italic>k</italic><sub>4</sub> for the phosphosphorylation of axin and APC in the destruction complex. Similar strong negative control is exerted by β-catenin binding to the phosphorylated destruction complex (rate constant: <italic>k</italic><sub>8</sub>), the phosphorylation of β-catenin in the destruction complex (rate constant: <italic>k</italic><sub>9</sub>), and the synthesis of axin (<bold>ν</bold><sub>14</sub>).</p>
+        <p>Six other reactions exert strong positive control in the reference state on the total concentration of β-catenin (concentration (<italic>C<sup>βcat</sup><sub>i</sub></italic> ≅ 1). To this group belong the reactions participating in the disassembly of the destruction complex APC*/axin*/GSK3β, which are described by the rate constants <italic>k<sub>−</sub></italic><sub>7</sub> for the dissociation of the APC/axin complex, <italic>k<sub>−</sub></italic><sub>6</sub> for the dissociation of GSK3β from the destruction complex, and <italic>k</italic><sub>5</sub> for the dephosphorylation of the APC and axin in the destruction complex. Other steps with a high positive control are the dissociation of β-catenin from the destruction complex (rate constant: <italic>k<sub>−</sub></italic><sub>8</sub>), axin degradation (rate constant: <italic>k</italic><sub>15</sub>), and β-catenin synthesis (<bold>ν</bold><sub>12</sub>).<sub/></p>
+        <p>There are many reactions exerting almost no control on β-catenin levels in the reference state. This group includes binding of β-catenin to TCF and APC (<italic>k</italic><sub>16</sub> and <italic>k</italic><sub>17</sub>), and the corresponding dissociation processes (<italic>k<sub>−</sub></italic><sub>16</sub> and <italic>k<sub>−</sub></italic><sub>17</sub>; again only valid for small perturbations). Interestingly, the effects of the two β-catenin degradation processes (rate constants: <italic>k</italic><sub>11</sub> and <italic>k</italic><sub>13</sub>) are also small. Calculation of control coefficients for the standard stimulated state reveals that some steps that exert no control in the reference state become important. These are the activation and inactivation of Dsh (rate constants: <italic>k</italic><sub>1</sub> and <italic>k</italic><sub>2</sub>) and, more pronounced, the Dsh-mediated release of GSK3β from the destruction complex (<italic>k</italic><sub>3</sub>). For all other processes, the signs of the control coefficients for β-catenin and axin do not change at the transition from the reference state to the standard stimulated state. The effects of parameter changes on axin are generally opposite to those on β-catenin; i.e., processes with a positive control coefficient for β-catenin have negative control coefficients for axin and vice versa. A significant exception is the synthesis of β-catenin, which exerts a positive control not only on β-catenin but also on axin, as expected from the results obtained in the last section.</p>
+        <p>Closer inspection of <xref ref-type="table" rid="pbio-0000010-t003">Table 3</xref> reveals that the values of the control coefficients for the rate constants sum up to zero. This fact is known as the summation theorem for concentration control (<xref ref-type="bibr" rid="pbio-0000010-Heinrich1">Heinrich and Rapoport 1974</xref>) and is valid for all reaction networks at steady state. This result finds its explanation in the invariance of the steady-state concentrations against simultaneous change of all rate constants by the same factor. Interestingly, in the present case there are subgroups of processes whose control coefficients separately sum up to zero, indicating a modular structure of the pathway. In <xref ref-type="table" rid="pbio-0000010-t003">Table 3</xref>, the control coefficients of the different modules are separated by horizontal lines. The main four subgroups are the Dsh module (not shown in <xref ref-type="table" rid="pbio-0000010-t003">Table 3</xref>), the kinase/phosphatase module, the β-catenin module, and the axin module. A subgroup is defined by a set of reactions where the control coefficients of the binding reactions are opposite to those of the corresponding dissociation reactions (<italic>C<sub>+i</sub></italic> = −<italic>C<sub>−i</sub></italic> for <italic>i</italic> = 6, 7, 8, 16, 17).</p>
+        <p>For those more familiar with genetic manipulation, it is more common to vary the concentrations of individual components rather than vary the rate constant of a reaction. <xref ref-type="table" rid="pbio-0000010-t004">Table 4</xref> shows the control coefficients for β-catenin and axin calculated for changes in the total concentrations of pathway components instead of the rate constants. Using the values of <xref ref-type="table" rid="pbio-0000010-t004">Table 4</xref>, the potential tumor-supressing effects (of APC, GSK3β, and axin) and potential oncogenic effects (of PP2A, TCF, Dsh, β-catenin) can be explained and quantified. It may be worth mentioning that there is no summation theorem for the control coefficients when calculated by changing total concentrations instead of rate constants. For practical reasons, it may be easier to discuss the coefficients with respect to concentration changes (<xref ref-type="table" rid="pbio-0000010-t004">Table 4</xref>); for theoretical reasons, changing rate constants are simpler to handle. We think that eventually it will also be clearest to speak about oncogenic reactions instead of oncogenic genes, especially if we are thinking of oncogenesis in response to pharmacologic or environmental perturbations. Genetic defects then can be considered in terms of changes in activity, transcription, translation, or proteolysis.</p>
+        <table-wrap id="pbio-0000010-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.0000010.t004</object-id><label>Table 4</label><caption>
+            <title>Concentration Control Coefficients for the Total Concentrations of β-Catenin and Axin Relative to Changes in the Concentrations of Pathway Components</title>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.t004" xlink:type="simple"/><table-wrap-foot>
+            <fn id="nt401">
+              <p>The control coefficients were obtained by numerical determination of the response to a change of total concentrations by 1%. Coefficients are given for the reference state and for the standard stimulated state</p>
+            </fn>
+          </table-wrap-foot><!-- <table>
+            <thead>
+              <tr>
+                <td></td>
+                <td><italic>W</italic> &equals; 0</td>
+                <td><italic>W</italic> &equals; 1</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><italic>C<sup>&beta;cat</sup><sub>j</sub></italic></td>
+                <td><italic>C<sup>axin</sup><sub>j</sub></italic></td>
+                <td><italic>C<sup>&beta;cat</sup><sub>j</sub></italic></td>
+                <td><italic>C<sup>axin</sup><sub>j</sub></italic></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><italic>APC</italic></td>
+                <td>&minus;0.83</td>
+                <td>0.79</td>
+                <td>&minus;0.87</td>
+                <td>0.52</td>
+              </tr>
+              <tr>
+                <td><italic>GSK3&beta;</italic></td>
+                <td>&minus;0.89</td>
+                <td>0.74</td>
+                <td>&minus;0.94</td>
+                <td>0.40</td>
+              </tr>
+              <tr>
+                <td><italic>PP2A</italic></td>
+                <td>0.89</td>
+                <td>&minus;0.50</td>
+                <td>0.94</td>
+                <td>&minus;0.30</td>
+              </tr>
+              <tr>
+                <td><italic>TCF</italic></td>
+                <td>0.20</td>
+                <td>0</td>
+                <td>0.07</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td><italic>Dsh</italic></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0.78</td>
+                <td>&minus;0.33</td>
+              </tr>
+              <tr>
+                <td><italic>&beta;-catenin</italic></td>
+                <td>1.00</td>
+                <td>0.20</td>
+                <td>1.00</td>
+                <td>0.44</td>
+              </tr>
+              <tr>
+                <td><italic>Axin</italic></td>
+                <td>&minus;1.08</td>
+                <td>1.00</td>
+                <td>&minus;1.59</td>
+                <td>1.00</td>
+              </tr>
+            </tbody>
+          </table> --></table-wrap>
+        <p>Clearly, the robustness of a variable towards parameter changes is higher the lower the corresponding concentration control coefficient. To arrive at an estimation of the overall effects of parameter perturbations on the system as a whole, we consider first the standard deviation <italic>σ</italic> of the control coefficients from their mean value. According to the summation theorem, the mean value of all control coefficients for a given variable is zero. Thus, we get for the standard deviation for the control coefficients of β-catenin:
+          <disp-formula id="pbio-0000010-e008"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.e008" xlink:type="simple"/><!-- <math display='block'>
+              <mrow>
+                <msup>
+                  <mrow>
+                    <mi>&sigma;</mi>
+                  </mrow>
+                  <mrow>
+                    <mi>&beta;</mi>
+                    <mi>c</mi>
+                    <mi>a</mi>
+                    <mi>t</mi>
+                  </mrow>
+                </msup>
+                <mo>=</mo>
+                <msqrt>
+                  <mrow>
+                    <mfrac>
+                      <mrow>
+                        <mn>1</mn>
+                      </mrow>
+                      <mrow>
+                        <mi>n</mi>
+                      </mrow>
+                    </mfrac>
+                    <mstyle displaystyle='false'>
+                      <mrow>
+                        <munder>
+                          <mo>&sum;</mo>
+                          <mrow>
+                            <mi>j</mi>
+                          </mrow>
+                        </munder>
+                        <mrow>
+                          <msup>
+                            <mrow>
+                              <mo>(</mo>
+                              <msubsup>
+                                <mrow>
+                                  <mi>C</mi>
+                                </mrow>
+                                <mrow>
+                                  <mi>j</mi>
+                                </mrow>
+                                <mrow>
+                                  <mi>&beta;</mi>
+                                  <mi>c</mi>
+                                  <mi>a</mi>
+                                  <mi>t</mi>
+                                </mrow>
+                              </msubsup>
+                              <mo>)</mo>
+                            </mrow>
+                            <mrow>
+                              <mn>2</mn>
+                            </mrow>
+                          </msup>
+                        </mrow>
+                      </mrow>
+                    </mstyle>
+                  </mrow>
+                </msqrt>
+              </mrow>
+            </math> --></disp-formula>where the summation is performed over all reactions, including forward and backward steps of fast equilibria. High values of <italic>σ</italic> indicate that the given variable is on average very sensitive towards changes of rate constants. We propose to introduce a measure for the robustness <italic>ρ</italic> of a variable towards changes of all parameters in the following way:
+          <disp-formula id="pbio-0000010-e009"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0000010.e009" xlink:type="simple"/><!-- <math display='block'>
+              <mrow>
+                <mi>&rho;</mi>
+                <mo>=</mo>
+                <mfrac>
+                  <mrow>
+                    <mn>1</mn>
+                  </mrow>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>&plus;</mo>
+                    <mi>&sigma;</mi>
+                  </mrow>
+                </mfrac>
+                <mi>.</mi>
+              </mrow>
+            </math> --></disp-formula>
+        </p>
+        <p>As <italic>σ</italic> may vary between zero and infinity, the range of <italic>ρ</italic> is confined to the interval 1≥ <italic>ρ</italic> ≥ 0. High values of <italic>ρ</italic> resulting from low <italic>σ</italic> values for the control coefficients indicate that the variable is robust against parameter perturbations. The standard deviations <italic>σ</italic> of the control coefficients and the <italic>ρ</italic> values for β-catenin and axin are presented in the last two rows of <xref ref-type="table" rid="pbio-0000010-t003">Table 3</xref>. Because many control coefficients are close to zero and the absolute values of the others hardly exceed unity, the <italic>σ</italic> values for β-catenin as well as for axin are rather small. Since all values for <italic>σ</italic> are lower than unity, a 1% change in a rate constant leads, on average, to a response of &lt;1% in the overall level of β-catenin. The total concentration of axin is more robust against parameter perturbations than the total concentration of β-catenin, particularly in the standard stimulated state. A transition from the reference to the standard stimulated state results in a lower robustness for β-catenin and a higher robustness for axin.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>Theory and quantitation are mutually dependent activities. It would seem unlikely that one would go to the trouble to measure detailed kinetic quantities without a specific model to test, and it is equally unlikely that realistic models can be constructed without the constraints of quantitative experimental data. Our intent in trying to reproduce a substantial part of the Wnt pathway in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> egg extracts was to acquire the kind of detailed kinetic data required to build a realistic model. There are several unusual advantages to the extract system that contributed to this effort. The <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> egg extract is essentially neat cytoplasm; it reproduces the in vivo rate of β-catenin degradation and responds to known regulators as expected from in vivo experiments. Kinetic experiments with high time resolution are possible in this system, since a well-stirred extract is presumably synchronous in ways in which collections of cells may not be. In extracts it is possible to precisely set the level of components by depletion or addition. The direct output of the canonical Wnt pathway is an easily measured cytoplasmic event, the degradation of β-catenin. Thus, in this unusual system it is possible to acquire quantitative information about signaling pathways, not achievable in vivo. At the same time, these extracts have limitations. We have not considered the receptor events, and it is likely that reactions at the plasma membrane contribute to dynamic features. Also, our analysis is incomplete, as there are other components of Wnt signaling, such as casein kinase I<italic>δ</italic>, casein kinase I<italic>ε</italic>, and PAR1, as well as cross-talk from other pathways, that influence the behavior of the system. We have also oversimplified the multiple phosphorylation steps. We have assumed a simple interconversion of the phosphorylated and unphosphorylated complex of axin, APC, and GSK3β, whereas in reality multiple phosphorylation states exist within the complex; the states may be random or sequential. We simply do not have the information to provide a much more specific model of phosphorylation interconversions at this time, although the model could easily be extended. Finally, there is the question of what Wnt process we are studying. We are looking at events in the cytoplasm of unfertilized eggs. Though endowed with all of the core components of the Wnt pathway, the egg is, as far as we know, transcriptionally silent and not involved in Wnt signaling, though this system is active very soon in embryogenesis. Thus, there is no biological in vivo behavior with which to compare the in vitro behavior. Nevertheless, the basic core circuitry is intact and is presumably prepared for the early Wnt events in the embryo. All the properties of the egg extract system are very similar to that circuitry in vertebrate somatic cells.</p>
+      <p>To build a mathematical description of the Wnt signaling system, we started with the basic circuitry discerned from previous studies in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> embryos and mammalian cells, whose similarity to the in vitro system we had already confirmed. We derived a system of differential equations that described the time-dependent variations of the system variables, i.e., the concentrations of the pathway components and their complexes. Parameters of the model are binding constants of proteins, rate constants of phosphorylations and dephosphorylations, rate constants of protein degradation, and rates of protein synthesis. Model reduction was achieved by considering conservation relations and by applying rapid equilibrium approximations for selected binding processes. Despite these simplifications, the model consists of a nonlinear system of differential equations whose solution requires the use of computers. Not all of these parameters were accessible to measurement. To circumvent this problem, we used as primary inputs not only kinetic parameters characterizing individual steps, but quantities that are more easily accessible from experiment, such as the overall flux of β-catenin degradation. This allowed us to derive rate constants as well as protein concentrations in a reference state, where there was no Wnt signal. This state serves as a starting point for predicting the system behavior during Wnt signaling as well as after experimental perturbations.</p>
+      <p>The basic model reproduced quantitatively the behavior of the reference state, including perturbations of this state achieved by varying the concentration of axin, GSK3β, and TCF. It also reproduced extensions of this to the signaling state. A wide variety of different sets of experimental data could be simulated by the same model, employing the same sets of kinetic parameters. We approached this process iteratively. For example, the early model did not include nonaxin-dependent degradation of β-catenin, but inclusion of this process improved the fit to the experimental data. More significantly, addition of this process had interesting biological implications, which we discuss.</p>
+      <p>In many ways, one of the most peculiar findings was the very low concentration of axin in the <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> extracts. Axin levels in other organisms may similarly be very low: <italic>Drosophila</italic> axin can be detected by Western blotting only following its immunoprecipitation (<xref ref-type="bibr" rid="pbio-0000010-Willert1">Willert et al. 1999</xref>). Although our theoretical and experimental studies have shown that axin is inhibitory at high concentrations, both indicate that axin is not present at the optimal concentration for the highest rate of β-catenin degradation. Therefore, axin levels are not set for optimality of β-catenin degradation, but are presumably optimized for some other purpose. Theoretically, axin levels must be held below the very sharp threshold of Dsh inhibition. Experimentally, these thresholds, which blunt Wnt signaling, are observed but are not as sharp as expected, and this may indicate some other compensatory effects. These thresholds would limit axin concentration to well below 1 nM if activated Dsh were constrained to concentrations of below 1 μM. Under these circumstances, we can expect that axin would never be found at concentrations approaching those of other Wnt pathway components (50–100 nM).</p>
+      <p>The low concentration of axin relative to other components (such as GSK3β, Dsh, and APC) has another design feature potentially very general and important for the modularity of metazoan signaling pathways. Axin is a critical node point for controlling β-catenin levels, but it also interacts with components shared with several other important pathways. The interaction of these components with axin fluctuates due to Wnt signals (reflecting changes in binding as well as changes in axin levels), yet because the concentration of axin is so low, there will be no appreciable change in the overall levels of GSK3β, Dsh, or APC (all these components important in other pathways would otherwise be driven to fluctuate). The very low axin concentration thus isolates the Wnt pathway from perturbing other systems, a simple mechanism to achieve modularity. Other scaffold proteins may serve similar functions in other pathways. These insights follow from a very simple measurement of axin concentration and suggest the utility of measuring the levels of signaling pathway components in different cell types and circumstances. Since quantitative and kinetic features may be important in defining modules, it suggests that qualitative circuit diagrams of signal transduction may overlook very important design features. Modularity within the Wnt pathway can be defined by an extension of the summation theorem of <xref ref-type="bibr" rid="pbio-0000010-Heinrich1">Heinrich and Rapoport (1974</xref>), which argues that the steady state of an entire pathway would have control coefficients that added to zero. When the Wnt pathway is broken down to several subpathways, we find that within these subpathways the control coefficients would sum to zero at steady state. While some of this subdivision is obvious (i.e., the kinase phosphatase module involving the phosporylation of APC and axin complexed to GSK3β), in other cases, such as the β-catenin module, it is much less obvious. Here the reactions include the phosphorylation of β-catenin in the APC/axin/GSK3β complex, the release and degradation of β-catenin, and the synthesis and nonaxin-dependent degradation of β-catenin. Balanced perturbation of these subpathways as a whole will not affect the overall flux of β-catenin degradation. It is not clear whether this concept of modularity might be extended usefully in two other directions: modularity in systems not at steady state, i.e., with transients, and estimates of linkage between pathways by some definition of nonzero summations expressing the degree of independence or modularity.</p>
+      <p>In addition to work by <xref ref-type="bibr" rid="pbio-0000010-Kholodenko1">Kholodenko et al. (1997</xref>), this paper marks one of the first extensions of metabolic control theory to signal transduction. Metabolism and signal transduction seem very different, the former involving the transfer of mass and the latter the transfer of information. In addition, metabolic pathways generally involve dedicated components and the specificity of interaction of substrates and enzymes is very high. Signaling pathways share many components; interactions are often weak. Metabolism, which has had a long history of quantitative study, was a natural field for the development of control theory, and this theory has been successful in converting the specific information about the behavior of enzymes in a pathway to the overall behavior of metabolic circuits. Control coefficients are useful measures of the impact of a process or quantity on another. In its application to metabolism, it allowed us to dispose of erroneous concepts, such as the notion of a rate-determining step. In signal transduction, control coefficients might play a similar role. Here they can be used to indicate quantitively the effects of a particular reaction on some other property, such as flux through the pathway or concentration of another component. By this definition, certain rate constants, such as the phosphorylation and dephosphorylation of APC and axin, have a major influence on the levels of β-catenin, while others, such as the degradation rate of phosphorylated β-catenin, have little effect. The sign and magnitude of these control coefficients give some indication what gene products could be oncogenes or tumor suppressors. As shown in <xref ref-type="table" rid="pbio-0000010-t004">Table 4</xref>, by this criterion APC, GSK3β, and axin are potent tumor suppressors, whereas β-catenin is an oncogene. Dsh would be expected to exert only moderate oncogenic effects. Clearly the effects of certain gene products are dependent on context, including their rate of synthesis and steady-state concentration. As our understanding of pathways improve, the effect of mutation or pharmacologic inhibition could be estimated quantitatively using control coefficients. The differences between cell types and organisms could be exploited to better predict mutagenic and pharmacologic impact on signal propagation.</p>
+      <p>Despite considerable progress in identifying components of the Wnt pathway, many important mechanistic details are still lacking. In this analysis we have shown that Dsh seems to act to prevent the phosphorylation of the axin/APC complex, not the phosphorylation of β-catenin. Dsh (complexed to GBP) does not seem to be a general GSK3β inhibitor, like Li<sup>+</sup>, but rather is focused on the two scaffolding proteins. This was apparent from the biphasic nature of both the theoretical and experimental curves, which suggested that Dsh inhibited the rephosphorylation of axin/APC, but still allowed many cycles of β-catenin phosphorylation, ubiquitination, and degradation. This mechanism was further proven by a timing-of-addition experiment. It needs to be further confirmed and extended by looking specifically at individual phosphorylation sites on all the components of the complex. Another insight into the mechanisms of complex formation and control of β-catenin degradation concerns the inhibition of β-catenin degradation at concentrations of axin approaching those of other components. This suggests that axin binds APC, GSK3β, and β-catenin in random order. As discussed above, the axin concentration is limited by other factors; owing to the low concentration of axin, random binding is not likely ever to be a problem. The situation for APC seems very different. The concentration of APC is comparable to that of the other components. Overexpression studies show no inhibitory effects. These theoretical and experimental observations suggest that APC as a scaffold must be very different from axin as a scaffold. Most likely, APC binds components in an ordered manner.</p>
+      <p>Metabolic pathways are understandable in terms of the familiar logic of chemical synthesis; signal transduction pathways, by contrast, often do not seem to conform to simple design principles. It is not clear at all whether signaling pathways have been optimized for a specific function or instead whether they are remnants of some early and rather arbitrary evolutionary experiment, now embedded in other processes that are difficult to change. Systems analysis, along with experiment, offers some hope of uncovering latent principles of design. For example, the modeling of the Wnt pathway gave a theoretical insight into the function of axin degradation in Wnt signaling. The degree of axin instability dramatically affects the amplitude and duration of the β-catenin response to a transient Wnt signal. If axin turnover were designed to be slow, then β-catenin would rise slowly to a low amplitude and persist for many hours. In a system where axin turnover was more rapid, the amplitude could increase several-fold and would persist a shorter time. The duration and amplitude of the response are likely to be important factors in developmental systems, which may respond differently to different amplitudes and durations of a signal. In addition, some developmental processes occur with such rapidity that the same signal would be interpreted differently at different times, hence the need to quickly terminate a signal. The very different effects of transient and persistent signals in the same pathway have been studied in PC12 cells in the MAP kinase pathway activated by EGF or NGF (<xref ref-type="bibr" rid="pbio-0000010-Marshall1">Marshall 1995</xref>). Finally, APC-dependent axin degradation stabilizes the Wnt pathway to variations in the APC concentration. Viewed from this perspective, the regulatory loop involving APC and axin degradation is an important design feature of the Wnt pathway.</p>
+      <p>Robustness has also been considered an important design principle for signaling processes (<xref ref-type="bibr" rid="pbio-0000010-Alon1">Alon et al. 1999</xref>), and control coefficients can be a good measure of this robustness. We present here a general measure of robustness of the entire pathway, using a measure that sums the variation in every individual reaction. Though it is generally thought that “robust” is good, the complement of robust is adaptability, and it may be that some aspects of a signaling pathway are designed to be responsive to changes in some parameters so that the same pathway can be used differently in different circumstances by altering key parameters. Since quantitative measures of the concentration or posttranslational modification of signaling proteins are rare in the literature, we have very little information on whether the organism varies certain key components to achieve different behavior of the signaling systems.</p>
+      <p>Another aspect of robustness is susceptibility to mutation or pharmacologic or environmental perturbation. The unexpected minimal phenotypes observed in numerous mouse knockout experiments have underscored our ignorance of the adaptable responses of organisms and in particular the adaptable nature of signaling pathways. One unexpected theoretical observation in this paper was the potential importance of the nonaxin-dependent degradation for β-catenin, under conditions where the APC levels are reduced. In our model, the nonaxin-dependent degradation contributed only a few percent to the overall flux of β-catenin degradation. Yet if the APC levels fall only 50%, the exact level of the alternative pathway made a large difference in the steady-state level of β-catenin. If the activity of the alternative pathways varied in different tissues, then this simple but largely silent effect could explain the tissue specificity of APC mutations. Similarly, variations in the alternative pathway might also explain some aspect of individual risk to loss of a single copy of the APC gene.</p>
+      <p>An experiment can better be judged by how many questions it raises than by how many it answers. The same may be said about theoretical analysis. Such analysis is always a work in progress, in that the experimental basis is continually changing to some degree. Some of the experimental changes, though significant mechanistically, may have little effect on the model and its interpretation. Some may require major revision. In the case of the Wnt pathway, the theoretical analysis and modeling have already raised several interesting questions of biological importance. They have already stimulated further experimentation. More than anything, the modeling has increased the urgency for obtaining accurate quantitative information about both steady-state and transient processes in Wnt signaling and for obtaining information about the differences in parameters in different tissues and in different organisms.</p>
+    </sec>
+    <sec id="s4">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title/>
+        <sec id="s4a1">
+          <title>Egg extracts and degradation assays.</title>
+          <p><named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> egg extracts were prepared as described previously (<xref ref-type="bibr" rid="pbio-0000010-Salic1">Salic et al. 2000</xref>). Extracts were used either used immediately or stored at –80°C after being snap-frozen in liquid nitrogen. β-Catenin degradation assays were performed as described before (<xref ref-type="bibr" rid="pbio-0000010-Salic1">Salic et al. 2000</xref>).</p>
+        </sec>
+        <sec id="s4a2">
+          <title>Measurement of β-catenin synthesis.</title>
+          <p>Freshly prepared <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> egg extracts were either supplemented with 25 mM LiCl in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> buffer (XB) or XB and an aliquot were withdrawn for β-catenin degradation assays. The free methionine pool in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> embryos is approximately 90 μM, and based on this number, [<sup>35</sup>S]methionine was added to the extract to a give a final activity of 1,000 counts per picomole methionine. Extracts were incubated at 20°C, and aliquots were withdrawn at the indicated times for SDS-PAGE, trichloroacetic acid (TCA) precipitation, and β-catenin pull-downs. To assay protein synthesis in the extract, total methionine incorporation was measured by TCA precipitation. In brief, <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> extracts (2 μl), metabolically labeled with [<sup>35</sup>S]methionine as above, were diluted to 100 μl with PBS and supplemented with 2 μl of 2% deoxycholate and TCA to 5%. The reaction was pelleted at 20,000 × g for 10 min at 4°C. After washing with ice-cold acetone and air drying, the radioactivity of the pellet was measured in a scintillation counter.</p>
+          <p>To isolate metabolically labeled β-catenin from <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> extracts, we used His-tagged APCm3 cross-linked to Ultralink beads (Pierce, Woburn, Massachusetts, United States). Since phosphorylated APC has a much higher affinity for β-catenin, APCm3 beads were first phosphorylated with 300 nM His-tagged GSK3β in 25 mM HEPES (pH 7.7), 1 mM EDTA, 300 mM NaCl, 10 mM MgCl<sub>2</sub>, 1 mM DTT, and 1 mM ATP for 1 h at room temperature with shaking. The beads were washed three times with 25 mM HEPES (pH 7.7), 1 mM EDTA, 300 mM NaCl, 1% Tween, and 1 mM DTT and were then used to pull down β-catenin. Extracts (50 μl) labeled with [<sup>35</sup>S]methionine (see above) were diluted 5× with XB containing 1% Tween and protease inhibitors. The diluted extracts were incubated with phosphorylated APCm3 beads (20 μl) at 4°C for 2 h. The beads were washed and bound protein was eluted by boiling in SDS-PAGE loading buffer. Labeled β-catenin was detected following SDS-PAGE and autoradiography.</p>
+        </sec>
+        <sec id="s4a3">
+          <title>Measuring dissociation rates of phosphorylated/nonphosphorylated β-catenin from axin.</title>
+          <p>Radiolabeled β-catenin (5 μl) was phosphorylated using 300 nM His-tagged GSK3β and 100 nM maltose-binding protein (MBP)–axin in 20 μl of XB containing 10 mM ATP, 20 mM MgSO<sub>4,</sub> and 50 mM NaCl. For the nonphorphorylated control, β-catenin was incubated as above, except that 50 mM LiCl was used instead of NaCl to inhibit GSK3β. The kinase reactions were incubated in a shaker for 30 min at 20°C and then added to 50 μl of MBP–axin, bound to amylose beads (1 mg of protein per milliliter of beads), and brought up to 250 μl with XB containing 50 mM LiCl. After phorsphorylated and nonphosphorylated β-catenin, respectively, bound to axin beads, the beads were washed three times with 500 μl of XB containing 50 mM LiCl. Dissociation of the bound β-catenin was initiated by adding 1 μM unlabeled recombinant β-catenin (His-tagged, from <italic>Sf9</italic> cells) and incubated at 20°C in a shaker. At the appropriate times, 5 μl aliquots of beads were quickly removed, filtered through Wizard minicolumns (Promega, Madison, Wisconsin, United States), and washed with ice-cold XB (3 ml). Proteins bound to beads were eluted from the minicolumns with 20 μl of hot sample buffer, followed by SDS-PAGE and autoradiography.</p>
+        </sec>
+        <sec id="s4a4">
+          <title>Recombinant proteins.</title>
+          <p>The expression and purification of all recombinant proteins have been previously described (<xref ref-type="bibr" rid="pbio-0000010-Salic1">Salic et al. 2000</xref>). Dsh was expressed as an MBP fusion in bacteria. His-tagged GSK3β, His-tagged Tcf3, His-tagged APCm3, and MBP–axin were expressed in <italic>Sf9</italic> cells.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="sd001" mimetype="application/msword" position="anchor" xlink:href="info:doi/10.1371/journal.pbio.0000010.sd001" xlink:type="simple">
+        <label>Dataset S1</label>
+        <caption>
+          <title>The Roles of APC and Axin Derived from Experimental and Theoretical Analysis of the Wnt Pathway</title>
+          <p>(287 KB DOC).</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="sg001" mimetype="image/tiff" position="anchor" xlink:href="info:doi/10.1371/journal.pbio.0000010.sg001" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <title>Effect of Wnt Stimulation on the Concentrations of β-Catenin and Axin</title>
+          <p>The curves represent steady-state concentrations of β-catenin (solid lines) and axin (broken lines) as functions of the strength <italic>W</italic> of Wnt stimulation. Curve a: free unphosphorylated β-catenin; curve b: free phosphorylated β-catenin; curve c: total β-catenin; curve d: total axin. All concentrations are scaled with respect to their values in the reference state. It is worth mentioning that in the model “without regulatory loop,” the steady-state concentration of free axin is determined by the condition <italic>X</italic><sub>12</sub><italic> =</italic> <bold>ν</bold><sub>14</sub><italic>/k</italic><sub>15</sub>, and is, therefore, independent of Wnt stimulation.</p>
+          <p>(2,954 KB TIFF).</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="sg002" mimetype="image/tiff" position="anchor" xlink:href="info:doi/10.1371/journal.pbio.0000010.sg002" xlink:type="simple">
+        <label>Figure S2</label>
+        <caption>
+          <title>Effects of the Amounts of Pathway Components on the Concentrations of β-Catenin and Axin</title>
+          <p>This figure gives additional information with respect to the effects of Dsh, TCF, and GSK3β on the steady-state concentrations of total β-catenin (solid lines) and total axin (dashed lines) for the case of permanent Wnt-stimulation, <italic>W</italic> = 1. All concentrations and synthesis rates are scaled with respect to their values in the stimulated stationary state.</p>
+          <p>(3,472 KB TIFF).</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="sg003" mimetype="image/tiff" position="anchor" xlink:href="info:doi/10.1371/journal.pbio.0000010.sg003" xlink:type="simple">
+        <label>Figure S3</label>
+        <caption>
+          <title>Effects of Synthesis Rates on the Concentrations of β-catenin and Axin</title>
+          <p>The curves represent steady-state values of total concentrations of β-catenin (solid lines) and axin (dashed lines), depending on the rates of synthesis of β-catenin and axin. All concentrations and synthesis rates are scaled with respect to their values in the stimulated stationary state.</p>
+          <p>(3,483 KB TIFF).</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="st001" mimetype="application/msword" position="anchor" xlink:href="info:doi/10.1371/journal.pbio.0000010.st001" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <title>Mathematical Notation for Model Variables as Subdivided into Independent and Dependent Variables</title>
+          <p>(45 KB DOC).</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="st002" mimetype="application/msword" position="anchor" xlink:href="info:doi/10.1371/journal.pbio.0000010.st002" xlink:type="simple">
+        <label>Table S2</label>
+        <caption>
+          <title>Complete List of Model Parameters of the Wnt Signal Transduction Model</title>
+          <p>The rate constants marked with “#” play a role only in stimulated states where <italic>W</italic> ≠ 0. Note that some of the numerical values are given in a higher precision compared to <xref ref-type="table" rid="pbio-0000010-t001">Table 1</xref>.</p>
+          <p>(111 KB DOC).</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Tom Rapoport, Rebecca Ward, and Yinon Ben-Neriah for thoughtful suggestions on the work. We thank the National Institute of Child Health and Development (grant HD037277 to MWK) for support and the National Institute of General Medical Sciences and the Harvard-Armenise Foundation for supplemental support (for RH). RH is also supported by the German Research Foundation (grant He 2049/2-1). EL is a Special Fellow of the Leukemia and Lymphoma Society. AS is supported by a Damon-Runyon Cancer Fund postdoctoral fellowship. RK is supported by the German Research Foundation (SFB 555).</p>
+    </ack>
+    
+    <ref-list>
+      <title>References</title>
+      <ref id="pbio-0000010-Alon1">
+        <label>1</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Alon</surname>
+              <given-names>U</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Surette</surname>
+              <given-names>MG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Barkai</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Leibler</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Robustness in bacterial chemotaxis.</article-title>
+          <source>Nature</source>
+          <year>1999</year>
+          <volume>397</volume>
+          <fpage>168</fpage>
+          <lpage>171</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Dajani1">
+        <label>2</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Dajani</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fraser</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Roe</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yeo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Good</surname>
+              <given-names>VM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Structural basis for recruitment of glycogen synthase kinase 3β to the axin–APC scaffold complex.</article-title>
+          <source>EMBO J</source>
+          <year>2003</year>
+          <volume>22</volume>
+          <fpage>494</fpage>
+          <lpage>501</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Fell1">
+        <label>3</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Fell</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Understanding the control of metabolism. London: Portland Press.</article-title>
+          <year>1997</year>
+          <page-count count="300"/>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Gerhart1">
+        <label>4</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Gerhart</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>1998 Warkany lecture: Signaling pathways in development.</article-title>
+          <source>Teratology</source>
+          <year>1999</year>
+          <volume>60</volume>
+          <fpage>226</fpage>
+          <lpage>239</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Gerhart2">
+        <label>5</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Gerhart</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kirschner</surname>
+              <given-names>MW</given-names>
+            </name>
+          </person-group>
+          <article-title>Cells, embryos, and evolution. Oxford: Blackwell Science.</article-title>
+          <year>1997</year>
+          <page-count count="642"/>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Heinrich1">
+        <label>6</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Heinrich</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rapoport</surname>
+              <given-names>TA</given-names>
+            </name>
+          </person-group>
+          <article-title>A linear steady-state treatment of enzymatic chains: General properties, control and effector strength.</article-title>
+          <source>Eur J Biochem</source>
+          <year>1974</year>
+          <volume>42</volume>
+          <fpage>89</fpage>
+          <lpage>95</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Heinrich2">
+        <label>7</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Heinrich</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Schuster</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>The regulation of cellular systems. New York: Chapman and Hall.</article-title>
+          <year>1996</year>
+          <page-count count="372"/>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Heinrich3">
+        <label>8</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Heinrich</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Neel</surname>
+              <given-names>BG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rapoport</surname>
+              <given-names>TA</given-names>
+            </name>
+          </person-group>
+          <article-title>Mathematical models of protein kinase signal transduction.</article-title>
+          <source>Mol Cell</source>
+          <year>2002</year>
+          <volume>9</volume>
+          <fpage>957</fpage>
+          <lpage>970</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Kang1">
+        <label>9</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Kang</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Soriano</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Xia</surname>
+              <given-names>X</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Eberhart</surname>
+              <given-names>CG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>De Strooper</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Presenilin couples the paired phosphorylation of β-catenin independent of axin: Implications for β-catenin activation in tumorigenesis.</article-title>
+          <source>Cell</source>
+          <year>2002</year>
+          <volume>110</volume>
+          <fpage>751</fpage>
+          <lpage>762</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Kholodenko1">
+        <label>10</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Kholodenko</surname>
+              <given-names>BN</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hoeck</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Westerhoff</surname>
+              <given-names>HV</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Brown</surname>
+              <given-names>GC</given-names>
+            </name>
+          </person-group>
+          <article-title>Quantification of information transfer via signal transduction pathways.</article-title>
+          <source>FEBS Lett</source>
+          <year>1997</year>
+          <volume>414</volume>
+          <fpage>430</fpage>
+          <lpage>434</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Lee1">
+        <label>11</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Lee</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Salic</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kirschner</surname>
+              <given-names>MW</given-names>
+            </name>
+          </person-group>
+          <article-title>Physiological regulation of β-catenin stability by Tcf3 and CK1ε.</article-title>
+          <source>J Cell Biol</source>
+          <year>2001</year>
+          <volume>154</volume>
+          <fpage>983</fpage>
+          <lpage>993</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Liu1">
+        <label>12</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Liu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Stevens</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rote</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yost</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Siah-1 mediates a novel β-catenin degradation pathway linking p53 to the adenomatous polyposis coli protein.</article-title>
+          <source>Mol Cell</source>
+          <year>2001</year>
+          <volume>7</volume>
+          <fpage>927</fpage>
+          <lpage>936</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Marshall1">
+        <label>13</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Marshall</surname>
+              <given-names>CJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Specificity of receptor tyrosine kinase signaling: Transient versus sustained extracellular signal-regulated kinase activation.</article-title>
+          <source>Cell</source>
+          <year>1995</year>
+          <volume>80</volume>
+          <fpage>179</fpage>
+          <lpage>185</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Matsuzawa1">
+        <label>14</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Matsuzawa</surname>
+              <given-names>SI</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Reed</surname>
+              <given-names>JC</given-names>
+            </name>
+          </person-group>
+          <article-title>Siah-1, SIP, and Ebi collaborate in a novel pathway for β-catenin degradation linked to p53 responses.</article-title>
+          <source>Mol Cell</source>
+          <year>2001</year>
+          <volume>7</volume>
+          <fpage>915</fpage>
+          <lpage>926</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Munemitsu1">
+        <label>15</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Munemitsu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Albert</surname>
+              <given-names>I</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Souza</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rubinfeld</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Polakis</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Regulation of intracellular β-catenin levels by the adenomatous polyposis coli (APC) tumor-suppressor protein.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>1995</year>
+          <volume>92</volume>
+          <fpage>3046</fpage>
+          <lpage>3050</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Papkoff1">
+        <label>16</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Papkoff</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rubinfeld</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Schryver</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Polakis</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Wnt-1 regulates free pools of catenins and stabilizes APC–catenin complexes.</article-title>
+          <source>Mol Cell Biol</source>
+          <year>1996</year>
+          <volume>16</volume>
+          <fpage>2128</fpage>
+          <lpage>2134</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Salic1">
+        <label>17</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Salic</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lee</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kirschner</surname>
+              <given-names>MW</given-names>
+            </name>
+          </person-group>
+          <article-title>Control of β-catenin stability: Reconstitution of the cytoplasmic steps of the Wnt pathway in <named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> egg extracts.</article-title>
+          <source>Mol Cell</source>
+          <year>2000</year>
+          <volume>5</volume>
+          <fpage>523</fpage>
+          <lpage>532</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Tolwinski1">
+        <label>18</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Tolwinski</surname>
+              <given-names>NS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Wehrli</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rives</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Erdeniz</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>DiNardo</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Wg/Wnt signal can be transmitted through arrow/LRP5,6 and Axin independently of Zw3/GSK3β activity.</article-title>
+          <source>Dev Cell</source>
+          <year>2003</year>
+          <volume>4</volume>
+          <fpage>407</fpage>
+          <lpage>418</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Willert1">
+        <label>19</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Willert</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Logan</surname>
+              <given-names>CY</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Arora</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fish</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Nusse</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>A <italic>Drosophila</italic> Axin homolog, Daxin inhibits Wnt signaling.</article-title>
+          <source>Development</source>
+          <year>1999</year>
+          <volume>126</volume>
+          <fpage>4165</fpage>
+          <lpage>4173</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0000010-Yamamoto1">
+        <label>20</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group>
+            <name name-style="western">
+              <surname>Yamamoto</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kishida</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kishida</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ikeda</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Takada</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Phosphorylation of axin, a Wnt signal negative regulator, by glycogen synthase kinase-3β regulates its stability.</article-title>
+          <source>J Biol Chem</source>
+          <year>1999</year>
+          <volume>274</volume>
+          <fpage>10681</fpage>
+          <lpage>10684</lpage>
+        </nlm-citation>
+      </ref>
+    </ref-list>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>APC</term>
+          <def>
+            <p>adenomatous polyposis coli</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>Dsh</term>
+          <def>
+            <p>Dishevelled</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>EDTA</term>
+          <def>
+            <p>ethylene diamine tetraacetic acid</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>GBP</term>
+          <def>
+            <p>glycogen synthase kinase-binding protein</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>GSK3β</term>
+          <def>
+            <p>glycogen synthase kinase 3β</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>MBP</term>
+          <def>
+            <p>maltose-binding protein</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PP2A</term>
+          <def>
+            <p>protein phosphatase 2A</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>
+            <italic>Sf9</italic>
+          </term>
+          <def>
+            <p>
+              <italic>Spodoptera frugiperda</italic>
+            </p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>TCA</term>
+          <def>
+            <p>trichloroacetic acid</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>TCF</term>
+          <def>
+            <p>T-cell factor</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>XB</term>
+          <def>
+            <p><named-content content-type="genus-species" xlink:type="simple">Xenopus</named-content> buffer.</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+  </back>
+</article>
