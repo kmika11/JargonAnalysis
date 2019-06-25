@@ -20,7 +20,7 @@ readPLOS <- readXML(
   doc = PlainTextDocument())
 
 #use DirSource to recursively import documents 
-plos <- VCorpus(DirSource("plostest", mode = "text"), 
+plos <- VCorpus(DirSource("ploscorpus/plostest", mode = "text"), 
                 readerControl = list(reader = readPLOS))
 
 View(plos)

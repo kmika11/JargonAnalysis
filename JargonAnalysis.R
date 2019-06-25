@@ -78,8 +78,39 @@ blog_freq <- colSums(as.matrix(blogDTM))
 length(blog_freq) #14515
 #posttm <- readXML(type = "node", spec = "XPathExpression") 
 
+###Building the Environmental science corpus###
+#### Creating a corpus from PLOS articles 
+# Link to full download: https://www.plos.org/text-and-data-mining 
+# Basically, I used the tm package to create a VCorpus from the XML files 
+# that PLOS downloads as. DirSource() imports files from a directory. I created
+# a custom reader (readPLOS) to handle the XML structure of the files 
+# DIRECTORY IS TOO BIG FOR R - USE SUBSETS (I used 15 files with zero performance issues
+# if you want to test with a more representative sample, I'm sure it could handle 50+)
 
-##Working on some analysis/creating numbers methods: 
+#create custom reader
+readPLOS <- readXML(
+  spec = list(front = list("node", "front"),
+              content = list("node", "body"),
+              back = list("node", "back")),
+  doc = PlainTextDocument())
+
+#use DirSource to recursively import documents 
+#note that the directory works when set to the main project directory, in my case, jargonanalysis-master.
+plos <- VCorpus(DirSource("ploscorpus/plostest", mode = "text"), 
+                readerControl = list(reader = readPLOS))
+
+View(plos)
+plos[["journal.pbio.0000001.xml"]][["content"]]
+
+# tidy - got rid of all metadata except filename (as identifier?) (which is maybe a bad call, but idk where to store it)
+#slice out content
+plos[[4]][[1]]
+
+ploscontent <- data.frame(sapply(plos,`[`,1)) %>%
+  gather(ploscontent) %>%
+  unnest_tokens("words", value)
+
+##### Working on some analysis/creating numbers methods ####
 #methods used will be: Jargonness, LSA, lex tightness, Flesch-Kincaid, POS analysis
 
 ##Jargonness: 1. comparison of word frequency in corpora: count words in science corpora, count in normal
