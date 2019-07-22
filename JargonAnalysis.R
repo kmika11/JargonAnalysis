@@ -4,6 +4,8 @@
 library(pdftools)
 library(tidyverse)
 library(tidytext)
+#ok, so for this to work, the directory has to be the PDF directory, as opposed to the test directory, where everything else is. 
+#so, how do we fix that? 
 files <- list.files(pattern = "pdf$")
 env_papers <- lapply(files, pdf_text)
 length(env_papers)
@@ -16,7 +18,6 @@ env_tidy <- env_tibble %>%
 
 ###Using blog posts to create general english corpus. Directory must be set to the jargon master, not to test. 
 ##This results in however many xml documents in the folder being read in as a DTM.
-library(tm)
 blogposts <- Corpus(DirSource("Test/XML"))
 blogposts <- tm_map(blogposts, removePunctuation)
 blogposts <- tm_map(blogposts, content_transformer(tolower))
@@ -63,6 +64,7 @@ ploscontent <- data.frame(sapply(plos,`[`,1)) %>%
 
 ##### Working on some analysis/creating numbers methods ####
 #methods used will be: Jargonness, LSA, lex tightness, Flesch-Kincaid, POS analysis
+##can also look at word frequency, topic modeling (should do preprosessing for this)
 
 ##Jargonness: 1. comparison of word frequency in corpora: count words in science corpora, count in normal
 #make ratio of counts. 
@@ -75,7 +77,7 @@ library(LSAfun)
 #working directory is set to jargonAnalysis-master.
 source_dir <- "Test/XML"
 text_dir <- blogposts #it only wants a path, not an object. So I need to find a way to make this a path.
-TDM <- textmatrix(source_dir, stopwords = stopwords_en, stemming = TRUE, removeXML = TRUE, removeNumber = T, minGlobFreq=1)
+TDM <- textmatrix(source_dir, stopwords = stopwords_en, stemming = TRUE, removeXML = TRUE, removeNumber = T, minGlobFreq=2)
 summary.textmatrix(TDM)
 # creating weighted matrix TDM2 out of the original TDM. TDM2 is the term frequency times its inverse document frequency
 TDM2 <- lw_tf(TDM) * gw_idf(TDM) 
@@ -87,6 +89,26 @@ tk2 <- t(LSAspace$sk *t(LSAspace$tk))
 plot(tk2[,1], y=tk2[,2], col="red", cex=.50, main="TK Plot")
 text(tk2[,1], y=tk2[,2], labels=rownames(tk2), cex=.70)
 
+###Hi Katie! The section below is what I've been working on/struggling with###
+##need to do this for the abstracts and sciCorp too. 
+#Ok, lets do this for the abstracts too: 
+source_dir_abs <- "Test/PDF"
+#I'm getting an error that says that text matrix can't run because there is something wrong with the encoding.
+#so I want to convert to UTF8, which takes a text object. However, I need a path for textmatrix...
+source_dir_abs <- enc2utf8(source_dir_abs)
+TDM_abs <- textmatrix(source_dir_abs, stopwords = stopwords_en, stemming = TRUE, removeNumbers = T, minGlobFreq = 2)
+#Maybe I don't need the textmatrix function... What if I can just use the lsa function with a DTM?
+abstracts_cor <- Corpus(DirSource("Test/PDF"))
+abstracts_cor <- tm_map(blogposts, removePunctuation)
+abstracts_cor <- tm_map(blogposts, content_transformer(tolower))
+abstracts_cor <- tm_map(blogposts, removeNumbers)
+abstracts_cor <- tm_map(blogposts, stripWhitespace)
+absDTM <- DocumentTermMatrix(abstracts_cor)
+#All of the above works, but then the line below throws: Error in  Ops.simple_triplet_matrix((m > 0), 1) : Not implemented.
+TDM2abs <- lw_tf(absDTM) * gw_idf(absDTM)
+LSAabs <- lsa()
+
+
 ##Flesch-Kincaid: 206.835 - 1.015(totalwords/totalsentences) - 84.6(totalsyllables/totalwords)
 #so I need a corpus of abstracts that is not tidy. It needs punctuation and spaces. 
 #there is actually a function: readability(txt.file, hyphen = NULL, index = "Flesch")
@@ -97,7 +119,8 @@ library(koRpus.lang.en)
 readability("Test/Ab1.txt", hyphen = NULL, index = "Flesch.Kincaid", tagger = "tokenize", force.lang = "en")
 readability("Test/Abs2.txt", hyphen = NULL, index = "Flesch.Kincaid", tagger = "tokenize", force.lang = "en")
 readability("Test/Abs3.txt", hyphen = NULL, index = "Flesch.Kincaid", tagger = "tokenize", force.lang = "en")
-
+#need to do this for sciCorp and blogs
 
 ##Lexical Tightness: how inter-related words are in normal vs science language.
 #is a mean of NPMI and is log2(p(a,b)/p(a)p(b))/-log2(p(a,b))
+##OR Word Association Profiles
